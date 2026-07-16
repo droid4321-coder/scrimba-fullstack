@@ -2,6 +2,9 @@
 
 This is a repository for all scrimba projects, in this file I will keep a log of the current timestamp and date
 
+Day 1: Got to 1 hour, did HTML and started CSS
+Day 2: Starting CSS
+
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
 Advanced CSS Styling (1:04:19 - 2:21:01): Mastering layout techniques, responsive design, and CSS architecture.
