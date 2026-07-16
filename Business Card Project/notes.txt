@@ -1,0 +1,5 @@
+Relative Image Paths on local images:
+
+./ -> Start from current directory
+../ -> Parent directory
+. -> Project Root directory
