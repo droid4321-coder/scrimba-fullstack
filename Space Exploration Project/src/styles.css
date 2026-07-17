@@ -2,9 +2,9 @@
 destination, also specifiying the font family to use */
 
 body {
-    background-image: url("../images/astronaut-in-space.jpg");
-    color:white;
-    background-size: cover;
+    /*background-image: url("../images/astronaut-in-space.jpg");*/
+    text-align: center;
+    margin:0;
 }
 
 .michroma-regular {
@@ -15,10 +15,28 @@ body {
 
 .container {
     text-align: center;
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWs5ZHJyOTRuM3NmMWxob2JyYms1c3U3MDRnYTA2MjBxZmh6aWxpciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eHXed39iQn3TrMAZJO/giphy.gif");
+    color:#525252;
+    background-size: cover;
+    padding:10px 0 600px 0;
+}
+
+.heading {
+    text-shadow: 0px 0px 4px black;
 }
 
 .btn {
     padding:6px 12px;
     background-color: white;
+    color:#525252;
     border: none;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+#space-logo {
+    width: 100px;
+    background-color: white;
 }
