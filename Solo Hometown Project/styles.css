@@ -54,6 +54,8 @@ body {
     justify-content: space-evenly;
     margin: 0 auto;
     background-color: rgb(197, 255, 109);
+    border: 3px solid #f8d5ba;
+    border-radius: 10px;
 }
 
 .activity {
@@ -74,4 +76,17 @@ body {
     border-radius:10px;
     padding:5px 10px;
     width:auto;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(197, 255, 109);
+    border: 3px solid #f8d5ba;
+    border-radius: 10px;
+}
+
+
+#img-card {
+    width:600px;
 }
