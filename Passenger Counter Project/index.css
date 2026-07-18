@@ -38,3 +38,7 @@ button {
 #save-btn {
     background-color: green;
 }
+
+#reset-btn {
+    background-color: black;
+}

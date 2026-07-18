@@ -2,16 +2,28 @@
 
 let countEl = document.getElementById("count-el")
 
+let saveEl = document.getElementById("save-el")
+
+let msg = document.getElementById("message")
+
 console.log(countEl);
 
 let count = 0;
 
 function increment() {
-    count = count + 1;
-    countEl.innerText = count;
-    
+    count += 1;
+    countEl.textContent = count;
+    msg.textContent = "Numero Añadido!"
 }
 
 function save() {
-    console.log(`Hay ${count} personas dentro del tren`);
+   saveEl.textContent += `${count} - `
+   msg.textContent = "Datos Guardados!"
+}
+
+function reset () {
+    count = 0;
+    countEl.textContent = count;
+    msg.textContent = "Cuenta Borrada!"
+
 }
