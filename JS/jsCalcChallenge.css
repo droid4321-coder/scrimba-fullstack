@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    background: linear-gradient(red,green,blue);
+    background: linear-gradient(rgb(255, 155, 155),rgb(130, 204, 130),rgb(108, 108, 242));
     margin: 0;
 }
 
@@ -33,4 +33,5 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 5em;
 }
