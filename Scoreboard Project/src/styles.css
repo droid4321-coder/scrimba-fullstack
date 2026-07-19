@@ -1,0 +1,30 @@
+body {
+    box-sizing: border-box;
+    background-color: #191E41;
+    text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 250px;
+}
+
+
+.text {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+.score, button {
+    font-family: 'Seven Segment', sans-serif;
+}
+
+
+
