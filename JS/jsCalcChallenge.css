@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient(red,green,blue);
+    margin: 0;
+}
+
+input {
+    width: 100px;
+    height: 100px;
+    font-size: 5em;
+    text-align: center;
+}
+
+button {
+    font-size: 2em;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

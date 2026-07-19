@@ -16,17 +16,17 @@ const mul = document.getElementById("mul");
 const div = document.getElementById("div");
 
 sum.addEventListener("click", () => {
-    result.textContent = num1 + num2;
+    result.textContent = `${num1} + ${num2} = ${num1 + num2}`;
 })
 
 sub.addEventListener("click", () => {
-    result.textContent = num1 - num2;
+    result.textContent = `${num1} - ${num2} = ${num1 - num2}`;
 })
 
 mul.addEventListener("click", () => {
-    result.textContent = num1 * num2;
+    result.textContent = `${num1} x ${num2} = ${num1 * num2}`;
 })
 
 div.addEventListener("click", () => {
-    result.textContent = num1 / num2;
+    result.textContent = `${num1} / ${num2} = ${num1 / num2}`;
 })
