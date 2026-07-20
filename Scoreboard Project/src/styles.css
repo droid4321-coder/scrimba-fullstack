@@ -2,6 +2,8 @@ body {
     box-sizing: border-box;
     background-color: #191E41;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -9,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 250px;
+  gap: 150px;
 }
 
 
@@ -24,7 +26,40 @@ body {
 
 .score, button {
     font-family: 'Seven Segment', sans-serif;
+    border-radius: 5px;
 }
 
+.btn {
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+}
 
+h1 {
+    font-size: 6em;
+    color: white;
+    white-space: pre-line;
+}
 
+.score {
+    background-color: black;
+    color:red;
+    font-size: 20em;
+    font-weight: bolder;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-size: 3em;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}

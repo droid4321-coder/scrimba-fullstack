@@ -9,25 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
-                
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />             
 </head>
 <body>
     <div class="container">
         <div class="home-container">
             <div class="home">
-                <h1 class="text" id="home-text">HOME</h1>
-                <p class="score" id="home-score">0</p>
+                <h1 class="text" id="home-text"></h1>
+                <h2 class="score animate__animated animate__flash" id="home-score">0</h2>
             </div>
-            <div class="home-buttons">
+            <div class="buttons">
                 <button class="btn" id="home-add1">+1</button>
                 <button class="btn" id="home-add2">+2</button>
                 <button class="btn" id="home-add3">+3</button>
             </div>
         </div>
+        <div class="center-container">
+            <button class="btn" id="reset-btn">Reset</button>
+        </div>
         <div class="guest-container">
             <div class="guest">
-                <h1 class="text" id="guest-text">GUEST</h1>
-                <p class="score" id="guest-score">0</p>
+                <h1 class="text" id="guest-text"></h1>
+                <h2 class="score animate__animated animate__flash" id="guest-score">0</h2>
             </div>
             <div class="buttons">
                 <button class="btn" id="guest-add1">+1</button>
@@ -37,4 +43,6 @@
         </div>
     </div>
 </body>
+<script src="./src/script.js">
+</script>
 </html>
