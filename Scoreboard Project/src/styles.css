@@ -24,6 +24,12 @@ body {
     "GRAD" 0;
 }
 
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
 .score, button {
     font-family: 'Seven Segment', sans-serif;
     border-radius: 5px;
@@ -35,8 +41,8 @@ body {
     color:white;
 }
 
-h1 {
-    font-size: 6em;
+h1, p {
+    font-size: 3em;
     color: white;
     white-space: pre-line;
 }
@@ -44,7 +50,7 @@ h1 {
 .score {
     background-color: black;
     color:red;
-    font-size: 20em;
+    font-size: 8em;
     font-weight: bolder;
     align-items: center;
     width: 100%;
@@ -55,8 +61,20 @@ h1 {
 }
 
 .btn {
-    font-size: 3em;
+    font-size: 1.5em;
     padding: 10px;
+}
+
+.btn:hover {
+    border:1px solid red;
+}
+
+.btn:active {
+    color:red;
+}
+
+.btn:disabled {
+    color:black;
 }
 
 .buttons {
