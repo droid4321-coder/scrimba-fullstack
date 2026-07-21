@@ -1,0 +1,16 @@
+/* The Animation Rule */
+@keyframes clockTick {
+  0% {
+    transform: scale(1.1);
+    color: #ff4757; /* Flash a different color briefly */
+  }
+  100% {
+    transform: scale(1);
+    color: inherit;
+  }
+}
+
+/* The Class your JS will toggle */
+.tick-animation {
+  animation: clockTick 0.2s ease-out;
+}
