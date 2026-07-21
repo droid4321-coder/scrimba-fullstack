@@ -58,6 +58,19 @@ function countdown() {
     }, 1000)
 }
 
+function highlightLeader () {
+    if (currentHomeScore > currentGuestScore) {
+        homeScore.style.color = "green";
+        guestScore.style.color = "red";
+    } else if (currentHomeScore === currentGuestScore) {
+        homeScore.style.color = "green";
+        guestScore.style.color = "green";
+    } else {
+        guestScore.style.color = "green";
+        homeScore.style.color = "red";
+    }
+}
+
 function resumeTimer () {
     clearInterval(timerId);
     resumeBtn.disabled = true;
@@ -87,12 +100,14 @@ function updateHome(points) {
     currentHomeScore += points;
     homeScore.textContent = currentHomeScore;
     buffer = points;
+    highlightLeader();
 }
 
 function updateGuest(points) {
     currentGuestScore += points;
     guestScore.textContent = currentGuestScore;
     buffer = points;
+    highlightLeader();
 }
 
 function resetScore () {
