@@ -11,6 +11,7 @@ Day 6: Taking a break, maybe do something later? 1PM
 Day 7: Busy, probably take a break (19 July 2026)
 Day 8: Busy, took break
 Day 9: Making a timer and updating scoreboard
+Day 10: Resuming, finally!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
