@@ -12,7 +12,8 @@ Day 7: Busy, probably take a break (19 July 2026)
 Day 8: Busy, took break
 Day 9: Making a timer and updating scoreboard
 Day 10: Resuming, finally! Black project progress going to lesson 22
-Day 11: Probably Break tomorrow, busy.(23 july)
+Day 11: Break, busy
+Day 12: Continuing!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.

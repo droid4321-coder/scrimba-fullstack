@@ -1,7 +1,7 @@
-let firstCard = Math.floor(Math.random() * (11 - 2 + 1)) + 2;
+let firstCard = getRandomCard()
 //console.log(firstCard);
 
-let secondCard = Math.floor(Math.random() * (11 - 2 + 1)) + 2;
+let secondCard = getRandomCard()
 //console.log(secondCard);
 
 let cards = [firstCard, secondCard];
@@ -17,13 +17,21 @@ const messageEl = document.getElementById("message-el");
 const sumEl = document.getElementById("sum-el");
 const cardsEl = document.getElementById("card-el");
 
+function getRandomCard() {
+    return Math.floor(Math.random() * (11 - 2 + 1)) + 2;
+}
+
 function startGame() {
     renderGame();
 }
 
 function renderGame() {
 
-    cardsEl.textContent = `Cards: ${cards[0]} ${cards[1]}`;
+    cardsEl.textContent = "Cards: ";
+    
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += `${cards[i]} `
+    }
     sumEl.textContent =`Sum: ${sum}`;
 
     if (sum <= 20) {
@@ -42,9 +50,11 @@ function renderGame() {
 function newCard() {
     console.log("Drawing a new card from the deck.");
 
-    let card = Math.floor(Math.random() * (11 - 2 + 1)) + 2;
+    let card = getRandomCard()
 
     sum += card
 
+    cards.push(card);
+    console.log(cards);
     renderGame();
 }
