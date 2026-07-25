@@ -1,0 +1,9 @@
+The objective is to build a password generator.
+
+Design requirements:
+1. Must have a button to generate passwords and have 2 fields with random passwords of 15 characters
+
+Stretch Goals:
+1. Create an input to put how long the passwords needs to be.
+2. Create a button to copy passwords on clipboard.
+3. Create options to exclude symbols or numbers

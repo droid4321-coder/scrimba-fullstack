@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <h1 class="text header">Generate a <span class="header2">random password</span></h1>
+            <p class="text description">Never use an insecure password again.</p>
+            <p class="text" id="copied"></p>
+            <div class="options-container">
+                <label for="length" class="text">Password Length</label>
+                <input type="number" name="length" id="length-el" class="text" value="15" placeholder="Enter Length" required/>
+                <p class="text options">Options</p>
+                <input type="checkbox" name="lowercase" id="lowercase" checked>
+                <label for="lowercase" class="text">Lowercase</label>
+                <input type="checkbox" name="uppercase" id="uppercase" checked>
+                <label for="uppercase" class="text">Uppercase</label>
+                <input type="checkbox" name="numbers" id="numbers" checked>
+                <label for="numbers" class="text">Numbers</label>
+                <input type="checkbox" name="symbols" id="symbols" checked>
+                <label for="symbols" class="text">Symbols</label>
+            </div>
+            <button class="btn" id="btn-el">Generate Passwords</button>
+        </div>
+        <div class="password-container">
+            <div class="password1-container">
+            <p class="text password" id="password-el1"></p>
+            <button class="btn" id="copybtn-el1">Copy To Clipboard</button>
+        </div>
+        <div class="password2-container">
+            <p class="text password" id="password-el2"></p>
+            <button class="btn" id="copybtn-el2">Copy To Clipboard</button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="./src/script.js"></script>
+</html>
