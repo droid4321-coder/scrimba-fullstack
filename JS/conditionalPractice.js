@@ -43,3 +43,36 @@ console.log(3 < 0)    false//
 console.log(3 >= 3)   true// 
 console.log(11 <= 11) true//
 console.log(3 <= 2)    false// */
+
+let hasCompletedCourse = true;
+let giveCertificate = true;
+
+if (hasCompletedCourse && giveCertificate) {
+    generateCertificate();
+}
+
+function generateCertificate() {
+    console.log("Generating certificate...");
+}
+
+let hasSolvedChallenge = false;
+let hasHintsLeft = false;
+
+if (!hasSolvedChallenge && !hasHintsLeft) {
+    showSolution()
+}
+
+function showSolution() {
+    console.log("Showing the solution...");
+}
+
+let likesDocumentaries = true;
+let likesStartups = false;
+
+if (likesDocumentaries || likesStartups) {
+    recommendMovie();
+}
+
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you will like!");
+}
