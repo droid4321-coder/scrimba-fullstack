@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -12,10 +16,10 @@
             <h1 class="text header">Generate a <span class="header2">random password</span></h1>
             <p class="text description">Never use an insecure password again.</p>
             <p class="text" id="copied"></p>
+                <h2 class="text options">Options</h2>
             <div class="options-container">
                 <label for="length" class="text">Password Length</label>
-                <input type="number" name="length" id="length-el" class="text" value="15" placeholder="Enter Length" required/>
-                <p class="text options">Options</p>
+                <input type="number" name="length" id="length-el" class="length" value="15" placeholder="Enter Length" required/>
                 <input type="checkbox" name="lowercase" id="lowercase" checked>
                 <label for="lowercase" class="text">Lowercase</label>
                 <input type="checkbox" name="uppercase" id="uppercase" checked>
