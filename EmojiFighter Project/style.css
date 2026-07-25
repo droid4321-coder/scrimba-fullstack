@@ -1,0 +1,106 @@
+body {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 40px;
+    /* Reducido un poco para pantallas medianas */
+}
+
+.emoji {
+    height: 150px;
+    /* Redimensionado para mantener la proporción */
+    width: 150px;
+    font-size: 4em;
+    display: flex;
+    /* NUEVO: Centra el emoji horizontalmente */
+    justify-content: center;
+    align-items: center;
+    /* NUEVO: Centra el emoji verticalmente */
+    background-color: #111;
+    /* Opcional: una base oscura de fondo */
+    border-radius: 12px;
+}
+
+.vs {
+    font-size: 2em;
+}
+
+.btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* --- ANIMACIONES DE COMBATE --- */
+
+/* Clase que aplicará JavaScript al peleador 1 (Izquierdo) */
+.hit-left {
+    animation: punchRight 0.2s ease-out;
+}
+
+/* Clase que aplicará JavaScript al peleador 2 (Derecho) */
+.hit-right {
+    animation: punchLeft 0.2s ease-out;
+}
+
+/* Movimiento hacia la derecha y regreso rápido */
+@keyframes punchRight {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+
+    40% {
+        transform: translateX(60px) scale(1.2);
+    }
+
+    /* Se estira hacia el rival */
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Movimiento hacia la izquierda y regreso rápido */
+@keyframes punchLeft {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+
+    40% {
+        transform: translateX(-60px) scale(1.2);
+    }
+
+    /* Se estira hacia el rival */
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}

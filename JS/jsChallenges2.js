@@ -53,3 +53,27 @@ largeCountries.push("Pakistan") // adds to last index
 largeCountries.shift(); // removes first index
 largeCountries.unshift("China"); // adds to first index
 console.log(largeCountries);
+
+
+//Challenge 5
+
+let dayOfMonth = 13;
+let weekDay = "Friday";
+
+if (dayOfMonth === 13 && weekDay === "Friday") {
+    console.log("😱");
+}
+
+//Challenge 6
+
+let hands = ["rock", "paper", "scissors"]
+
+function janKenPon(arr) {
+    return arr[Math.floor(Math.random() * 3)]
+}
+
+console.log(janKenPon(hands));
+
+//Challenge 6 done in EmojiFighter Folder (vibecoded some lol)
+
+//Challenge 7 also done in FruitSorter Folder

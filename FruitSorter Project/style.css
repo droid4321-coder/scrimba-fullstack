@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    /* Aplicado a todo el documento */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    /* Permite que crezca si es necesario */
+    flex-direction: column;
+    padding: 20px;
+}
+
+.shelf {
+    min-height: 150px;
+    width: 100%;
+    max-width: 600px;
+    /* Responsivo */
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Permite que los emojis se acomoden en varias líneas */
+.shelf .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.apples {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.oranges {
+    background-color: rgba(255, 166, 0, 0.2);
+}
