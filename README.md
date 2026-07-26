@@ -14,7 +14,7 @@ Day 9: Making a timer and updating scoreboard
 Day 10: Resuming, finally! Black project progress going to lesson 22
 Day 11: Break, busy
 Day 12: Continuing! Finished JS Blackjacl project!
-Day 13: Starting Js Challenges after Blackjack project!
+Day 13: Starting Js Challenges after Blackjack project! JS Challenges Done and PW Generator Done! Starting Extension Project!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.

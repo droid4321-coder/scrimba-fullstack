@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            width: 250px;
+            height: 250px;
+            background: black;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="box">
+        <p>Open the Box!</p>
+    </div>
+</body>
+<script>
+    const box = document.getElementById("box")
+    box.addEventListener("click", function() {
+        console.log("I want to open the box!");
+    })
+</script>
+</html>
