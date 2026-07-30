@@ -19,6 +19,7 @@ Day 14: Progressing through Chrome Extension
 Day 15: Continuing with LocalStorage
 Day 16: break
 Day 17: Continuing Extension Chrome
+Day 18: Starting JS Challenges
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
