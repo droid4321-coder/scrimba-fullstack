@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+/* Add this to force all elements to respect padding and borders */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* For Chrome, Safari, Edge, and Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.container {
+    height: 100vh;
+}
+
+.unit-container {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    background-color: #593BF3;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+input {
+    background: transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    font-size: 5em;
+}
+
+button {
+    background: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    color:#593BF3;
+}
+
+button:hover {
+    background:lightgrey;
+}
+
+button:active {
+    background: grey;
+}
+
+.conversions-container {
+    background-color: lightgray;
+}
+
+#conversions-container {
+    background-color: lightgrey;
+    /* Dark theme contrast, or use a light gray like #F4F4F6 */
+    border-radius: 8px;
+    /* Softens the sharp corners */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Optional: Removes the line from the very last item so it looks professional */
+.conversion-container:last-child {
+    border-bottom: none;
+}
+
+.conversion-container {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 700px;
+    width: 100%;
+    margin: 5px;
+}
