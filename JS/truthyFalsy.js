@@ -23,3 +23,16 @@ undefined
 NaN - Not a Number
 
 */
+let trueOrFalse = Boolean("hello")
+
+console.log(trueOrFalse);
+
+/*
+    Boolean practice
+    "" = false
+    "0" = true
+    100 = true
+    null = false
+    [0] = true
+    -0 = false
+*/ 
