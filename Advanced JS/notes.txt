@@ -1,0 +1,9 @@
+ternary operators
+
+condition ? expression : expression
+
+the ? expression will run whrn value is truthy and the : expression when it is falsy
+
+it can be chained
+
+switch statements- various cases and various code blocks, also can continue and break
