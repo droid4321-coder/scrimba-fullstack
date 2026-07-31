@@ -7,3 +7,7 @@ the ? expression will run whrn value is truthy and the : expression when it is f
 it can be chained
 
 switch statements- various cases and various code blocks, also can continue and break
+
+object destructuring - extract properties into distinct variables
+
+setTimeout - 
