@@ -20,7 +20,7 @@ Day 15: Continuing with LocalStorage
 Day 16: break
 Day 17: Continuing Extension Chrome
 Day 18: Starting JS Challenges, done, did JS Unit Converter and Finished Tools of the Trade Command Line
-Day 19: Continuing Tools Git section
+Day 19: Continuing Tools Git section, skimmed through starting advanced JS section now
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
