@@ -10,4 +10,71 @@ switch statements- various cases and various code blocks, also can continue and 
 
 object destructuring - extract properties into distinct variables
 
-setTimeout - 
+setTimeout - we have a timeout function like this:
+
+setTimeout(function() {
+    console.log("This code executes")
+    }, 5000
+)
+
+This function its logical to think it will start in 5 seconds. But its not, Why? 
+Because of how JS works.
+
+Js is a single threaded, non blocking language
+JS has a runtime environment, V8 for example used in Chrome. Js has a heap that handles memory allocation, Also it has a call stack, which can only execute one piece of code at a time in its single thread.
+
+JS has WebAPIs, task queues, and event loops, these are not part of JS but they are helping hands and JS can multitask!
+
+methods like fetching network, Promises, setTimeout and setInterval.
+
+When JS is executed, code follows the following execution
+
+//JS code
+
+console.log("first") - line 1
+
+setTimeout(function...); - line 2
+
+console.log("Third"); - line 3
+
+//End of JS code
+
+//Simplified explanation
+
+line 1 goes to call stack, executes to console, and cleared from call stack
+line 2 goes to the stack and gets passed to a WEbAPI where it has a timer, clears from call stack
+line 3 goes to stack and passed to console, cleared from call stack
+line 2 timer runs out goes to task queue, and the event loop watches the function,
+therefore, it returns to the call stack when done and executed function and empty stack
+
+WebAPIs are functionalities provided by the browser and are not a part of JS - examples, DOM manip, data requests, timers, and more
+
+Another example:
+
+//JS code
+
+console.log("first") - line 1
+
+setTimeout(function...); - line 2
+
+mineBitcoin() - line 3
+
+//End of JS code
+
+line 1 goes to stack, executes, and cleared from stack;
+line 2 goes to stack, gets handled by WEbAPI,
+line 3 goes to stack, its taking its time, and its in stack
+line 2 timer finishes, passed to queue
+event loop watches stack and mineBitcoin function has not finished
+finally finishes, and stack is empty function completes, line 2 goes to stack, and get executed
+
+Now in another hypothtical example, line 2 goes to task queue, but, there is a task a and ask b before it.
+the function has to wait for mineBitcoin and both tasks, so its delayed..
+If line 2 goes to stack, chaos ensues, because it mergs with function
+
+constructors:
+
+a constructor gives you an object, there are many cases, some are inbuilt and custom
+
+inbuit examples provide objects in various predetermined formats, like Date, Error objects, and objects for each data type.
+custom constructors we design ourselved to producr objects for our own specific purposes.

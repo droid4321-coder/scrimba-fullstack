@@ -1,0 +1,12 @@
+Create a Stock Ticker that meets the requirements:
+
+The app should display the name, symbol and price of the stock, with a timestamp as per the screenshot.
+The triangle compares the stock price to the previous one. If up, return a green triangle. If down, return a red triangle going down. If same. return a triangle facing right.
+The price should update every 1.5 seconds
+
+Challenges:
+
+Find a way to get fresh stock data each 1.5 seconds
+Call the randomStockTicker function with the fresh data
+Add logic to renderStockTicker to display the correct information
+Code will need to be written in index.js and fakeStockApi.js
