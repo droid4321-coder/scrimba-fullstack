@@ -1,0 +1,20 @@
+/* src/style.css */
+
+/* Estilo base para el icono */
+#price-icon {
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Suaviza el cambio de color */
+}
+
+/* Clase que aplicarás cuando el precio suba */
+.up {
+    color: #2ecc71;
+    /* Un verde brillante agradable */
+}
+
+/* Opcional: clase para cuando baje */
+.down {
+    color: #e74c3c;
+    /* Un rojo llamativo */
+}
