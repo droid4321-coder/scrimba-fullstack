@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+<body>
+    <h1>My Shopping List📋</h1>
+    <p id="error"></p>
+    <ul id="list"></ul>
+    <label for="item">Item</label>
+    <input type="text" id="item-input" placeholder="e.g rice"/>
+    <button id="add-item-btn">Add</button>
+</body>
+<script>
+    const emojis = ["🐣", "🐯", "🐼"]
+    console.log(emojis.includes("🐣"))
+    //.includes() is a method to check if an array holds a given value?
+
+    //get elements
+    const addItemBtn = document.getElementById("add-item-btn");
+    const itemInput = document.getElementById("item-input");
+    const list = document.getElementById("list");
+    const error = document.getElementById("error");
+
+    // Turn the array into a string and save it
+    localStorage.setItem("myList", JSON.stringify(shoppingList));
+
+    // Get the string, parse it back into an array, or default to [] if empty
+    const savedList = localStorage.getItem("myList");
+    const shoppingList = savedList ? JSON.parse(savedList) : [];
+
+    // Call render() right away so the saved items show up on page load
+    render();
+
+    //when clicked, pushes item to array and does render function
+    addItemBtn.addEventListener("click", function() {
+        const verification = shoppingList.includes(itemInput.value);
+        if(verification) {
+            itemInput.value = "";
+            error.textContent = "No duplicates please!";
+            return;
+        }
+        error.textContent = "";
+        shoppingList.push(itemInput.value);
+        render();
+        itemInput.value = "";
+        // Turn the array into a string and save it
+        localStorage.setItem("myList", JSON.stringify(shoppingList));
+    })
+
+    //iterates thru shoppingList and displays it in a list
+    function render() {
+        let html = "";
+        for(let item of shoppingList) {
+            html += `<li class="list-item">${item}</li>`
+        }
+        list.innerHTML = html;
+    }
+</script>
+</html>

@@ -14,6 +14,7 @@ function getStockData() {
         sym: "SE",
         price: (Math.random() * 3).toFixed(2),
         time: `${hours}:${minutes}:${seconds}` //return time in format hh:mm:ss
+        //also new Date().toLocaleTimeString()
     }
 }
 

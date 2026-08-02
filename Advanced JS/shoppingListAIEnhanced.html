@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+
+<body>
+    <h1>My Shopping List📋</h1>
+    <p id="error" style="color: red;"></p>
+    <ul id="list"></ul>
+
+    <label for="item-input">Item</label>
+    <input type="text" id="item-input" placeholder="e.g rice" />
+    <button id="add-item-btn">Add</button>
+    <!-- New button to clear the storage -->
+    <button id="clear-list-btn">Clear List</button>
+
+    <script>
+        // 1. Get HTML elements
+        const addItemBtn = document.getElementById("add-item-btn");
+        const clearItemBtn = document.getElementById("clear-list-btn");
+        const itemInput = document.getElementById("item-input");
+        const list = document.getElementById("list");
+        const error = document.getElementById("error");
+
+        // 2. Load data from localStorage on page startup
+        // JSON.parse turns the saved text string back into a real JavaScript array
+        const savedList = localStorage.getItem("myShoppingList");
+        const shoppingList = savedList ? JSON.parse(savedList) : [];
+
+        // 3. Immediately render any saved items so they show on screen
+        render();
+
+        // 4. Add item event listener
+        addItemBtn.addEventListener("click", function () {
+            const newItem = itemInput.value.trim();
+
+            // Prevent empty inputs
+            if (newItem === "") {
+                error.textContent = "Please enter an item!";
+                return;
+            }
+
+            // Case-insensitive duplicate check
+            const isDuplicate = shoppingList.some(item => item.toLowerCase() === newItem.toLowerCase());
+
+            if (isDuplicate) {
+                itemInput.value = "";
+                error.textContent = "No duplicates please!";
+                return;
+            }
+
+            // Clear errors, update array, and re-render
+            error.textContent = "";
+            shoppingList.push(newItem);
+            render();
+
+            // JSON.stringify turns the array into a text string so localStorage can save it
+            localStorage.setItem("myShoppingList", JSON.stringify(shoppingList));
+
+            itemInput.value = "";
+        });
+
+        // 5. Clear list event listener
+        clearItemBtn.addEventListener("click", function () {
+            // Empty the array
+            shoppingList.length = 0;
+
+            // Remove the data from browser storage
+            localStorage.removeItem("myShoppingList");
+
+            // Update the screen
+            render();
+            error.textContent = "";
+        });
+
+        // 6. Render function to display the list
+        function render() {
+            let html = "";
+            for (let item of shoppingList) {
+                html += `<li class="list-item">${item}</li>`;
+            }
+            list.innerHTML = html;
+        }
+    </script>
+</body>
+
+</html>

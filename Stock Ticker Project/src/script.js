@@ -2,6 +2,17 @@ import getStockData from './fakeStockAPI.js';
 
 let previousPrice = null;
 
+/*
+Also:
+
+const {name, sym, price, time } = stockData;
+
+const priceDirectionIcon = price > prevPrice ? "green.svg" : price < prevPrice ? "red.svg" : "grey.svg"
+
+at bottom:
+prevPrice = price;
+*/
+
 function renderStockTicker(stockData) {
     let currentPrice = Number(stockData.price);
     
