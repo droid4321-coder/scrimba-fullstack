@@ -16,3 +16,5 @@ const sumGrades = grades.reduce((total, currentGrade) => total + currentGrade);
 console.log(sumGrades);
 const avg = sumGrades / grades.length;
 console.log(`The class average is ${avg}`);
+
+//reduce method with objects

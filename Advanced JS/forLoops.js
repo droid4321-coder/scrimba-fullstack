@@ -67,3 +67,41 @@ const characters = [
 characters.forEach(function (character, index) {
     console.log(index, character.title);
 })
+
+//break and continue on for loops
+
+const expensesAndRefunds = [
+    { description: "Groceries", amount: 50, year: 2023 },
+    { description: "Electronics", amount: -10, year: 2023 },
+    { description: "Dinner", amount: 40, year: 2023 },
+    { description: "Clothing", amount: 60, year: 2023 },
+    { description: "Entertainment", amount: 25, year: 2023 },
+    { description: "Rent", amount: -500, year: 2024 },
+    { description: "Utilities", amount: 100, year: 2024 },
+    { description: "Books", amount: 20, year: 2024 },
+    { description: "Fitness", amount: 30, year: 2024 },
+    { description: "Gifts", amount: 15, year: 2024 },
+]
+
+
+
+let totalSpent = 0;
+const cutOffDate = 2024;
+
+//iterate with conditionals and skip elements not wanted
+for (let i = 0; i < expensesAndRefunds.length; i++) {
+    const currentExpensesOrRefund = expensesAndRefunds[i];
+    if (currentExpensesOrRefund.year >= cutOffDate) {
+        console.log("Reached cutoff date, exiting loop");
+        break; //exits loop when conditions met
+    }
+    if (currentExpensesOrRefund.amount < 0) {
+        console.log(`Skipping ${currentExpensesOrRefund.description} due to refund`);
+        continue; //skips current element that meets the conditions
+    }
+
+    totalSpent += currentExpensesOrRefund.amount
+    
+}
+
+console.log(`Total amount spent on items in 2023: $${totalSpent}`);
