@@ -1,1 +1,4 @@
 Notes methods and loops advanced JS
+
+map vs ForEach()
+

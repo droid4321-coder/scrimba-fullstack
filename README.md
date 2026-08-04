@@ -23,6 +23,8 @@ Day 18: Starting JS Challenges, done, did JS Unit Converter and Finished Tools o
 Day 19: Continuing Tools Git section, skimmed through starting advanced JS section now
 Day 20: Going forward!
 Day 21: Stock ticker done! Methods and loops
+Day 22: Not feeling it today, maybe later!
+Day 23: Lets go! Continuing
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
