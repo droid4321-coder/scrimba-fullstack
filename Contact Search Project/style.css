@@ -1,0 +1,25 @@
+body {
+    box-sizing: border-box;
+    background-color: black;
+    color:white
+}
+
+button {
+    color:white;
+    border:none;
+    background-color: #E73585;
+}
+
+.contact-card {
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
