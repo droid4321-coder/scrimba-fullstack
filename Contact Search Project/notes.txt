@@ -1,0 +1,5 @@
+Challenge details:
+
+Wire up a search patern app so that inputting a full or partial name brings up the matching contact or contacts.
+
+Only searching by name

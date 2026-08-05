@@ -35,3 +35,23 @@ paragraph2 = paragraph2.replaceAll(/(?:^|[.!?]\s+)(\w)/g, (item) => {
 })
 
 console.log(paragraph2);
+
+//regex in JS
+//the g flag is global, not only finds the first instance, finds all, needed to call up replaceall, if not throws an error
+//the i flag makes the regular expression case insensitive
+
+const text = "Please turn off the WiFi before you leave."
+
+//if it does not have the i flag it returns false.
+//with the flag it returns true
+const regex = /wifi/gi
+
+//regexp constructor
+//cont regex = `/${userInput}/gi` //throws an error regex.test is not a function
+const userInput = "wifi"
+const regex1 = new RegExp(userInput, "gi")
+
+const doesMatch = regex1.test(text);
+
+console.log(doesMatch);
+
