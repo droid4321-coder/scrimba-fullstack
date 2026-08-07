@@ -17,3 +17,23 @@ function getPropertyHtml(propertiesArr = placeholderpropertyObj) {
 }
 
 document.getElementById("container").innerHTML = getPropertyHtml(propertyForSaleArr);
+
+/*
+Scrimba official solution:
+const displayArr = propertiesArr.map((item) => {
+    // This is object destructuring:
+    const { propertyLocation, priceGBP, comment, roomsM2, image } = item;
+
+    // Now you can drop the "item." prefix completely:
+    return `<section class="card">
+    <img src="./images/${image}">
+    <div class="card-right">
+        <h2>${propertyLocation}</h2>
+        <h3>€${priceGBP}</h3>
+        <p>${comment}</p>
+        <h3>${roomsM2.reduce((one, two) => one + two)}m&sup2;</h3>
+    </div>
+</section>`;
+});
+
+*/
