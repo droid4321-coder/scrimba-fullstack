@@ -1,0 +1,47 @@
+//This works with APIs
+
+Data used in apps is stored in the cloud, APIs allow us to manipulate data from the cloud into our PC
+It is a link between the frontend and backend
+
+We will look at API, clients and servers requests and responses, JSON, Urls used to access APIs handling errors, and Promises.
+
+What is an api?
+
+Aplication Programming Interface - it is any tool that helps connect your program wirh someone elses program
+
+Restaurant analogy - in a restaurant you sit at a table, you want to put an order and revieve some food.
+In the kitchen there is an econsystem, a workflow of things happening that you are not familiar with.
+The documentation of the restaurant is the menu, you look at the menu, and you know what is available,
+the middlemen is the waiter, server, this person is a portal to interface with the restaurant and you.
+
+Api Examples:
+Getting data from a server - The server hosts an API - exposed endpoints we can access for getting data fromt he server
+We dont have acceess to everything, only the things they want us to have.
+
+Prewritten code that does cool stuff
+Like the DOM API that allows us to do certain things, we dont know how it works, just call the function and pass the parameter.(BlackBox)
+Array MEthods API
+3rd party packages have an API.
+
+Quiz answers:
+
+1) What API stands for - Application Programming Interface
+2) Describe an API in your own words - well, an API is an interface we can use to communicate with a program that executes certain purpose, like the middlemen. We dont know how it works, but it gives us predefined limited access to functions that add the functionality to a program
+
+A tool that allows our code to talk with another piece of code or program
+
+3) Api i have used? DOM API
+
+Requests and Responses Cycle
+
+A request is when a device asks for a resource (data, image, HTML page, etc.)
+It will require a connection to the internet to send a request
+
+A response is the reply to the request
+If it went well, it will return the resource we want, but it might return an error example when a device is not authorized
+
+Quiz:
+
+1 - 3 things client might request - HTML page, image, data
+2 - what a server does - a server recieves the requests and handles them to respond in various ways
+3 - internal server error message code - 500???
