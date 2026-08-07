@@ -1,0 +1,68 @@
+/* Layout wrapper for the list of cards */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Horizontal card body splitting image and text */
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+/* Base image adjustments matching your structure */
+.card img {
+    width: 40%;
+    min-width: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right column containing text blocks */
+.card-right {
+    width: 60%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Internal text element formatting */
+.card-right h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 4px 0;
+}
+
+.card-right p {
+    font-size: 0.95rem;
+    color: #555555;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+/* Targets the price if it is the first paragraph tag */
+.card-right p:first-of-type {
+    font-weight: 700;
+    color: #2b2b2b;
+    margin-bottom: 8px;
+}
+
+/* Targets the sizing metric at the bottom */
+.card-right p:last-of-type {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
