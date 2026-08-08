@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Image Loading</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #202126;
+    font-family: Arial, sans-serif;
+}
+
+#upload-container {
+    width: 305px;
+    padding: 28px 25px;
+
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35);
+
+    text-align: center;
+}
+
+#upload-container h2 {
+    margin: 0 0 22px;
+
+    font-size: 17px;
+    font-weight: 700;
+    color: #111;
+}
+
+#selected-images {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-bottom: 28px;
+}
+
+.image-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 34px;
+    padding: 0 8px;
+
+    background: #f1f4f2;
+    border-radius: 3px;
+
+    color: #555;
+    font-size: 15px;
+}
+
+.remove-image {
+    border: none;
+    background: transparent;
+
+    color: #d40000;
+    font-size: 24px;
+    font-weight: bold;
+
+    line-height: 1;
+    cursor: pointer;
+
+    padding: 0 2px;
+}
+
+.remove-image:hover {
+    color: #ff0000;
+}
+
+#submit-imgs {
+    padding: 10px 18px;
+
+    background: #75c9eb;
+
+    border: 2px solid #3b9fc5;
+    border-radius: 6px;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.7),
+        0 2px 3px rgba(0, 0, 0, 0.25);
+
+    color: #14536d;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#submit-imgs:hover {
+    background: #83d2ef;
+}
+
+#submit-imgs:active {
+    transform: translateY(1px);
+    box-shadow:
+        inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.hidden {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="img-container" id="img-container">
+        <p>mountains.jpg ❌</p>
+        <p>valley.jpg ❌</p>
+        <p>coast.jpg ❌</p>
+    </div>
+    <div class="upload-container" id="upload-container">
+            <button id="submit-imgs">Upload Images</button>
+    </div>
+</body>
+<script type="module">
+    function getImagePromise(url) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const img = new Image();
+                img.src = url;
+                img.alt = "scenic image";
+                img.addEventListener("load", () => resolve(img));
+                img.addEventListener("error", () => reject(new Error(`Failed to load the image: ${url}`)));
+            }, 500)
+        })
+    }
+
+    const images = [
+        "https://scrimba.com/links/advancedjs-resources-images-scenic1",
+        "https://scrimba.com/links/advancedjs-resources-images-scenic2",
+        "https://scrimba.com/links/advancedjs-resources-images-scenic3"
+    ]
+
+    async function preloadImages(imageUrlsArr) {
+        const imgContainer = document.getElementById("img-container");
+        const uploadContainer = document.getElementById("upload-container");
+        const promiseArray = imageUrlsArr.map(async (item) => {
+            const response = await getImagePromise(item);
+            return item;
+        })
+        try {
+            const results = await Promise.all(promiseArray);
+            console.log("All images loaded successfully!");
+            uploadContainer.classList.add("hidden");
+            for (const item of results) {
+                const img = document.createElement("img");
+                img.src = item.url || item;
+                img.alt = "Image";
+
+                imgContainer.appendChild(img)
+            }
+        } catch(err) {
+            console.log(err);
+        }
+    }
+
+    document.getElementById("submit-imgs").addEventListener("click", () => preloadImages(images))
+
+    /* Much simpler Scrimba solution 
+        const promises = imageUrlsArr.map((url) => getImagePromise(url)) 
+        
+        try {
+            const results = await Promise.all(promiseArray);
+            uploadContainer.style.display = none;
+            results.forEach((img) => imgContainer.appendChild(img))
+        } catch(err) {
+            console.log(err) 
+        }
+    */
+</script>
+</html>
