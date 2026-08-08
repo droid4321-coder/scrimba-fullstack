@@ -27,7 +27,7 @@ Day 22: Not feeling it today, maybe later!
 Day 23: Lets go! Continuing
 Day 24: A new day new tools! continuing and doing super challenge methods and loops, section done!
 Day 25: Break
-Day 26: Full steam ahead!
+Day 26: Full steam ahead! Starting Asynchronous JS
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.

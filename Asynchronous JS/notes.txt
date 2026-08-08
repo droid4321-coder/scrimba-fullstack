@@ -45,3 +45,27 @@ Quiz:
 1 - 3 things client might request - HTML page, image, data
 2 - what a server does - a server recieves the requests and handles them to respond in various ways
 3 - internal server error message code - 500???
+
+JSON - JavaScript Object Notation
+JSON looks like a javascript object, keys need to be surrounded in double quotes, values can be any data type JS accepts
+
+simple strings like "hi or true are valid JSON, but usually its an object or array of objects
+Pages like jsonlint.com can be used to verify JSON, or the inspect icon in Chrome, Dev tools, Network tab XHR filter
+XHR is Ajax requests that are usually JSON, also can do the preview and see the JSON
+
+URLs and Endpoints:
+
+Url is the address where that resource is present and its needed to do a request
+The makeup of an url is a base url and the endpoints
+Example - scrimba API - Base URL would be https://scrimba.com/api - portion of an url that does not change
+Endpoint is the specific resource to retrieve, like /courses, /users, /templates, /resources/challenges. Queries are sent to know what type of resource
+Full example -> https://scrimba.com/api/resources/tests?test=typescript
+
+Challenge:
+
+base URL = https://apis.scrimba.com/dog.ceo/api
+
+Endpoints = /breeds/list/all
+/breeds/image/random
+
+Take the base url and an endpoint and put it in browser.
