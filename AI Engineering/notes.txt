@@ -1,0 +1,4 @@
+In this course we will see how to use AI in our projects
+We will build a stock predictor app
+Now, this is not financial advice
+We will send a stock ticker to an API which will go to Ai and then to our app
