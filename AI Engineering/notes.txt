@@ -2,3 +2,19 @@ In this course we will see how to use AI in our projects
 We will build a stock predictor app
 Now, this is not financial advice
 We will send a stock ticker to an API which will go to Ai and then to our app
+
+API requests contain a model, an array of messages, and other optional settings
+
+A LLM is an algorith that uses training data to recognize patterns and make predictions or decisions, like GPT for example.
+
+Example, messages array [system], this has instructions and expected behaviour
+
+Example of a system object message - You will be asked for holiday recommendations by a tourist. Answer as if you were an experienced tour operator and give no more than three recommendations per answer. Always give friendly, chatty answers.
+
+[user] object - user input
+
+Example - Can you recommend me a holiday destination for January. I like warm weather and want to swim in the sea. But no sharks!
+
+Then array of objects goes to the API and gives us an assistent object, the output of the AI
+
+example = Why not go to Morocco, Greece or Turkey. January temperatures should be fine and they are great for sea swimming with few sharks
