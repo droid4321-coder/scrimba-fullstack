@@ -1,5 +1,7 @@
 # Secrets and keys
+# This matches any file named .env in the root or any subfolder
 .env
+.env.*
 
 # Dependencies
 node_modules/
