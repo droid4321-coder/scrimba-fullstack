@@ -30,6 +30,7 @@ Day 25: Break
 Day 26: Full steam ahead! Starting Asynchronous JS
 Day 27: Lets continue! Asynchronic JS Done! Starting AI engineering
 Day 28: Moar AI Engineering
+Day 29: Lets go!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
