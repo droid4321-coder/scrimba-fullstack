@@ -37,3 +37,47 @@ When its lower temp its more predictable and safer. Good for factual output
 When its high temp its more dangerous and less predictable, it is good for creative output
 
 Few shot approach
+
+//ai safety
+
+There are risks in short and long term of AI misuse
+Deepfakes can be harmful
+Prompt injection, also need to be careful - its an attack technique that manipulated the output of the LLM, the AI
+For example an AI can describe an image that contains hidden code, or documents with the same purpose.
+Also sameobdy can give malicious info to trick the LLM based on the context window.
+Accidental short term ai safety, ai can encounter situations that cant handle
+long term ai risks can be misused and acciental, alignment problem
+It can become dangerous when given tools to access for example real world data like emails.
+
+When you build AI agents, you should expect misuse thru prompt injection
+
+Best practices - there is a link from openAI that gives us practices to safely use AI.
+
+how to check in a code:
+
+async function main() {
+    const completion = await openai.moderations.create ({
+        input: "I hate you!"
+        user: "user_ID_HERE" // user identification, be anonymous
+    });
+
+    const (flagged, categories) = completion.results[0];
+    console.log("flagged", flagged);
+    console.log("categories", categories);
+    //this returns if flagged and what category
+
+    if (flagged) {
+        renderWarning(categories);
+    }
+
+    main();
+
+    function renderWarning(obj) {
+        exampleDiv.innerHTML += "Your response has been flagged due to ${categories};
+    }
+}
+
+Another examples are prompt engineering, need to know your customer and constrain input and set limits. Also allow users to report hateful messages.
+Its important to add a user ID to flag people
+
+Lesson done!
