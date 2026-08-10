@@ -18,3 +18,22 @@ Example - Can you recommend me a holiday destination for January. I like warm we
 Then array of objects goes to the API and gives us an assistent object, the output of the AI
 
 example = Why not go to Morocco, Greece or Turkey. January temperatures should be fine and they are great for sea swimming with few sharks
+
+//tokens
+
+tokens in openAI are chunks of text that the AI interprets. They set limits in token usage.
+We can use Tokenizer OpenAI tool to view how many tokens.
+This matters because tokens cost credit, tokens nned processing, so keeping tokens low saves time and money.
+Price changes rapidly and depends on models. Max_tokens setting controls limits the number of tokens the model outputs, not the input tokens.
+max_tokens can be used in response. Set max_tokens to an appropiate size for a response
+in openai response, there is a finish_reason and its important to see why the input got cut or if it finished successfully.
+The best way to control token usage is good prompt design
+
+OPENAI Playground is a website to play with the API, and it generates code for API too.
+
+Temperature phrase - When you get over how good AI is, you start to recognize how bad it is.
+Temperature in Ai controls how daring output is. Can be set from 0 to 2, defaults to 1, lower temperature is less daring high is more daring
+When its lower temp its more predictable and safer. Good for factual output
+When its high temp its more dangerous and less predictable, it is good for creative output
+
+Few shot approach
