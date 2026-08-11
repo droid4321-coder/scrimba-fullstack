@@ -1,0 +1,14 @@
+In 2009 node.js was created as a backend for our projects ans is one of the mosrt popular used projects.
+NPM gives us a lot of tools to buid our projects. It is found in a lot of things and services.
+Wild Horizons API, and also a spooky app, which I will change
+Java used to only work in a browser environment. Node.js bundles Chrome V8 and therefore allows us to run JS.
+Node.js is not a language, it is an environment that allows us to run JS.
+JS knowledge is required for Node.
+
+Node.js is good to learn, even though it has Express.js when you learn Node you learn frameworks easier like Next.js or Fastlify
+
+Building a REST API - Wild horizons, we want people to visit some cool destinations
+
+3 ways users can get data: 1. /api 2. /api/country/india 3. /api?country=turkey&is_open_to_public=true
+
+we will be studying node hhtp module, ceating server, sending status codes, headers, requests/responses, filtering data, extracting query params, and more plus challenges
