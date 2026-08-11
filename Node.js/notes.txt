@@ -21,3 +21,20 @@ JSON.stringfiy(<data-to-convert>) We can convet most data.
 Most apis work with JSON and if not, the docs specify it.
 
 USually when dealing with node and API, you have the data on a database or if it is small enough in a JSON object
+
+//sending the content type mime type is important in node and there are various types you can put depending on the type of content like sound images etc.
+application/json, text/html, text/css, and application/javascript
+
+Example:
+//front end code:
+const response = wawit fetch("https://example.org/post, {
+    method:"POST",
+    body:JSON.stringify({username: "tom_1"}),
+    header: {
+        "Content-Type": "application/json", //here is the header
+    },
+});
+
+we need to setup what happens when somebody offers something that is not covered
+
+Path parameters giving chioce to users so they want certain path parameters
