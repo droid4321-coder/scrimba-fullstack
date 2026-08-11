@@ -12,3 +12,12 @@ Building a REST API - Wild horizons, we want people to visit some cool destinati
 3 ways users can get data: 1. /api 2. /api/country/india 3. /api?country=turkey&is_open_to_public=true
 
 we will be studying node hhtp module, ceating server, sending status codes, headers, requests/responses, filtering data, extracting query params, and more plus challenges
+
+//sending data from REST API
+
+when data is sent, usually is thru JSON format for standarization and compatibility, we cant send raw data thru HTTP, because http is a text based protocol.
+All data transferred between the client and the server must be in the form of strings. To do this within JSON we have the JSON.stringify method
+JSON.stringfiy(<data-to-convert>) We can convet most data.
+Most apis work with JSON and if not, the docs specify it.
+
+USually when dealing with node and API, you have the data on a database or if it is small enough in a JSON object

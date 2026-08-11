@@ -18,11 +18,29 @@ const PORT = 8000;
     The computer is the client and over http it sends a request with a maethod, like GET, it tells us the path, and other data.
     This request goes to the server which handles the request, by filtering data, or throwing an error if something is wrong. Eventually, it will send the response to the client by http.
     The response willcontain the response the content type and status code and message. Thats the cycle
+
+    Routing and the req object
+    An API is going to have certain route, like for example scrimba.com/api/courses?topic=mode&price=free.
+    we need to add some routing capabilities
+
+    For that we use the request object, it gives us access to the incoming request, the url of the client used, the headers, any data sent, and the method(GET, POST, DELETE), 
+
+    We also need to know what methods the client is using in its request - GET, POST, DELETE, PUT, PATCH, etc.
     */
 
 const server = http.createServer((req, res) => {
-    res.write("This is some data!")
-    res.end("Hello from the server") // sends data over http and ends the response
+
+    console.log(req.url); // this way we can find the url of the request
+    //it logs out the url after the main page, in this case everything after localhost:8000(/this gets logged out)
+    console.log(req.method); //this logs out the method
+
+
+    //this checks if the url of the request is equal to the wanted API route.
+    if (req.url === "/api" && req.method === "GET") {
+
+        res.write("This is some data!\n")
+        res.end("Hello from the server!")
+    }    // sends data over http and ends the response
 }) // this creates an http server{} it takes 2 parameters, req (request) and res (response) into a callback function
 
 server.listen(PORT, () => console.log(`Server listening on port ${PORT}`))
