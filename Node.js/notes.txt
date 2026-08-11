@@ -38,3 +38,8 @@ const response = wawit fetch("https://example.org/post, {
 we need to setup what happens when somebody offers something that is not covered
 
 Path parameters giving chioce to users so they want certain path parameters
+
+Query parameters
+Queries allow us to specify various parameters
+Example = /api?name=tom&country=uk
+? introduces the query with a key value pair and ampersand keeps uniting other queries

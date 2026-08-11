@@ -1,5 +1,7 @@
 import http from "node:http"
 import { getDataFromDB } from "./database/db.js";
+import { sendJSONResponse } from "./utils/sendJSONResponse.js";
+import { getDataByPathParams } from "./utils/getDataByPathParams.js";
 
 const PORT = 8000;
 
@@ -11,18 +13,18 @@ const server = http.createServer(async (req, res) => {
     const destinations = await getDataFromDB();
 
     if (req.url === "/api" && req.method === "GET") {
-        res.setHeader("Content-Type", "application/json"); //we are setting up the headers on the response, first is the content type and then the type of content
-        res.statusCode = 200 // return a response code of 200, succesful
-        res.end(JSON.stringify(destinations))
-    } else if (req.url.startsWith("/api/continent")) {
-        
+        sendJSONResponse(res, 200, destinations)
+    } else if (req.url.startsWith("/api/continent") && req.method === "GET") {
+        const filteredData = getDataByPathParams(destinations, "continent", req.url.split("/").pop());
+        sendJSONResponse(res, 200, filteredData)
+    }  else if (req.url.startsWith("/api/country") && req.method === "GET") { 
+        const filteredData = getDataByPathParams(destinations, "country", req.url.split("/").pop());
+        sendJSONResponse(res, 200, filteredData)
     } else {
-        res.setHeader("Content-Type", "application/json");
-        res.statusCode = 404
-        res.end(JSON.stringify({
+        sendJSONResponse(res, 404, {
             error: "Not found",
             message: "The requested route does not exist. Please try accessing localhost:8000/api"
-        }))
+        })
     }
 })
 
