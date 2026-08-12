@@ -43,3 +43,25 @@ Query parameters
 Queries allow us to specify various parameters
 Example = /api?name=tom&country=uk
 ? introduces the query with a key value pair and ampersand keeps uniting other queries
+
+Filterting by qury parameters
+We need to filter data based on some attributes
+
+CORS
+If we invite people to use our API, its not going to work because of CORS.
+By default, browsers enforce a same-origin policy. This means requests can only be made to the same protocol, domain, and port as the one serving the web page.
+Everything has a protocol, domain and port. Example http is protocol, scrimba.com is the domain, and 8000 is the port, another ex https in the protocol, moxilla..org is the domain, and 3000 is the port.
+
+basically CORS needs the server and frontend to be the same to communicate. Because if it is not, it will block communication.
+
+Cross Origin Resource Sharing
+
+A server might be http://scrimba.com:3000, but a known frontend might be http://scrimba.com:8000, CORS is needed. If it is another likre http://evil.com:3000
+
+CORS is needed to allow all access, example if we put http://wildhorizons.com:3000, we want it to be accesible by everyone
+
+Stretch Goals:
+1. Gentler error handling - giving users more feedback instead of sending empty array
+2. Handle POST requests - Ignore auth for now
+3. Add better filterting
+4. Expand this API and sell it! lol

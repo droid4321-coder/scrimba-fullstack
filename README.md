@@ -32,6 +32,7 @@ Day 27: Lets continue! Asynchronic JS Done! Starting AI engineering
 Day 28: Moar AI Engineering
 Day 29: Lets go! AI Engineering done! Starting Node.js
 Day 30: 1 month already?? Node.js
+Day 31: Moar Node.js, Part 1 done, starting part 2!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
