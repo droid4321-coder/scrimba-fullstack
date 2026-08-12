@@ -1,0 +1,33 @@
+//this is for the section 2 of node.js scrimba course. Using the fullstack app
+
+//lesson 3 - res.writeHead()
+//example with simple code:
+
+import http from "node:http"
+
+const PORT = 8000;
+
+const server = http.createServer((req, res) => {
+    //we use text/html to send html content to the client from the server
+
+    //the writeHead takes the status code as first param, and also the headers as an object second param.
+
+    //these headers need to be BEFORE the writeHead to execute successfully
+
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Methods", "GET")
+
+    //this is not used all time because it has some tradebacks
+    //setheader() sets a response header but does not send it inmediately, writeHead{} sends any headers inmediately.
+    //Also, with setheader you can modify headers individually, at any point before sending the response, while with writehead no further modification is possible
+    //A problem is that a header set using setheader after writehead will not be included in the response
+    //A header set using setheader can be overruled by a header set with writeHead
+    
+
+    //this will get overruled the Methods
+    res.writeHead(200, {"Content-Type": "text/html", "Access-Control-Allow-Methods": "GET"})
+
+    res.end(`<html><h1>The server is working!</h1></html>`);
+})
+
+server.listen(PORT, () =>  console.log(`Server listening on port ${PORT}`) );

@@ -1,0 +1,11 @@
+{
+  "name": "interesting-fullstack-app",
+  "version": "1.0.0",
+  "description": "A site to put and share quirky interesting things happening around us.",
+  "author": "Droid",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
