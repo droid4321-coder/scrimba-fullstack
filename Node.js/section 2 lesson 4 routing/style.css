@@ -1,0 +1,85 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* Cleaner look for text */
+    background-color: #f4f4f9;
+    /* Light background so cards stand out */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 1. This keeps the 3 cards sitting side-by-side in a row */
+.items-main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    /* Puts uniform spacing between the 3 cards */
+    padding: 40px;
+    /* Adds padding around the whole row section */
+    max-width: 1200px;
+    /* Prevents the row from getting too wide on huge screens */
+    margin: 0 auto;
+    /* Centers the entire row on the screen */
+}
+
+/* 2. This styles each individual card with borders, shadows, and internal alignment */
+.items-container, .about-container {
+    flex: 1;
+    /* Forces all 3 items to be exactly the same width */
+    display: flex;
+    flex-direction: column;
+    /* Stacks the card's OWN image above its OWN text */
+    align-items: center;
+    /* Centers the image and text horizontally inside the card */
+    text-align: center;
+    /* Centers the product text lines */
+
+    /* Border and Shadow Styles */
+    background-color: #ffffff;
+    /* White background for the card */
+    border: 1px solid #e0e0e0;
+    /* Clean, subtle light-gray border */
+    border-radius: 8px;
+    /* Smooths out the corners of the cards */
+    padding: 20px;
+    /* Adds breathing room inside the card boundaries */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* Soft drop shadow under the card */
+
+    transition: transform 0.2s;
+    /* Smooth transition for the hover effect below */
+}
+
+/* Optional: Subtle pop effect when you hover over a card */
+.items-container:hover {
+    transform: translateY(-5px);
+    /* Lifts the card slightly when hovered */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Makes the shadow deeper on hover */
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header, .footer {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
