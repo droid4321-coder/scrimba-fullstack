@@ -1,5 +1,6 @@
 import http from "node:http";
 import path from "node:path";
+import fs from "node:fs/promises";
 import { testPath } from "./utils/testPath.js";
 
 const PORT = 8000;
@@ -12,18 +13,24 @@ const __dirname = import.meta.dirname
 //access CWD to see where node deplys from 
 //console.log("CWD", process.cwd());
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
     
     //joins path file segments into one string to make it safe
-    const absPathToResource = path.join(__dirname, "public", "index.html")
-    const relPathToResource = path.join("public", "index.html")
-    console.log("absolute: " + absPathToResource);
-    console.log("relative: " + relPathToResource);
+    //const absPathToResource = path.join(__dirname, "public", "index.html")
+    //const relPathToResource = path.join("public", "index.html")
+    //console.log("absolute: " + absPathToResource);
+    //console.log("relative: " + relPathToResource);
     testPath();
+
+    const pathToResource = path.join(__dirname, "public", "index.html");
     
+    //this gives us the path to the html file we want to display
+    const content = await fs.readFile(pathToResource)
+    console.log(content);
+
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
-    res.end()
+    res.end(content);
 })
 
 server.listen(PORT, () => console.log(`Server listening on port ${PORT}`))
@@ -60,4 +67,38 @@ Relative paths created from path module start from the CWD and affected by chang
 the path module joins path elements to create one path (absolute or relative) whih will work on any supoorted OS
 
 Also can be used to extract filenames and extensions
+*/
+
+/*  
+Lesson 8: The FS module
+We will serve the html
+To read the html file we need the fs module
+It provided modules to read files, create, update, delete, and rename files
+Usng methmods like .readFile(), .writeFile(), .appendFile(), .unlink(), and .rename().
+
+2 Ways to use fs
+
+const content = fs.readFileSync(pathToResource, "utf8")//utf8 is the encoding
+then we can res.send the content. This is synchronous code, in small code its beneficial but in large code can cause issues.
+
+other way is fs.readFile(pathToResource, "utf8", (err, content) => {
+    if(err) {
+        console.log(err)
+        return
+    }
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "text/html");
+        res.end(content);
+    })
+    
+    this method can be done, but you can end up in callback hell and have a very messy code
+
+    the modern techinque we will use is better and is asynchronous
+
+    Encoding - it is specified as utf8 here but it is optional, when given console.log it will be saying it is strings.
+    The thing is thst the content variable can deliver any kind of content, therefore if we put utf8 in eveything, it will break some content.
+
+    When it is removed from the content variable, it returns an object type when we log it it returns a buffer a low level representation of bytes. Browsers are able to interpret content buffer via the header. This way our server is more flexible.
+
+    In conclusion, it is best to let node and the browser interpret the content, the best is to leave it alone and only use it if needed.
 */
