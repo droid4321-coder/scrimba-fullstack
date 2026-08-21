@@ -2,6 +2,7 @@ import http from "node:http";
 import path from "node:path";
 import fs from "node:fs/promises";
 import { testPath } from "./utils/testPath.js";
+import { getContentType } from "./utils/getContentType.js";
 
 const PORT = 8000;
 
@@ -35,10 +36,12 @@ const server = http.createServer(async (req, res) => {
 
     //get the extension of the file served to client
     const ext = path.extname(pathToResource);
-    console.log(ext);
+    //console.log(ext);
+
+    const contentType = getContentType(ext)
 
     res.statusCode = 200;
-    res.setHeader("Content-Type", "text/html");
+    res.setHeader("Content-Type", contentType);
     res.end(content);
 })
 
