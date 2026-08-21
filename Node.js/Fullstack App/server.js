@@ -1,6 +1,7 @@
 import http from "node:http"
 import path from "node:path"
 import { serveStatic } from "./utils/serveStatic.js";
+import { getContentType } from "./utils/getContentType.js";
 
 const PORT = 8000;
 
