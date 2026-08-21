@@ -22,11 +22,20 @@ const server = http.createServer(async (req, res) => {
     //console.log("relative: " + relPathToResource);
     testPath();
 
-    const pathToResource = path.join(__dirname, "public", "index.html");
+    //path to public folder directory
+    const publicDirectory = path.join(__dirname, "public");
+
+    //path to index.html from public folder
+    //we will use a ternary operator to serve a resource depending on page selected
+    const pathToResource = path.join(publicDirectory, req.url === "/" ? "index.html" : req.url);
     
     //this gives us the path to the html file we want to display
     const content = await fs.readFile(pathToResource)
-    console.log(content);
+    //console.log(content);
+
+    //get the extension of the file served to client
+    const ext = path.extname(pathToResource);
+    console.log(ext);
 
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
@@ -101,4 +110,12 @@ other way is fs.readFile(pathToResource, "utf8", (err, content) => {
     When it is removed from the content variable, it returns an object type when we log it it returns a buffer a low level representation of bytes. Browsers are able to interpret content buffer via the header. This way our server is more flexible.
 
     In conclusion, it is best to let node and the browser interpret the content, the best is to leave it alone and only use it if needed.
+*/
+
+/*
+    Serving multiple assets
+    For that we need to deal with the path name and the content type of the module
+    first we set a path to the public directory and set it to the path of the resource.
+
+    Now it workd but the CSS is not displayed correctly. We will see how to deal with that to get the content type we can get the extension of the file
 */
