@@ -2,10 +2,13 @@ import http from "node:http"
 import path from "node:path"
 import { serveStatic } from "./utils/serveStatic.js";
 import { getContentType } from "./utils/getContentType.js";
+import { getData } from "./utils/getData.js";
 
 const PORT = 8000;
 
 const __dirname = import.meta.dirname;
+
+//console.log(await getData("data.json"));
 
 const server = http.createServer((req, res) => {
     //we use text/html to send html content to the client from the server
