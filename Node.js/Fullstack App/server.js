@@ -16,7 +16,7 @@ const server = http.createServer(async (req, res) => {
     
     if (req.url === "/api") {
         if (req.method === "GET") {
-            return await handleGet(req, res, "data.json")
+            return await handleGet(res, "data.json")
         }
 
         /* 

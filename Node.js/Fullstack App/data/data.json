@@ -1,702 +1,708 @@
 [
-    {
-        "uuid": "c29dfe74-54bc-4c78-ab19-f9095497fd0a",
-        "location": "Edinburgh, Scotland",
-        "timeStamp": "23 Feb 2025 at 20:30",
-        "title": "The Crow Cartel #1",
-        "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
-    },
-    {
-        "uuid": "6864e67a-d8ba-4751-b72b-a763a8907ac5",
-        "location": "Varanasi, India",
-        "timeStamp": "22 Dec 2026 at 13:08",
-        "title": "Haunted Toaster Exhibition #2",
-        "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
-    },
-    {
-        "uuid": "f49b8df6-fc85-494c-b78d-c888ad145f72",
-        "location": "Timbuktu, Mali",
-        "timeStamp": "4 Dec 2026 at 17:30",
-        "title": "Subterranean Disco #3",
-        "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
-    },
-    {
-        "uuid": "c551f380-7a82-4379-aa16-6d7a8fcfa697",
-        "location": "Transylvania, Romania",
-        "timeStamp": "4 Jun 2026 at 00:34",
-        "title": "The Knitting Guerrilla #4",
-        "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "4e0415b2-90b3-4654-9954-1b221fdd4ef1",
-        "location": "Melbourne, Australia",
-        "timeStamp": "2 May 2025 at 15:53",
-        "title": "Cloud Grading Society #5",
-        "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
-    },
-    {
-        "uuid": "5fab081c-d20d-4bf5-95be-dad080bfc4b0",
-        "location": "Exeter, UK",
-        "timeStamp": "18 Jan 2025 at 03:36",
-        "title": "Unusual Traffic Jam #6",
-        "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
-    },
-    {
-        "uuid": "cafbdcaf-b57c-4057-8d7b-20fbadb27b16",
-        "location": "Nuuk, Greenland",
-        "timeStamp": "10 May 2025 at 23:50",
-        "title": "The Lost Sock Monument #7",
-        "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
-    },
-    {
-        "uuid": "b6f9f46f-7209-48f6-992f-9b3819271db8",
-        "location": "Glastonbury, UK",
-        "timeStamp": "14 Aug 2026 at 19:59",
-        "title": "Gourmet Pigeon Diner #8",
-        "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "6374808f-34bd-47fe-bad7-124c2a931e46",
-        "location": "Salem, Massachusetts, USA",
-        "timeStamp": "22 Jun 2025 at 18:55",
-        "title": "Library of Unwritten Books #9",
-        "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
-    },
-    {
-        "uuid": "3f69aa8d-bd10-4850-b275-de647e79675b",
-        "location": "Kyoto, Japan",
-        "timeStamp": "21 Sep 2025 at 02:02",
-        "title": "The Whispering Wall #10",
-        "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
-    },
-    {
-        "uuid": "5e71defb-4ecc-49cd-b8b5-999682fbf7cf",
-        "location": "Loch Ness, Scotland",
-        "timeStamp": "21 Dec 2025 at 16:54",
-        "title": "The Moss Enthusiast #11",
-        "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
-    },
-    {
-        "uuid": "899a49c9-13dc-4b5d-b509-df6822a005dd",
-        "location": "Melbourne, Australia",
-        "timeStamp": "3 Apr 2026 at 00:08",
-        "title": "Reverse Busking #12",
-        "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
-    },
-    {
-        "uuid": "213f4866-e93a-4c43-85e4-b3d5928644f5",
-        "location": "Sedona, Arizona, USA",
-        "timeStamp": "2 Jul 2026 at 14:04",
-        "title": "The Squirrel Summit #13",
-        "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
-    },
-    {
-        "uuid": "e5699b28-cc56-4826-94e9-ac8255104f62",
-        "location": "Exeter, UK",
-        "timeStamp": "13 Jan 2026 at 14:16",
-        "title": "The Infinite Maze #14",
-        "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "e7841358-8fe8-48ac-ad3e-be2fc6b0b4fb",
-        "location": "Austin, Texas, USA",
-        "timeStamp": "19 Jan 2026 at 00:21",
-        "title": "Clockwork Pigeon #15",
-        "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
-    },
-    {
-        "uuid": "2d5d7a5d-6065-48f0-a4ca-6d10f157ab0c",
-        "location": "Svalbard, Norway",
-        "timeStamp": "23 Mar 2025 at 01:58",
-        "title": "The Banana Currency #16",
-        "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
-    },
-    {
-        "uuid": "fdafa29a-08bf-4567-8dd1-cff9473fe929",
-        "location": "Svalbard, Norway",
-        "timeStamp": "2 Feb 2026 at 21:02",
-        "title": "Shadow Puppetry Master #17",
-        "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
-    },
-    {
-        "uuid": "a43ee9cb-6125-4071-83dc-0af40a80227c",
-        "location": "Transylvania, Romania",
-        "timeStamp": "26 Jan 2026 at 03:25",
-        "title": "The Snail Racecourse #18",
-        "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "88a488fe-4ae8-4291-9f59-9f96f1f38c70",
-        "location": "Melbourne, Australia",
-        "timeStamp": "21 Jul 2026 at 06:06",
-        "title": "The Yelp Reviewer #19",
-        "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
-    },
-    {
-        "uuid": "5d4a331f-bf36-4e7f-b86b-7c31063b2ce2",
-        "location": "Okinawa, Japan",
-        "timeStamp": "4 Apr 2025 at 06:43",
-        "title": "The Umbrella Protocol #20",
-        "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
-    },
-    {
-        "uuid": "b41cf56d-ef33-47de-a999-d12c9d3ca88b",
-        "location": "Kyoto, Japan",
-        "timeStamp": "9 Apr 2026 at 01:36",
-        "title": "The Crow Cartel #21",
-        "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
-    },
-    {
-        "uuid": "285d8bd1-97bd-42e2-ba13-a008fd5b017a",
-        "location": "Chefchaouen, Morocco",
-        "timeStamp": "14 Apr 2025 at 08:18",
-        "title": "Haunted Toaster Exhibition #22",
-        "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
-    },
-    {
-        "uuid": "cc71249f-d19a-492b-80aa-62f54d1e57e9",
-        "location": "Austin, Texas, USA",
-        "timeStamp": "26 May 2025 at 18:46",
-        "title": "Subterranean Disco #23",
-        "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
-    },
-    {
-        "uuid": "a27e0681-105b-4153-bf73-b62371831382",
-        "location": "Timbuktu, Mali",
-        "timeStamp": "26 Dec 2025 at 20:02",
-        "title": "The Knitting Guerrilla #24",
-        "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "3af9d016-f5b7-4060-8ff5-a3a4d316a44c",
-        "location": "Coober Pedy, Australia",
-        "timeStamp": "27 Apr 2025 at 10:03",
-        "title": "Cloud Grading Society #25",
-        "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
-    },
-    {
-        "uuid": "3f1d10a6-4e3d-434b-b7c2-ac4c1dc4f14f",
-        "location": "Reykjav\u00edk, Iceland",
-        "timeStamp": "20 Jul 2026 at 04:46",
-        "title": "Unusual Traffic Jam #26",
-        "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
-    },
-    {
-        "uuid": "0ee6cb56-4f31-4212-a640-b2fe686cb202",
-        "location": "Chefchaouen, Morocco",
-        "timeStamp": "25 Sep 2026 at 23:08",
-        "title": "The Lost Sock Monument #27",
-        "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
-    },
-    {
-        "uuid": "ca4ce7aa-acb6-4127-bc55-16927189e2a5",
-        "location": "Reykjav\u00edk, Iceland",
-        "timeStamp": "6 Feb 2026 at 23:03",
-        "title": "Gourmet Pigeon Diner #28",
-        "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "a5a45b94-e468-4f5b-bdd0-e9ee2d776186",
-        "location": "Okinawa, Japan",
-        "timeStamp": "12 May 2025 at 13:51",
-        "title": "Library of Unwritten Books #29",
-        "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
-    },
-    {
-        "uuid": "e172493f-a713-440b-a956-f4fe78705d5a",
-        "location": "Coober Pedy, Australia",
-        "timeStamp": "26 Oct 2025 at 15:21",
-        "title": "The Whispering Wall #30",
-        "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
-    },
-    {
-        "uuid": "a24a0fb3-dafd-4208-837d-4387519c692f",
-        "location": "Invercargill, New Zealand",
-        "timeStamp": "9 Feb 2026 at 08:06",
-        "title": "The Moss Enthusiast #31",
-        "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
-    },
-    {
-        "uuid": "6c6217a1-980e-4a3d-bae8-0ae01588a9c7",
-        "location": "Cairo, Egypt",
-        "timeStamp": "19 May 2025 at 04:11",
-        "title": "Reverse Busking #32",
-        "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
-    },
-    {
-        "uuid": "c94295aa-c577-4db5-bad2-9484883526af",
-        "location": "Kyoto, Japan",
-        "timeStamp": "9 Jul 2026 at 11:34",
-        "title": "The Squirrel Summit #33",
-        "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
-    },
-    {
-        "uuid": "80d1b492-65de-44a8-b6d7-ae7c0bab0dcb",
-        "location": "Melbourne, Australia",
-        "timeStamp": "17 Sep 2025 at 21:01",
-        "title": "The Infinite Maze #34",
-        "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "76afb175-2549-402e-ba63-fed680fd0599",
-        "location": "Exeter, UK",
-        "timeStamp": "4 Aug 2026 at 12:17",
-        "title": "Clockwork Pigeon #35",
-        "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
-    },
-    {
-        "uuid": "637e686b-2acc-45c5-b104-788f17093881",
-        "location": "Edinburgh, Scotland",
-        "timeStamp": "19 Apr 2026 at 06:59",
-        "title": "The Banana Currency #36",
-        "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
-    },
-    {
-        "uuid": "e86985bc-830a-4cce-8a9e-07b3ef671b11",
-        "location": "Chefchaouen, Morocco",
-        "timeStamp": "27 Jan 2026 at 11:32",
-        "title": "Shadow Puppetry Master #37",
-        "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
-    },
-    {
-        "uuid": "d1614dad-8fe4-4260-b49c-abbf5e7f0ff1",
-        "location": "Rotorua, New Zealand",
-        "timeStamp": "19 Sep 2026 at 17:06",
-        "title": "The Snail Racecourse #38",
-        "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "c450fd56-4f09-4511-a7de-662d8169983e",
-        "location": "Cairo, Egypt",
-        "timeStamp": "9 Jan 2025 at 22:26",
-        "title": "The Yelp Reviewer #39",
-        "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
-    },
-    {
-        "uuid": "b46293a3-c3a5-4263-a7f1-ce81644ad4d6",
-        "location": "Roswell, New Mexico, USA",
-        "timeStamp": "15 Apr 2026 at 00:15",
-        "title": "The Umbrella Protocol #40",
-        "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
-    },
-    {
-        "uuid": "69907742-e1f9-45f4-a954-23d382e131da",
-        "location": "Invercargill, New Zealand",
-        "timeStamp": "22 Feb 2026 at 17:01",
-        "title": "The Crow Cartel #41",
-        "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
-    },
-    {
-        "uuid": "4c059673-f4c0-45b3-ab9a-478a0ba13db2",
-        "location": "Svalbard, Norway",
-        "timeStamp": "10 Oct 2026 at 22:33",
-        "title": "Haunted Toaster Exhibition #42",
-        "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
-    },
-    {
-        "uuid": "0059400f-6f80-44cc-9600-ee192ab12466",
-        "location": "Varanasi, India",
-        "timeStamp": "2 Feb 2026 at 14:14",
-        "title": "Subterranean Disco #43",
-        "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
-    },
-    {
-        "uuid": "23b9418e-73ff-4fda-a32b-23a551022465",
-        "location": "Nuuk, Greenland",
-        "timeStamp": "9 Jun 2026 at 11:56",
-        "title": "The Knitting Guerrilla #44",
-        "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "def697e1-9dbe-4665-8b2e-0de901d13f39",
-        "location": "Chefchaouen, Morocco",
-        "timeStamp": "14 Nov 2025 at 13:24",
-        "title": "Cloud Grading Society #45",
-        "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
-    },
-    {
-        "uuid": "f3fdad52-f322-475d-a872-8892c5d3805a",
-        "location": "Timbuktu, Mali",
-        "timeStamp": "27 Aug 2026 at 12:49",
-        "title": "Unusual Traffic Jam #46",
-        "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
-    },
-    {
-        "uuid": "ae905dfe-cab8-449f-87ec-efd692e04fa8",
-        "location": "Amsterdam, Netherlands",
-        "timeStamp": "2 Jan 2025 at 17:36",
-        "title": "The Lost Sock Monument #47",
-        "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
-    },
-    {
-        "uuid": "fbc89cb0-1643-41d4-b0a1-6f310b90c7f2",
-        "location": "Transylvania, Romania",
-        "timeStamp": "8 Sep 2026 at 07:58",
-        "title": "Gourmet Pigeon Diner #48",
-        "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "54b38732-d168-4124-9c3d-0cffa9b54e83",
-        "location": "Chefchaouen, Morocco",
-        "timeStamp": "14 Jun 2026 at 22:06",
-        "title": "Library of Unwritten Books #49",
-        "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
-    },
-    {
-        "uuid": "5bfe2e9c-c6ae-4609-b32a-2a9fe2bfe7a3",
-        "location": "Austin, Texas, USA",
-        "timeStamp": "26 Nov 2026 at 08:33",
-        "title": "The Whispering Wall #50",
-        "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
-    },
-    {
-        "uuid": "a34e4423-9888-42f1-90ae-4b2158b9184f",
-        "location": "Glastonbury, UK",
-        "timeStamp": "18 Jan 2025 at 12:10",
-        "title": "The Moss Enthusiast #51",
-        "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
-    },
-    {
-        "uuid": "3083833b-6d5e-4db0-bc9a-baab403db9ab",
-        "location": "Reykjav\u00edk, Iceland",
-        "timeStamp": "7 Sep 2026 at 16:39",
-        "title": "Reverse Busking #52",
-        "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
-    },
-    {
-        "uuid": "32c89f53-81ed-431c-b59e-f023e8a1a25c",
-        "location": "Coober Pedy, Australia",
-        "timeStamp": "11 Apr 2026 at 17:21",
-        "title": "The Squirrel Summit #53",
-        "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
-    },
-    {
-        "uuid": "dc0ef80a-5c4c-4977-8d1d-49638cae442a",
-        "location": "Edinburgh, Scotland",
-        "timeStamp": "7 Jun 2025 at 21:15",
-        "title": "The Infinite Maze #54",
-        "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "8459a4ec-fd04-4b74-9580-ce99bc2bdcd7",
-        "location": "Cairo, Egypt",
-        "timeStamp": "5 Jul 2025 at 07:12",
-        "title": "Clockwork Pigeon #55",
-        "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
-    },
-    {
-        "uuid": "1727655a-4de6-4ddb-ae79-2e1e42bc032e",
-        "location": "Machu Picchu, Peru",
-        "timeStamp": "7 May 2026 at 21:10",
-        "title": "The Banana Currency #56",
-        "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
-    },
-    {
-        "uuid": "7bf8f47a-0979-40d3-80e8-b2533108be62",
-        "location": "Machu Picchu, Peru",
-        "timeStamp": "16 Dec 2026 at 06:37",
-        "title": "Shadow Puppetry Master #57",
-        "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
-    },
-    {
-        "uuid": "cb01d061-8a71-4543-821f-5ab9a5a8b1a5",
-        "location": "Coober Pedy, Australia",
-        "timeStamp": "1 Feb 2025 at 16:27",
-        "title": "The Snail Racecourse #58",
-        "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "d377049e-bc37-4a96-b1f7-f56295a53aea",
-        "location": "Glastonbury, UK",
-        "timeStamp": "26 Dec 2025 at 20:43",
-        "title": "The Yelp Reviewer #59",
-        "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
-    },
-    {
-        "uuid": "4b6a3674-0071-4614-ae20-e2e5b882b2f4",
-        "location": "Amsterdam, Netherlands",
-        "timeStamp": "7 Sep 2026 at 20:59",
-        "title": "The Umbrella Protocol #60",
-        "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
-    },
-    {
-        "uuid": "9264eda7-c66e-474c-9f54-ac2a631b9889",
-        "location": "Salem, Massachusetts, USA",
-        "timeStamp": "1 Jul 2025 at 01:29",
-        "title": "The Crow Cartel #61",
-        "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
-    },
-    {
-        "uuid": "8df74d07-6ec5-486e-8804-10097885e2ae",
-        "location": "Amsterdam, Netherlands",
-        "timeStamp": "14 Nov 2025 at 19:08",
-        "title": "Haunted Toaster Exhibition #62",
-        "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
-    },
-    {
-        "uuid": "7a70397e-6051-4afc-8410-883b2a3b3c8f",
-        "location": "Amsterdam, Netherlands",
-        "timeStamp": "12 Sep 2025 at 05:38",
-        "title": "Subterranean Disco #63",
-        "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
-    },
-    {
-        "uuid": "2e047691-0385-4dbf-81ac-490ed25aceb0",
-        "location": "Coober Pedy, Australia",
-        "timeStamp": "22 Feb 2025 at 21:48",
-        "title": "The Knitting Guerrilla #64",
-        "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "644128e3-9489-4819-91aa-2d61702f072f",
-        "location": "Nuuk, Greenland",
-        "timeStamp": "4 Aug 2025 at 23:28",
-        "title": "Cloud Grading Society #65",
-        "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
-    },
-    {
-        "uuid": "5e77f298-60ce-4d11-a3b1-2a2a8993350a",
-        "location": "Nuuk, Greenland",
-        "timeStamp": "18 Nov 2025 at 22:20",
-        "title": "Unusual Traffic Jam #66",
-        "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
-    },
-    {
-        "uuid": "133c8e4c-5bc8-4565-bc0d-788dcb634882",
-        "location": "Glastonbury, UK",
-        "timeStamp": "23 Dec 2026 at 09:11",
-        "title": "The Lost Sock Monument #67",
-        "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
-    },
-    {
-        "uuid": "91226ed4-c85e-4a88-8d64-b65a64261d3c",
-        "location": "Salem, Massachusetts, USA",
-        "timeStamp": "3 Dec 2026 at 02:09",
-        "title": "Gourmet Pigeon Diner #68",
-        "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "675a0e7f-4af9-406e-b45f-259e9fb8c7d0",
-        "location": "Okinawa, Japan",
-        "timeStamp": "12 Mar 2026 at 11:37",
-        "title": "Library of Unwritten Books #69",
-        "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
-    },
-    {
-        "uuid": "84aca2ba-ce2c-492a-ae5a-da36531a1538",
-        "location": "Chefchaouen, Morocco",
-        "timeStamp": "21 Jun 2025 at 16:34",
-        "title": "The Whispering Wall #70",
-        "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
-    },
-    {
-        "uuid": "2ec69520-6b3b-44fe-89f0-662bd4e832bc",
-        "location": "Salem, Massachusetts, USA",
-        "timeStamp": "13 Jul 2026 at 07:06",
-        "title": "The Moss Enthusiast #71",
-        "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
-    },
-    {
-        "uuid": "5c168458-3241-42fe-a62b-ee10fea3beff",
-        "location": "Varanasi, India",
-        "timeStamp": "22 Feb 2026 at 02:22",
-        "title": "Reverse Busking #72",
-        "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
-    },
-    {
-        "uuid": "74f64870-7514-4234-bd66-d7e1ae38fa25",
-        "location": "Salem, Massachusetts, USA",
-        "timeStamp": "14 Dec 2026 at 19:49",
-        "title": "The Squirrel Summit #73",
-        "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
-    },
-    {
-        "uuid": "c9a246e3-b500-425e-b88b-7af73d135c0d",
-        "location": "Cairo, Egypt",
-        "timeStamp": "8 Jan 2025 at 07:32",
-        "title": "The Infinite Maze #74",
-        "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "369215a7-ba8f-4b4e-a9cf-f4372f5074d6",
-        "location": "Transylvania, Romania",
-        "timeStamp": "18 Nov 2026 at 09:53",
-        "title": "Clockwork Pigeon #75",
-        "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
-    },
-    {
-        "uuid": "a9aee4b7-b370-4388-9143-14e6bb7fea12",
-        "location": "Melbourne, Australia",
-        "timeStamp": "19 May 2026 at 23:46",
-        "title": "The Banana Currency #76",
-        "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
-    },
-    {
-        "uuid": "d9a198aa-3310-47aa-81cc-f4adfcc20da9",
-        "location": "Salem, Massachusetts, USA",
-        "timeStamp": "28 Feb 2025 at 04:13",
-        "title": "Shadow Puppetry Master #77",
-        "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
-    },
-    {
-        "uuid": "c93b7ce6-02d6-4e7c-8228-79d4d4bcebbb",
-        "location": "Transylvania, Romania",
-        "timeStamp": "16 May 2026 at 00:41",
-        "title": "The Snail Racecourse #78",
-        "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "f42cb31f-2d9e-4611-bd97-0e1f96c436fe",
-        "location": "Sedona, Arizona, USA",
-        "timeStamp": "13 Jun 2026 at 06:59",
-        "title": "The Yelp Reviewer #79",
-        "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
-    },
-    {
-        "uuid": "7a0de9f3-f429-4dc5-9001-f4c955296f74",
-        "location": "Roswell, New Mexico, USA",
-        "timeStamp": "16 Jan 2025 at 00:13",
-        "title": "The Umbrella Protocol #80",
-        "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
-    },
-    {
-        "uuid": "e03b995a-b46e-4eb6-ab10-634019410a64",
-        "location": "Coober Pedy, Australia",
-        "timeStamp": "9 Feb 2026 at 09:09",
-        "title": "The Crow Cartel #81",
-        "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
-    },
-    {
-        "uuid": "76f736eb-2b4b-4b59-9af9-c136e91cc4f6",
-        "location": "Kyoto, Japan",
-        "timeStamp": "28 Jun 2026 at 13:07",
-        "title": "Haunted Toaster Exhibition #82",
-        "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
-    },
-    {
-        "uuid": "854b3564-0fc4-43be-ac31-d202ac490958",
-        "location": "Coober Pedy, Australia",
-        "timeStamp": "8 Sep 2026 at 15:00",
-        "title": "Subterranean Disco #83",
-        "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
-    },
-    {
-        "uuid": "b1453916-03b5-410b-90b8-7590c16494af",
-        "location": "Rotorua, New Zealand",
-        "timeStamp": "15 Aug 2025 at 13:24",
-        "title": "The Knitting Guerrilla #84",
-        "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "4ca75051-5e23-457f-8a4a-8cfd6ad82cea",
-        "location": "Varanasi, India",
-        "timeStamp": "18 Sep 2026 at 20:40",
-        "title": "Cloud Grading Society #85",
-        "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
-    },
-    {
-        "uuid": "b1e1fbb0-2813-4c77-9a71-734b8bcfddeb",
-        "location": "Portland, Oregon, USA",
-        "timeStamp": "27 Nov 2026 at 20:18",
-        "title": "Unusual Traffic Jam #86",
-        "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
-    },
-    {
-        "uuid": "c518f644-53aa-4cd8-9a11-f1e4cdc555c0",
-        "location": "Sedona, Arizona, USA",
-        "timeStamp": "11 Sep 2026 at 14:09",
-        "title": "The Lost Sock Monument #87",
-        "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
-    },
-    {
-        "uuid": "1b7b7d82-0071-4aa5-a044-eddefc8b9f28",
-        "location": "Kyoto, Japan",
-        "timeStamp": "10 Sep 2026 at 10:58",
-        "title": "Gourmet Pigeon Diner #88",
-        "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "0d168618-a5e2-409b-9c4f-015fcc5783fd",
-        "location": "Melbourne, Australia",
-        "timeStamp": "17 Jul 2025 at 20:16",
-        "title": "Library of Unwritten Books #89",
-        "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
-    },
-    {
-        "uuid": "665c5a64-9e78-44d8-b2c7-17f33669aec1",
-        "location": "Rotorua, New Zealand",
-        "timeStamp": "15 Dec 2026 at 11:45",
-        "title": "The Whispering Wall #90",
-        "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
-    },
-    {
-        "uuid": "55aecabe-a7df-40af-8337-c95eb4842563",
-        "location": "Transylvania, Romania",
-        "timeStamp": "17 Feb 2025 at 05:22",
-        "title": "The Moss Enthusiast #91",
-        "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
-    },
-    {
-        "uuid": "fe7774ff-c692-4cad-8cf3-6196d959ddb8",
-        "location": "Svalbard, Norway",
-        "timeStamp": "4 Sep 2025 at 23:24",
-        "title": "Reverse Busking #92",
-        "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
-    },
-    {
-        "uuid": "28044a2e-4cbf-457e-aa27-9fb8419f8b06",
-        "location": "Timbuktu, Mali",
-        "timeStamp": "10 Mar 2025 at 11:10",
-        "title": "The Squirrel Summit #93",
-        "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
-    },
-    {
-        "uuid": "cbb6d50a-7bfd-4499-afcf-816af8d444c0",
-        "location": "Exeter, UK",
-        "timeStamp": "6 Jun 2025 at 19:24",
-        "title": "The Infinite Maze #94",
-        "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
-    },
-    {
-        "uuid": "2c8d58da-1cfe-4683-9cc4-7e3cea646f7a",
-        "location": "Portland, Oregon, USA",
-        "timeStamp": "1 Oct 2026 at 12:12",
-        "title": "Clockwork Pigeon #95",
-        "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
-    },
-    {
-        "uuid": "afe8410a-105b-4038-b877-8b14eb3309a8",
-        "location": "Rotorua, New Zealand",
-        "timeStamp": "25 Feb 2025 at 08:18",
-        "title": "The Banana Currency #96",
-        "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
-    },
-    {
-        "uuid": "44edb3ba-a474-435e-96e5-0cc1cea79f88",
-        "location": "Exeter, UK",
-        "timeStamp": "7 Apr 2025 at 10:04",
-        "title": "Shadow Puppetry Master #97",
-        "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
-    },
-    {
-        "uuid": "ae7c0f7d-bb86-4c68-bea2-24291b8e3add",
-        "location": "Kyoto, Japan",
-        "timeStamp": "19 Aug 2026 at 04:05",
-        "title": "The Snail Racecourse #98",
-        "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
-    },
-    {
-        "uuid": "5f3d1355-2d8b-4263-b8d3-fb67bd5bdb88",
-        "location": "Okinawa, Japan",
-        "timeStamp": "10 Oct 2026 at 17:21",
-        "title": "The Yelp Reviewer #99",
-        "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
-    },
-    {
-        "uuid": "a4463b2b-2120-4502-bcbd-d71c4a29fd19",
-        "location": "Nuuk, Greenland",
-        "timeStamp": "27 Apr 2026 at 12:45",
-        "title": "The Umbrella Protocol #100",
-        "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
-    }
+  {
+    "uuid": "c29dfe74-54bc-4c78-ab19-f9095497fd0a",
+    "location": "Edinburgh, Scotland",
+    "timeStamp": "23 Feb 2025 at 20:30",
+    "title": "The Crow Cartel #1",
+    "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
+  },
+  {
+    "uuid": "6864e67a-d8ba-4751-b72b-a763a8907ac5",
+    "location": "Varanasi, India",
+    "timeStamp": "22 Dec 2026 at 13:08",
+    "title": "Haunted Toaster Exhibition #2",
+    "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
+  },
+  {
+    "uuid": "f49b8df6-fc85-494c-b78d-c888ad145f72",
+    "location": "Timbuktu, Mali",
+    "timeStamp": "4 Dec 2026 at 17:30",
+    "title": "Subterranean Disco #3",
+    "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
+  },
+  {
+    "uuid": "c551f380-7a82-4379-aa16-6d7a8fcfa697",
+    "location": "Transylvania, Romania",
+    "timeStamp": "4 Jun 2026 at 00:34",
+    "title": "The Knitting Guerrilla #4",
+    "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "4e0415b2-90b3-4654-9954-1b221fdd4ef1",
+    "location": "Melbourne, Australia",
+    "timeStamp": "2 May 2025 at 15:53",
+    "title": "Cloud Grading Society #5",
+    "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
+  },
+  {
+    "uuid": "5fab081c-d20d-4bf5-95be-dad080bfc4b0",
+    "location": "Exeter, UK",
+    "timeStamp": "18 Jan 2025 at 03:36",
+    "title": "Unusual Traffic Jam #6",
+    "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
+  },
+  {
+    "uuid": "cafbdcaf-b57c-4057-8d7b-20fbadb27b16",
+    "location": "Nuuk, Greenland",
+    "timeStamp": "10 May 2025 at 23:50",
+    "title": "The Lost Sock Monument #7",
+    "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
+  },
+  {
+    "uuid": "b6f9f46f-7209-48f6-992f-9b3819271db8",
+    "location": "Glastonbury, UK",
+    "timeStamp": "14 Aug 2026 at 19:59",
+    "title": "Gourmet Pigeon Diner #8",
+    "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "6374808f-34bd-47fe-bad7-124c2a931e46",
+    "location": "Salem, Massachusetts, USA",
+    "timeStamp": "22 Jun 2025 at 18:55",
+    "title": "Library of Unwritten Books #9",
+    "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
+  },
+  {
+    "uuid": "3f69aa8d-bd10-4850-b275-de647e79675b",
+    "location": "Kyoto, Japan",
+    "timeStamp": "21 Sep 2025 at 02:02",
+    "title": "The Whispering Wall #10",
+    "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
+  },
+  {
+    "uuid": "5e71defb-4ecc-49cd-b8b5-999682fbf7cf",
+    "location": "Loch Ness, Scotland",
+    "timeStamp": "21 Dec 2025 at 16:54",
+    "title": "The Moss Enthusiast #11",
+    "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
+  },
+  {
+    "uuid": "899a49c9-13dc-4b5d-b509-df6822a005dd",
+    "location": "Melbourne, Australia",
+    "timeStamp": "3 Apr 2026 at 00:08",
+    "title": "Reverse Busking #12",
+    "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
+  },
+  {
+    "uuid": "213f4866-e93a-4c43-85e4-b3d5928644f5",
+    "location": "Sedona, Arizona, USA",
+    "timeStamp": "2 Jul 2026 at 14:04",
+    "title": "The Squirrel Summit #13",
+    "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
+  },
+  {
+    "uuid": "e5699b28-cc56-4826-94e9-ac8255104f62",
+    "location": "Exeter, UK",
+    "timeStamp": "13 Jan 2026 at 14:16",
+    "title": "The Infinite Maze #14",
+    "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "e7841358-8fe8-48ac-ad3e-be2fc6b0b4fb",
+    "location": "Austin, Texas, USA",
+    "timeStamp": "19 Jan 2026 at 00:21",
+    "title": "Clockwork Pigeon #15",
+    "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
+  },
+  {
+    "uuid": "2d5d7a5d-6065-48f0-a4ca-6d10f157ab0c",
+    "location": "Svalbard, Norway",
+    "timeStamp": "23 Mar 2025 at 01:58",
+    "title": "The Banana Currency #16",
+    "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
+  },
+  {
+    "uuid": "fdafa29a-08bf-4567-8dd1-cff9473fe929",
+    "location": "Svalbard, Norway",
+    "timeStamp": "2 Feb 2026 at 21:02",
+    "title": "Shadow Puppetry Master #17",
+    "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
+  },
+  {
+    "uuid": "a43ee9cb-6125-4071-83dc-0af40a80227c",
+    "location": "Transylvania, Romania",
+    "timeStamp": "26 Jan 2026 at 03:25",
+    "title": "The Snail Racecourse #18",
+    "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "88a488fe-4ae8-4291-9f59-9f96f1f38c70",
+    "location": "Melbourne, Australia",
+    "timeStamp": "21 Jul 2026 at 06:06",
+    "title": "The Yelp Reviewer #19",
+    "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
+  },
+  {
+    "uuid": "5d4a331f-bf36-4e7f-b86b-7c31063b2ce2",
+    "location": "Okinawa, Japan",
+    "timeStamp": "4 Apr 2025 at 06:43",
+    "title": "The Umbrella Protocol #20",
+    "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
+  },
+  {
+    "uuid": "b41cf56d-ef33-47de-a999-d12c9d3ca88b",
+    "location": "Kyoto, Japan",
+    "timeStamp": "9 Apr 2026 at 01:36",
+    "title": "The Crow Cartel #21",
+    "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
+  },
+  {
+    "uuid": "285d8bd1-97bd-42e2-ba13-a008fd5b017a",
+    "location": "Chefchaouen, Morocco",
+    "timeStamp": "14 Apr 2025 at 08:18",
+    "title": "Haunted Toaster Exhibition #22",
+    "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
+  },
+  {
+    "uuid": "cc71249f-d19a-492b-80aa-62f54d1e57e9",
+    "location": "Austin, Texas, USA",
+    "timeStamp": "26 May 2025 at 18:46",
+    "title": "Subterranean Disco #23",
+    "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
+  },
+  {
+    "uuid": "a27e0681-105b-4153-bf73-b62371831382",
+    "location": "Timbuktu, Mali",
+    "timeStamp": "26 Dec 2025 at 20:02",
+    "title": "The Knitting Guerrilla #24",
+    "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "3af9d016-f5b7-4060-8ff5-a3a4d316a44c",
+    "location": "Coober Pedy, Australia",
+    "timeStamp": "27 Apr 2025 at 10:03",
+    "title": "Cloud Grading Society #25",
+    "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
+  },
+  {
+    "uuid": "3f1d10a6-4e3d-434b-b7c2-ac4c1dc4f14f",
+    "location": "Reykjavík, Iceland",
+    "timeStamp": "20 Jul 2026 at 04:46",
+    "title": "Unusual Traffic Jam #26",
+    "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
+  },
+  {
+    "uuid": "0ee6cb56-4f31-4212-a640-b2fe686cb202",
+    "location": "Chefchaouen, Morocco",
+    "timeStamp": "25 Sep 2026 at 23:08",
+    "title": "The Lost Sock Monument #27",
+    "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
+  },
+  {
+    "uuid": "ca4ce7aa-acb6-4127-bc55-16927189e2a5",
+    "location": "Reykjavík, Iceland",
+    "timeStamp": "6 Feb 2026 at 23:03",
+    "title": "Gourmet Pigeon Diner #28",
+    "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "a5a45b94-e468-4f5b-bdd0-e9ee2d776186",
+    "location": "Okinawa, Japan",
+    "timeStamp": "12 May 2025 at 13:51",
+    "title": "Library of Unwritten Books #29",
+    "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
+  },
+  {
+    "uuid": "e172493f-a713-440b-a956-f4fe78705d5a",
+    "location": "Coober Pedy, Australia",
+    "timeStamp": "26 Oct 2025 at 15:21",
+    "title": "The Whispering Wall #30",
+    "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
+  },
+  {
+    "uuid": "a24a0fb3-dafd-4208-837d-4387519c692f",
+    "location": "Invercargill, New Zealand",
+    "timeStamp": "9 Feb 2026 at 08:06",
+    "title": "The Moss Enthusiast #31",
+    "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
+  },
+  {
+    "uuid": "6c6217a1-980e-4a3d-bae8-0ae01588a9c7",
+    "location": "Cairo, Egypt",
+    "timeStamp": "19 May 2025 at 04:11",
+    "title": "Reverse Busking #32",
+    "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
+  },
+  {
+    "uuid": "c94295aa-c577-4db5-bad2-9484883526af",
+    "location": "Kyoto, Japan",
+    "timeStamp": "9 Jul 2026 at 11:34",
+    "title": "The Squirrel Summit #33",
+    "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
+  },
+  {
+    "uuid": "80d1b492-65de-44a8-b6d7-ae7c0bab0dcb",
+    "location": "Melbourne, Australia",
+    "timeStamp": "17 Sep 2025 at 21:01",
+    "title": "The Infinite Maze #34",
+    "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "76afb175-2549-402e-ba63-fed680fd0599",
+    "location": "Exeter, UK",
+    "timeStamp": "4 Aug 2026 at 12:17",
+    "title": "Clockwork Pigeon #35",
+    "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
+  },
+  {
+    "uuid": "637e686b-2acc-45c5-b104-788f17093881",
+    "location": "Edinburgh, Scotland",
+    "timeStamp": "19 Apr 2026 at 06:59",
+    "title": "The Banana Currency #36",
+    "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
+  },
+  {
+    "uuid": "e86985bc-830a-4cce-8a9e-07b3ef671b11",
+    "location": "Chefchaouen, Morocco",
+    "timeStamp": "27 Jan 2026 at 11:32",
+    "title": "Shadow Puppetry Master #37",
+    "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
+  },
+  {
+    "uuid": "d1614dad-8fe4-4260-b49c-abbf5e7f0ff1",
+    "location": "Rotorua, New Zealand",
+    "timeStamp": "19 Sep 2026 at 17:06",
+    "title": "The Snail Racecourse #38",
+    "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "c450fd56-4f09-4511-a7de-662d8169983e",
+    "location": "Cairo, Egypt",
+    "timeStamp": "9 Jan 2025 at 22:26",
+    "title": "The Yelp Reviewer #39",
+    "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
+  },
+  {
+    "uuid": "b46293a3-c3a5-4263-a7f1-ce81644ad4d6",
+    "location": "Roswell, New Mexico, USA",
+    "timeStamp": "15 Apr 2026 at 00:15",
+    "title": "The Umbrella Protocol #40",
+    "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
+  },
+  {
+    "uuid": "69907742-e1f9-45f4-a954-23d382e131da",
+    "location": "Invercargill, New Zealand",
+    "timeStamp": "22 Feb 2026 at 17:01",
+    "title": "The Crow Cartel #41",
+    "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
+  },
+  {
+    "uuid": "4c059673-f4c0-45b3-ab9a-478a0ba13db2",
+    "location": "Svalbard, Norway",
+    "timeStamp": "10 Oct 2026 at 22:33",
+    "title": "Haunted Toaster Exhibition #42",
+    "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
+  },
+  {
+    "uuid": "0059400f-6f80-44cc-9600-ee192ab12466",
+    "location": "Varanasi, India",
+    "timeStamp": "2 Feb 2026 at 14:14",
+    "title": "Subterranean Disco #43",
+    "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
+  },
+  {
+    "uuid": "23b9418e-73ff-4fda-a32b-23a551022465",
+    "location": "Nuuk, Greenland",
+    "timeStamp": "9 Jun 2026 at 11:56",
+    "title": "The Knitting Guerrilla #44",
+    "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "def697e1-9dbe-4665-8b2e-0de901d13f39",
+    "location": "Chefchaouen, Morocco",
+    "timeStamp": "14 Nov 2025 at 13:24",
+    "title": "Cloud Grading Society #45",
+    "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
+  },
+  {
+    "uuid": "f3fdad52-f322-475d-a872-8892c5d3805a",
+    "location": "Timbuktu, Mali",
+    "timeStamp": "27 Aug 2026 at 12:49",
+    "title": "Unusual Traffic Jam #46",
+    "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
+  },
+  {
+    "uuid": "ae905dfe-cab8-449f-87ec-efd692e04fa8",
+    "location": "Amsterdam, Netherlands",
+    "timeStamp": "2 Jan 2025 at 17:36",
+    "title": "The Lost Sock Monument #47",
+    "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
+  },
+  {
+    "uuid": "fbc89cb0-1643-41d4-b0a1-6f310b90c7f2",
+    "location": "Transylvania, Romania",
+    "timeStamp": "8 Sep 2026 at 07:58",
+    "title": "Gourmet Pigeon Diner #48",
+    "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "54b38732-d168-4124-9c3d-0cffa9b54e83",
+    "location": "Chefchaouen, Morocco",
+    "timeStamp": "14 Jun 2026 at 22:06",
+    "title": "Library of Unwritten Books #49",
+    "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
+  },
+  {
+    "uuid": "5bfe2e9c-c6ae-4609-b32a-2a9fe2bfe7a3",
+    "location": "Austin, Texas, USA",
+    "timeStamp": "26 Nov 2026 at 08:33",
+    "title": "The Whispering Wall #50",
+    "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
+  },
+  {
+    "uuid": "a34e4423-9888-42f1-90ae-4b2158b9184f",
+    "location": "Glastonbury, UK",
+    "timeStamp": "18 Jan 2025 at 12:10",
+    "title": "The Moss Enthusiast #51",
+    "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
+  },
+  {
+    "uuid": "3083833b-6d5e-4db0-bc9a-baab403db9ab",
+    "location": "Reykjavík, Iceland",
+    "timeStamp": "7 Sep 2026 at 16:39",
+    "title": "Reverse Busking #52",
+    "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
+  },
+  {
+    "uuid": "32c89f53-81ed-431c-b59e-f023e8a1a25c",
+    "location": "Coober Pedy, Australia",
+    "timeStamp": "11 Apr 2026 at 17:21",
+    "title": "The Squirrel Summit #53",
+    "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
+  },
+  {
+    "uuid": "dc0ef80a-5c4c-4977-8d1d-49638cae442a",
+    "location": "Edinburgh, Scotland",
+    "timeStamp": "7 Jun 2025 at 21:15",
+    "title": "The Infinite Maze #54",
+    "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "8459a4ec-fd04-4b74-9580-ce99bc2bdcd7",
+    "location": "Cairo, Egypt",
+    "timeStamp": "5 Jul 2025 at 07:12",
+    "title": "Clockwork Pigeon #55",
+    "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
+  },
+  {
+    "uuid": "1727655a-4de6-4ddb-ae79-2e1e42bc032e",
+    "location": "Machu Picchu, Peru",
+    "timeStamp": "7 May 2026 at 21:10",
+    "title": "The Banana Currency #56",
+    "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
+  },
+  {
+    "uuid": "7bf8f47a-0979-40d3-80e8-b2533108be62",
+    "location": "Machu Picchu, Peru",
+    "timeStamp": "16 Dec 2026 at 06:37",
+    "title": "Shadow Puppetry Master #57",
+    "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
+  },
+  {
+    "uuid": "cb01d061-8a71-4543-821f-5ab9a5a8b1a5",
+    "location": "Coober Pedy, Australia",
+    "timeStamp": "1 Feb 2025 at 16:27",
+    "title": "The Snail Racecourse #58",
+    "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "d377049e-bc37-4a96-b1f7-f56295a53aea",
+    "location": "Glastonbury, UK",
+    "timeStamp": "26 Dec 2025 at 20:43",
+    "title": "The Yelp Reviewer #59",
+    "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
+  },
+  {
+    "uuid": "4b6a3674-0071-4614-ae20-e2e5b882b2f4",
+    "location": "Amsterdam, Netherlands",
+    "timeStamp": "7 Sep 2026 at 20:59",
+    "title": "The Umbrella Protocol #60",
+    "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
+  },
+  {
+    "uuid": "9264eda7-c66e-474c-9f54-ac2a631b9889",
+    "location": "Salem, Massachusetts, USA",
+    "timeStamp": "1 Jul 2025 at 01:29",
+    "title": "The Crow Cartel #61",
+    "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
+  },
+  {
+    "uuid": "8df74d07-6ec5-486e-8804-10097885e2ae",
+    "location": "Amsterdam, Netherlands",
+    "timeStamp": "14 Nov 2025 at 19:08",
+    "title": "Haunted Toaster Exhibition #62",
+    "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
+  },
+  {
+    "uuid": "7a70397e-6051-4afc-8410-883b2a3b3c8f",
+    "location": "Amsterdam, Netherlands",
+    "timeStamp": "12 Sep 2025 at 05:38",
+    "title": "Subterranean Disco #63",
+    "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
+  },
+  {
+    "uuid": "2e047691-0385-4dbf-81ac-490ed25aceb0",
+    "location": "Coober Pedy, Australia",
+    "timeStamp": "22 Feb 2025 at 21:48",
+    "title": "The Knitting Guerrilla #64",
+    "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "644128e3-9489-4819-91aa-2d61702f072f",
+    "location": "Nuuk, Greenland",
+    "timeStamp": "4 Aug 2025 at 23:28",
+    "title": "Cloud Grading Society #65",
+    "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
+  },
+  {
+    "uuid": "5e77f298-60ce-4d11-a3b1-2a2a8993350a",
+    "location": "Nuuk, Greenland",
+    "timeStamp": "18 Nov 2025 at 22:20",
+    "title": "Unusual Traffic Jam #66",
+    "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
+  },
+  {
+    "uuid": "133c8e4c-5bc8-4565-bc0d-788dcb634882",
+    "location": "Glastonbury, UK",
+    "timeStamp": "23 Dec 2026 at 09:11",
+    "title": "The Lost Sock Monument #67",
+    "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
+  },
+  {
+    "uuid": "91226ed4-c85e-4a88-8d64-b65a64261d3c",
+    "location": "Salem, Massachusetts, USA",
+    "timeStamp": "3 Dec 2026 at 02:09",
+    "title": "Gourmet Pigeon Diner #68",
+    "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "675a0e7f-4af9-406e-b45f-259e9fb8c7d0",
+    "location": "Okinawa, Japan",
+    "timeStamp": "12 Mar 2026 at 11:37",
+    "title": "Library of Unwritten Books #69",
+    "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
+  },
+  {
+    "uuid": "84aca2ba-ce2c-492a-ae5a-da36531a1538",
+    "location": "Chefchaouen, Morocco",
+    "timeStamp": "21 Jun 2025 at 16:34",
+    "title": "The Whispering Wall #70",
+    "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
+  },
+  {
+    "uuid": "2ec69520-6b3b-44fe-89f0-662bd4e832bc",
+    "location": "Salem, Massachusetts, USA",
+    "timeStamp": "13 Jul 2026 at 07:06",
+    "title": "The Moss Enthusiast #71",
+    "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
+  },
+  {
+    "uuid": "5c168458-3241-42fe-a62b-ee10fea3beff",
+    "location": "Varanasi, India",
+    "timeStamp": "22 Feb 2026 at 02:22",
+    "title": "Reverse Busking #72",
+    "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
+  },
+  {
+    "uuid": "74f64870-7514-4234-bd66-d7e1ae38fa25",
+    "location": "Salem, Massachusetts, USA",
+    "timeStamp": "14 Dec 2026 at 19:49",
+    "title": "The Squirrel Summit #73",
+    "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
+  },
+  {
+    "uuid": "c9a246e3-b500-425e-b88b-7af73d135c0d",
+    "location": "Cairo, Egypt",
+    "timeStamp": "8 Jan 2025 at 07:32",
+    "title": "The Infinite Maze #74",
+    "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "369215a7-ba8f-4b4e-a9cf-f4372f5074d6",
+    "location": "Transylvania, Romania",
+    "timeStamp": "18 Nov 2026 at 09:53",
+    "title": "Clockwork Pigeon #75",
+    "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
+  },
+  {
+    "uuid": "a9aee4b7-b370-4388-9143-14e6bb7fea12",
+    "location": "Melbourne, Australia",
+    "timeStamp": "19 May 2026 at 23:46",
+    "title": "The Banana Currency #76",
+    "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
+  },
+  {
+    "uuid": "d9a198aa-3310-47aa-81cc-f4adfcc20da9",
+    "location": "Salem, Massachusetts, USA",
+    "timeStamp": "28 Feb 2025 at 04:13",
+    "title": "Shadow Puppetry Master #77",
+    "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
+  },
+  {
+    "uuid": "c93b7ce6-02d6-4e7c-8228-79d4d4bcebbb",
+    "location": "Transylvania, Romania",
+    "timeStamp": "16 May 2026 at 00:41",
+    "title": "The Snail Racecourse #78",
+    "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "f42cb31f-2d9e-4611-bd97-0e1f96c436fe",
+    "location": "Sedona, Arizona, USA",
+    "timeStamp": "13 Jun 2026 at 06:59",
+    "title": "The Yelp Reviewer #79",
+    "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
+  },
+  {
+    "uuid": "7a0de9f3-f429-4dc5-9001-f4c955296f74",
+    "location": "Roswell, New Mexico, USA",
+    "timeStamp": "16 Jan 2025 at 00:13",
+    "title": "The Umbrella Protocol #80",
+    "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
+  },
+  {
+    "uuid": "e03b995a-b46e-4eb6-ab10-634019410a64",
+    "location": "Coober Pedy, Australia",
+    "timeStamp": "9 Feb 2026 at 09:09",
+    "title": "The Crow Cartel #81",
+    "text": "Watched a crow drop a shiny coin into a vending machine, press a button with its beak, and leave with a single peanut. The local vendor says it has a running tab. Unbelievable but true."
+  },
+  {
+    "uuid": "76f736eb-2b4b-4b59-9af9-c136e91cc4f6",
+    "location": "Kyoto, Japan",
+    "timeStamp": "28 Jun 2026 at 13:07",
+    "title": "Haunted Toaster Exhibition #82",
+    "text": "Visited a pop-up museum dedicated entirely to appliances that owners claim are possessed. One toaster supposedly only burns the face of 17th-century philosophers. Still thinking about this."
+  },
+  {
+    "uuid": "854b3564-0fc4-43be-ac31-d202ac490958",
+    "location": "Coober Pedy, Australia",
+    "timeStamp": "8 Sep 2026 at 15:00",
+    "title": "Subterranean Disco #83",
+    "text": "Accidentally walked into a storm drain and found a fully functioning, miniature disco setup with a disco ball and jazz music playing for an audience of three confused frogs. Highly recommend checking it out."
+  },
+  {
+    "uuid": "b1453916-03b5-410b-90b8-7590c16494af",
+    "location": "Rotorua, New Zealand",
+    "timeStamp": "15 Aug 2025 at 13:24",
+    "title": "The Knitting Guerrilla #84",
+    "text": "Spotted someone rapidly knitting a sweater directly onto a public fire hydrant. When asked why, they whispered, 'Winter is coming for the plumbing,' and sprinted away. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "4ca75051-5e23-457f-8a4a-8cfd6ad82cea",
+    "location": "Varanasi, India",
+    "timeStamp": "18 Sep 2026 at 20:40",
+    "title": "Cloud Grading Society #85",
+    "text": "A group of elderly people sat on lawn chairs in the middle of a park, holding up Olympic-style scorecard signs every time a uniquely shaped cloud floated past. A core memory was unlocked."
+  },
+  {
+    "uuid": "b1e1fbb0-2813-4c77-9a71-734b8bcfddeb",
+    "location": "Portland, Oregon, USA",
+    "timeStamp": "27 Nov 2026 at 20:18",
+    "title": "Unusual Traffic Jam #86",
+    "text": "Traffic was backed up for two miles because an exceptionally large, slow-moving tortoise was wearing a tiny hi-vis vest and escorting a family of ducklings across the tarmac. Just another normal day here."
+  },
+  {
+    "uuid": "c518f644-53aa-4cd8-9a11-f1e4cdc555c0",
+    "location": "Sedona, Arizona, USA",
+    "timeStamp": "11 Sep 2026 at 14:09",
+    "title": "The Lost Sock Monument #87",
+    "text": "Found a beautifully sculpted marble pedestal in a park. Atop it sat a single, mismatched neon green sock. A plaque read: 'To those we lost in the dryer.' I love this place."
+  },
+  {
+    "uuid": "1b7b7d82-0071-4aa5-a044-eddefc8b9f28",
+    "location": "Kyoto, Japan",
+    "timeStamp": "10 Sep 2026 at 10:58",
+    "title": "Gourmet Pigeon Diner #88",
+    "text": "An old man set up a miniature folding table with a white tablecloth and tiny candles, serving gourmet breadcrumbs to a single, very distinguished-looking pigeon. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "0d168618-a5e2-409b-9c4f-015fcc5783fd",
+    "location": "Melbourne, Australia",
+    "timeStamp": "17 Jul 2025 at 20:16",
+    "title": "Library of Unwritten Books #89",
+    "text": "A small bookstore had a shelf labeled 'Unwritten Masterpieces.' It was full of completely blank notebooks with highly specific, dramatic titles on the spines. Proceed with caution."
+  },
+  {
+    "uuid": "665c5a64-9e78-44d8-b2c7-17f33669aec1",
+    "location": "Rotorua, New Zealand",
+    "timeStamp": "15 Dec 2026 at 11:45",
+    "title": "The Whispering Wall #90",
+    "text": "Leaned against a brick wall and distinctly heard a muffled voice say, 'Step two inches to the left, the brick is loose.' It was completely right. Truly a sight to behold."
+  },
+  {
+    "uuid": "55aecabe-a7df-40af-8337-c95eb4842563",
+    "location": "Transylvania, Romania",
+    "timeStamp": "17 Feb 2025 at 05:22",
+    "title": "The Moss Enthusiast #91",
+    "text": "A person was gently brushing a patch of sidewalk moss with a toothbrush and whispering motivational quotes to it. They claimed it helps the ecosystem thrive. Unbelievable but true."
+  },
+  {
+    "uuid": "fe7774ff-c692-4cad-8cf3-6196d959ddb8",
+    "location": "Svalbard, Norway",
+    "timeStamp": "4 Sep 2025 at 23:24",
+    "title": "Reverse Busking #92",
+    "text": "A street musician was sitting silently while an audience member played the violin to him and threw coins into the musician's open guitar case. Pure chaos. Still thinking about this."
+  },
+  {
+    "uuid": "28044a2e-4cbf-457e-aa27-9fb8419f8b06",
+    "location": "Timbuktu, Mali",
+    "timeStamp": "10 Mar 2025 at 11:10",
+    "title": "The Squirrel Summit #93",
+    "text": "Saw seven squirrels sitting in a perfect circle around a single unpeeled walnut. Nobody moved for ten minutes. It felt like a high-stakes corporate negotiation. Highly recommend checking it out."
+  },
+  {
+    "uuid": "cbb6d50a-7bfd-4499-afcf-816af8d444c0",
+    "location": "Exeter, UK",
+    "timeStamp": "6 Jun 2025 at 19:24",
+    "title": "The Infinite Maze #94",
+    "text": "Followed a sign that said 'Short Cut to Main Street' only to find a labyrinth made entirely of brightly colored plastic laundry baskets in an alleyway. Nobody else seemed to notice."
+  },
+  {
+    "uuid": "2c8d58da-1cfe-4683-9cc4-7e3cea646f7a",
+    "location": "Portland, Oregon, USA",
+    "timeStamp": "1 Oct 2026 at 12:12",
+    "title": "Clockwork Pigeon #95",
+    "text": "Swear I saw a pigeon blink horizontally and emit a tiny clockwork ticking sound before launching itself off a street lamp. The government drone theories are ruining me. A core memory was unlocked."
+  },
+  {
+    "uuid": "afe8410a-105b-4038-b877-8b14eb3309a8",
+    "location": "Rotorua, New Zealand",
+    "timeStamp": "25 Feb 2025 at 08:18",
+    "title": "The Banana Currency #96",
+    "text": "A small fruit stand had a sign stating they accept high-quality compliments as legal tender for single bananas. I told him his mustache looked aerodynamic and got a free snack. Just another normal day here."
+  },
+  {
+    "uuid": "44edb3ba-a474-435e-96e5-0cc1cea79f88",
+    "location": "Exeter, UK",
+    "timeStamp": "7 Apr 2025 at 10:04",
+    "title": "Shadow Puppetry Master #97",
+    "text": "A street lamp cast a perfect shadow on a wall where a teenager was putting on an incredibly complex shadow puppet play of Hamlet for a small dog. I love this place."
+  },
+  {
+    "uuid": "ae7c0f7d-bb86-4c68-bea2-24291b8e3add",
+    "location": "Kyoto, Japan",
+    "timeStamp": "19 Aug 2026 at 04:05",
+    "title": "The Snail Racecourse #98",
+    "text": "Two kids drew a racetrack on the sidewalk with chalk. They were intensely cheering on two snails. The race had been going on for four hours. Blue Shell was winning. Absolutely chaotic energy."
+  },
+  {
+    "uuid": "5f3d1355-2d8b-4263-b8d3-fb67bd5bdb88",
+    "location": "Okinawa, Japan",
+    "timeStamp": "10 Oct 2026 at 17:21",
+    "title": "The Yelp Reviewer #99",
+    "text": "Overheard a parrot outside a cafe distinctly shouting, 'Three stars! Too much foam! Service was sluggish!' It was accurately mimicking a regular customer. Proceed with caution."
+  },
+  {
+    "uuid": "a4463b2b-2120-4502-bcbd-d71c4a29fd19",
+    "location": "Nuuk, Greenland",
+    "timeStamp": "27 Apr 2026 at 12:45",
+    "title": "The Umbrella Protocol #100",
+    "text": "It started raining and a group of strangers simultaneously opened identical bright yellow umbrellas. It looked like a highly coordinated flash mob, but nobody spoke. Truly a sight to behold."
+  },
+  {
+    "location": "b",
+    "timeStamp": "22 August 2026 at 18:23",
+    "text": "c",
+    "title": "a"
+  }
 ]

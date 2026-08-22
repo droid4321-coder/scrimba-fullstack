@@ -26,16 +26,16 @@ export async function serveStatic(req, res, baseDir) {
       const content = await fs.readFile(filePath);
       const ext = path.extname(filePath);
       const contentType = getContentType(ext);
-      return sendResponse(req, res, 200, contentType, content);
+      return sendResponse(res, 200, contentType, content);
    } catch (error) {
       console.log(error.code);
       //error for ENOENT content not found or route not available
       if (error.code === "ENOENT") {
          const content = await fs.readFile(path.join(publicDir, "404.html"));
-         return sendResponse(req, res, 404, "text/html", content);
+         return sendResponse(res, 404, "text/html", content);
       }
       if (error) {
-         return sendResponse(req, res, 500, "text/html", `<html><h1>Server Error: ${error.code}</h1></html>`)
+         return sendResponse(res, 500, "text/html", `<html><h1>Server Error: ${error.code}</h1></html>`)
       }
    }
 

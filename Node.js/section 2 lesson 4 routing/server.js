@@ -15,6 +15,33 @@ const __dirname = import.meta.dirname
 //console.log("CWD", process.cwd());
 
 const server = http.createServer(async (req, res) => {
+
+    //handle post request if the url is sub and the method is POST
+    if (req.url === "/sub" && req.method === "POST") {
+
+        //initializr body variable
+        let body = ""
+
+        //for loop to get the chunks of data and add them up to the body
+        for await (const chunk of req) {
+            body += chunk
+        }
+
+        //try catch block to process data
+        try {
+            //parse the body into a variable and use it
+            const emailObj = JSON.parse(body)
+            console.log(emailObj);
+            res.statusCode = 200;
+            res.setHeader("Content-Type", "application/json");
+            res.end(JSON.stringify(emailObj));
+        } catch (error) {
+            //if error we return to make it not run more data and exit gracefully
+            console.log("Invalid JSON: ", error);
+
+        }
+            return
+    }
     
     //joins path file segments into one string to make it safe
     //const absPathToResource = path.join(__dirname, "public", "index.html")
