@@ -1,20 +1,26 @@
+//get elements by id
 const form = document.getElementById("eventForm")
 const formMessageText = document.getElementsByClassName("form-message-text")[0]
 
+//event listener
 form.addEventListener("submit", async function (event) {
   event.preventDefault()
 
+//get values from elements
   const location = document.getElementById("location").value
   const text = document.getElementById("details").value
   const title = document.getElementById("title").value
 
+//form validation to see if all required fields are filled
   if (!location || !text || !title) {
     formMessageText.textContent = `Please complete all fields!`
     return
   }
 
+  //get the date from element
   const isoDateString = document.getElementById("datetime").value
 
+  //if time not selected return message to put time
   if (!isoDateString) {
     formMessageText.textContent = "Please select a date and time!"
     return
@@ -30,8 +36,10 @@ form.addEventListener("submit", async function (event) {
     minute: "2-digit",
     hour12: false,
   }
+  //date to readable format
   const readableDate = date.toLocaleString("en-GB", options)
 
+  //object to put appropiate elements to object entries
   const formData = {
     location: location,
     timeStamp: readableDate,
