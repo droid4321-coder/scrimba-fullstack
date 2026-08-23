@@ -1,5 +1,6 @@
 import http from "node:http"
 import path from "node:path"
+import sanitizeHtml from "sanitize-html"
 import { serveStatic } from "./utils/serveStatic.js";
 import { getContentType } from "./utils/getContentType.js";
 import { getData } from "./utils/getData.js";

@@ -31,3 +31,9 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(PORT, () =>  console.log(`Server listening on port ${PORT}`) );
+
+Event driven architecture
+
+Code is designed to react to events
+An event is a signal that something happened, like for example a user clicks a button, a file finishes downloading, a network request is recieved, or many more events
+There is a module eventemitter for node. This handles actions made after events are done, like when somebody clicks a Buy Now button, a PDF invoice is generated, an order note also, logistics are notified, and an email confirmation is sent.
