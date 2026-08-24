@@ -1,0 +1,2 @@
+1. Error handling - example a client requests an api not available or a client requests an api but the method is not GET or POST.
+2. Add uuids with a dependency to the added data.

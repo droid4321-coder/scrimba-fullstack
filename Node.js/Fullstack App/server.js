@@ -4,7 +4,7 @@ import sanitizeHtml from "sanitize-html"
 import { serveStatic } from "./utils/serveStatic.js";
 import { getContentType } from "./utils/getContentType.js";
 import { getData } from "./utils/getData.js";
-import { handleGet, handlePost } from "./handlers/routeHandlers.js";
+import { handleGet, handlePost, handleNews } from "./handlers/routeHandlers.js";
 
 const PORT = 8000;
 
@@ -32,6 +32,10 @@ const server = http.createServer(async (req, res) => {
         else if (req.method === "POST") {
             return await handlePost(req, res)
         }
+    }
+
+    else if (req.url === "/api/news") {
+        handleNews(req, res);
     }
 
     else if (!req.url.startsWith("/api")) {
