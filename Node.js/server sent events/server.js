@@ -31,7 +31,7 @@ const server = http.createServer(async (req, res) => {
                     temp: temperature
                 })}\n\n` //these \n\n is required by the protocol to signalize the connection ends of a complete message block. It will not work if this is not implemented
             )
-        })
+        }, 2000)
     }
 })
 
