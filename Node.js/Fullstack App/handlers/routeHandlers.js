@@ -4,6 +4,7 @@ import { sendResponse } from "../utils/sendResponse.js";
 import { parseJSONBody } from "../utils/parseJSONBody.js";
 import { addNewSighting } from "../utils/addNewSighting.js";
 import { sanitizeInput } from "../utils/sanitizeInput.js";
+import { sightingEvents } from "../events/sightingEvents.js";
 
 //handleGet
 export async function handleGet(res, data) {
@@ -28,6 +29,11 @@ export async function handlePost(req, res) {
         const sanitizedBody = sanitizeInput(parsedBody)
         //sending info to the data json
         await addNewSighting(sanitizedBody);
+
+        //emit the event when an interesting thing is found and pass the object to send the location
+        sightingEvents.emit("sighting-added", sanitizedBody);
+
+        //send the response
         sendResponse(res, 201, "application/json", JSON.stringify(parsedBody)) //says we recieved the data and strings it to the array
         //console.log(rawBody), 201 - Created
     } catch (err) {

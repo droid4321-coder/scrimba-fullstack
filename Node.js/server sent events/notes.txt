@@ -1,0 +1,5 @@
+We are in a sports website and the score is updated. This is done thanks to server sent events.
+Server sent events allow the server to send a constant stream of data to a client, like breaking news, stock price tickers, sports scores, and real time monitoring
+On SSE data flows only one way, so things that require bidirectional communication are not suitable like chat apps, doorbell cams, and anything where 2way comms is needed
+
+The client will make a request to the server, and the server makes a connection that stays open to the client, providing the data needed, the client will listen and handle the response
