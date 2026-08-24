@@ -1,0 +1,49 @@
+We will learn what databases are, SQL and NoSQL techniqued, how to develop apps with dbs, managed and hosted dbs, and an intro to SQL project in upcoming lessons
+Databases are used in software apps to store, manage and retrieve data.
+Storage is persistent, preserved in between user visits and across the app. like usernames and encrypted passwords
+dbs can offer a structured way to store data often within tables
+different data types can be stored and enforced in a databases
+Each db has a schema, which defines the shape of the dara within it.
+An example of a db we will do is called Retro Rides, which will be a db of vintage cars in SQL with tables that will hold data like stock, staff, and dealership locations.
+
+2: SQL vs NoSQL
+SQL is synonymous with Dbs, Structured Query Language
+Sql dbs are relational which means that data stored is interconnected.
+There is a strict structure to the data which is organized into tables.
+
+NoSQL dbs are non relational, this means that the data is defined with a looser structure and less strict relationships.
+These can be more flexible and allow for less rigid data structure.
+
+Sql is short for Structured Query Language and it is used to store, access and manipulate data within a db.
+We write commands, or queries to perform actions on tables within a db. Very popular Language
+
+db tables and relationships are defined by a schema, which is a representation of the columns and types in the table.
+Connections are shown between the different db tables.
+A table has unique indentifiers and properties like text numbers. Also an entitiy diagram shows relationships from different tables
+
+NoSQL dbs are less structured than SQL dbs. They are more flexible which allows for looser data shapes.
+An example is an object in JS or Python. Various types of NoSQL dbs can be used for different types of apps.
+
+One example is MongoDB, which stores document stores, these store data in documents, like JSON where each document represents a record.
+Documents can vary in structure, each having different sets of fields. One way of using a db like this is in a CMS (content management system)
+
+Other type of NoSQL db is Redis, which stores data as a collection of key-value pairs which can be anything from a simple string to more complex data structures like arrays or objects.
+API's will often use this type of database as they dont rely on relational data.
+
+Other example = Cassandra is a Column Family Stores, which are designed for handling large volumes of data across distributed systems.
+Data is stored as columns rather than rows, grouped into column families, and these can be used for time-series dara, logging and event tracking.
+
+A last example, neo4j are dbs that are optimized for representing and querying relationships.
+Data is stored in nodes (entities) and edges (relationships) with properties on both.
+This system is useful for social networking apps
+
+Differences recapped:
+
+sql | NoSQL
+
+data structure - fixed schema tables | flexible
+schema - rigid | schema less or dynamic
+scalability - vertical scaleup | horizontal scaleout
+query language - sql | varied
+use cases - structured data, complex joins | large scale, unstructured or semi-structured data
+
