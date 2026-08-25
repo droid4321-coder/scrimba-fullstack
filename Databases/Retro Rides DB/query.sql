@@ -58,6 +58,26 @@
 --L12 C
 --SELECT brand, model, year, price FROM cars WHERE (brand NOT IN ('Ford', 'Chevrolet', 'Dodge', 'Triumph') OR price <= 50000) AND sold IS FALSE; cars not from America that or less than $50,000 and are not sold.
 
+--L13 C1 - something red but not Ferrari, and available
+--SELECT brand, model, year, price FROM cars WHERE color LIKE '%red%' AND NOT brand = 'Ferrari' AND sold IS FALSE
+
+--L13 C2 - exclude red, blue, and white cars, and no Aston Martin, Bentley or Jaguar
+--SELECT brand, model, year, color, price, sold FROM cars WHERE NOT color IN ('red', 'blue', 'white') AND NOT brand IN ('Aston Martin', 'Bentley', 'Jaguar') AND sold IS FALSE; That is long lol!
+
+--L13 C3 - dodge from 60s or Ford or Triumph from the 70s
+--SELECT brand, model, year, color, price, sold FROM cars WHERE ((brand = 'Dodge' AND year BETWEEN 1960 AND 1969) OR (brand IN ('Ford', 'Triumph') AND year BETWEEN 1970 AND 1979)) AND sold IS FALSE; holy toledo!
+
+--L14 E
+--SELECT brand, model, year FROM cars ORDER BY brand DESC, year; it orders the brand from A-Z default is alphabetical for strings and ascending for numbers. To reverse the order we use DESC. And we can sort by USING SORT BY. If we put multiple values in the ORDER BY, we it will start with the first one, then sort by the other column, etc.
+
+--L14 C - sort by condition desc and by price asc, also check if cars are not sold
+-- SELECT brand, model, condition, price FROM cars WHERE sold IS FALSE AND condition <> 5 ORDER BY condition DESC, price ASC;
+
+--L15 E most expensive car in stock
+--SELECT brand, model, year, price FROM cars ORDER BY price DESC LIMIT 1;
+
+--L15 C 5 cheapest red cars
+--SELECT brand, model, year, price, color FROM cars WHERE color LIKE '%red%' AND sold IS FALSE ORDER BY price ASC LIMIT 5;
 
 
 
@@ -109,4 +129,13 @@
     Look for multiple values in a column we can use the IN operator
 
     L13: Challenges 1
+
+    L14: ORDER BY
+    Order and aggregates - now we will see how to order the output
+    Order by allows us to sort the content by a selected column
+
+    L15: LIMIT
+    The limit keyword limits the number of records shown on the query
+    
+    L16: COUNT and SUM
 */
