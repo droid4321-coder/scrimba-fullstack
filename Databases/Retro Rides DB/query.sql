@@ -49,6 +49,15 @@
 --L11 C
 --SELECT brand, model, year, color FROM cars WHERE (color LIKE '%red%' OR year BETWEEN 1960 AND 1969) AND sold IS FALSE; cars from the 60s or red and are not sold . The IS FALSE statement is used for booleans and is good to avoid edge cases
 
+--L12 E
+--SELECT brand, model, price, sold FROM cars WHERE brand IN ('Ford', 'Chevrolet', 'Ferrari') AND sold IS FALSE; cars from 3 brands in the brand column that have not been sold
+
+--L12 E2
+--SELECT brand, model, condition, year FROM cars WHERE year IN (1961, 1963, 1965, 1967, 1969) AND condition >= 3 AND sold IS FALSE; cars from odd years in the 60s that are in good condition and are not sold
+
+--L12 C
+--SELECT brand, model, year, price FROM cars WHERE (brand NOT IN ('Ford', 'Chevrolet', 'Dodge', 'Triumph') OR price <= 50000) AND sold IS FALSE; cars not from America that or less than $50,000 and are not sold.
+
 
 
 
@@ -95,4 +104,9 @@
     L11: OR
     The operator allows us to combine conditions and find records that meet 1 of the conditions given
     In OR conditions, we cant put AND operator in any of one conditions. If we want 2 conditions to have an AND, we need to add brackets to the OR conditions to put them separate of the AND condition
+
+    L12: IN operator
+    Look for multiple values in a column we can use the IN operator
+
+    L13: Challenges 1
 */
