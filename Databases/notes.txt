@@ -47,3 +47,54 @@ scalability - vertical scaleup | horizontal scaleout
 query language - sql | varied
 use cases - structured data, complex joins | large scale, unstructured or semi-structured data
 
+3: developing with dbs
+Apps usually have 3 parts:
+1. Frontend - A web browser
+2. Backend - Server and an API
+3.  Database - our RBDMS such as Postgres DB
+
+There are Various libraries that help for using dbs in our apps, like SQLite or SQLAlchemy.
+We will be using simple Node.js with PGLite DB in practice excercises
+
+Other ways to interact with dbs in apps is ORMs, Object Relational Mapping is a method of interacting with databases which allows use of an object oriented approach, rather than directly using SQL queries.
+This means that we can write queries in languages like JS or Python as part of an app.
+This can have the advantage of developers avoiding to learn complex SQL. This is useful for dev teams where the dbs have limited complexity.
+If an app has complex apps and devs need full control over a db, RBDMS is preferible
+
+One example of an ORM is Prisma, whose queries look more like calling methods and use objects to define what info to retrieve
+Prisma Query example :
+    const user = await prisma.user.findFirst({
+        select: (
+            email: true,
+            name: true,
+        ),
+    })
+
+4: Managed vs self hosted
+
+Db administration - this is the practice of managing a production db with regards to creating or dropping tables, managing access, and otherwise controlling data.
+
+Managed DB - a managed database is a cloud based solution provided by a 3rd-party provider. This avoids the complexity of managing infrastructure
+Managed DB have benefits like flexibility to scale as the db requirements increase, optimizing costs by scaling resources with the size of the DB, and removing the burden of mantaining db security and integrity.
+
+Self hosted DBs are run on infrastructure owned in house by an organization. Usually these will run on a physical server but also a VM or Docker machine
+benefits incluce greater custimizabiility in configuration, add custom layers of security for sensitive use cases and industries, and no reliance on 3rd party management
+
+In recap, managed dbs have quick startup and lower overheads, but can be costly and always rely on external management. Self hosted DBs, offer higher flexibility customization and security with lower costs. But an app which is small it can be overkill and expensive to set up and mantaining it.
+
+5: Project intro
+Intro about retro rides.using PGLite and building skills writing SQL Queries, not building a fullstack app.
+
+The inventory table has the following fields
+
+id - db id
+brand
+model
+year
+price
+color
+condition - 0 is bad 5 is mint
+sold
+
+the PGLite library will run a PostgreSQL db in practice excercises
+When we save the project, index.js is run. This creates the DB, runs the query, and logs the output
