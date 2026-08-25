@@ -79,6 +79,20 @@
 --L15 C 5 cheapest red cars
 --SELECT brand, model, year, price, color FROM cars WHERE color LIKE '%red%' AND sold IS FALSE ORDER BY price ASC LIMIT 5;
 
+--L16 E Check sold cars count - 24 rows
+--SELECT COUNT(*) AS total_sold FROM cars WHERE sold is TRUE; we can also use aliases to change some names of columns
+
+--L16 E2 Price of sold cars - $1,205,000
+--SELECT SUM(price) AS total_earnings FROM cars WHERE sold IS TRUE;
+
+--L17 E1 - most expensive car sold - $195,000
+--SELECT MAX(price) AS most_expensive FROM cars WHERE sold IS TRUE; important we cannot add other columns because we are aggregating by a column, and we are selecting a column and reducing a single value
+
+--L17 C1 - Avg price of a Bentley - $62,500
+--SELECT AVG(price) AS avg_bentley_price FROM cars WHERE brand = 'Bentley'; We have trailing decimals we can get rid of them by doing FLOOR(AVG(price)), we can also USE CEIL.
+
+--L17 C2 - Avg, min and max prices of all sold cars
+--SELECT CEIL(AVG(price)) AS avg, MIN(price) as min_sold_price, MAX(price) AS max_sold_price FROM cars WHERE sold IS TRUE;
 
 
 
@@ -138,4 +152,8 @@
     The limit keyword limits the number of records shown on the query
     
     L16: COUNT and SUM
+    These are aggregations and return one value. We use aggregates by defining them and then in parentheses specifiying the column we want to analyze. Count returns the number of records(rows) that match certain criteria, and sum return the total amount of certain column numbers
+
+    L17: MAX, MIN, AVG:
+    MAX returns the maximum value, MIN the minimum, and AVG the average of a set of values
 */
