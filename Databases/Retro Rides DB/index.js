@@ -1,5 +1,6 @@
 import { PGlite } from '@electric-sql/pglite';
 import fs from 'fs';
+import path from "node:path"
 
 (async () => {
   const db = new PGlite();
@@ -60,8 +61,14 @@ import fs from 'fs';
           ('Bentley', 'T2', 1978, 52000, 'silver', 4, false);
 `);
 
+    // Dirname and path to query.sql
+    const __dirname = import.meta.dirname
+    //console.log(__dirname);
+    const sqlFile = path.join(__dirname, "query.sql");
+    //console.log(sqlFile);
+
   // Load the SQL file
-  const query = fs.readFileSync('query.sql', 'utf8');
+  const query = fs.readFileSync(sqlFile, 'utf8');
 
   // Executing simple queries for sections 1 - 3
   const response = await db.query(query);
