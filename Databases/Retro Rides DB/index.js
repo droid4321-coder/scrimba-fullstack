@@ -76,7 +76,6 @@ import path from "node:path"
           ('Triumph', 'Spitfire', 1972, 19000, 'green', 3, true),
           ('Triumph', 'Stag', 1975, 25000, 'red', 4, false),
           ('Triumph', 'Dolomite Sprint', 1974, 21000, 'orange', 3, false);
-
 `);
   
   //routing
@@ -86,8 +85,11 @@ import path from "node:path"
   // Load the SQL file
   const query = fs.readFileSync(sqlPath, 'utf8');
 
-  // Executing simple queries for sections 1 - 3
-  const response = await db.query(query);
+  //for section 4 - execute the CRUD operation
+  await db.exec(query);
+
+  //display data from the table
+  const response = await db.query('SELECT * FROM cars ORDER BY id;');
 
   console.clear();
   console.table(response.rows);

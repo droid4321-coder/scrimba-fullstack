@@ -1,0 +1,12 @@
+L1 - Welcome to React fundamentals
+React is a very popular component framework
+We will be building 6 projects on the curriculum that will help us to understand React
+How to get the most of the course, the easy way is the hard way, to gain knowledge is to put in the effort.
+We need to learn by doing, we dont want to do tutorial hell where we do a course but in solo project we cant build nothing. We need to experiment and do stretch goals
+Book make it stick the science of successful learning - active retrieval, retrieve and apply past info, spaced repetition, we try to go thru content quickly, but we need to take breaks to apply info better. And varied applications for projects so we can see how they are applied.
+To learn React a solid knowledge of HTML, CSS and JS is required.
+
+Section 1 - Static Pages in React
+Its true we do know how to create pages, but in React we need to learn to think in React to aplly different technologies.
+The project is ReactFacts, we will learn why React is useful, set up a new React project, we will see the syntax and JSX, and build custom component, and styling.
+There will be a lot of challenges.

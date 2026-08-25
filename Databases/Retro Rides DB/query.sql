@@ -94,6 +94,61 @@
 --L17 C2 - Avg, min and max prices of all sold cars
 --SELECT CEIL(AVG(price)) AS avg, MIN(price) as min_sold_price, MAX(price) AS max_sold_price FROM cars WHERE sold IS TRUE;
 
+--L18 E1 - how many of each brand we have?
+--SELECT brand, COUNT(brand) AS brand_count FROM cars GROUP BY brand;
+
+--L18 E2 - cars by condition?
+--SELECT condition, COUNT(condition) AS total_condition FROM cars GROUP BY condition ORDER BY condition;
+
+--L18 E3 - cars grouped by brand that have not been sold
+--SELECT brand, COUNT(brand), FLOOR(AVG(price)) AS AVG FROM cars WHERE sold IS FALSE GROUP BY brand;
+
+--L19 E1 - having count > 1 on the previous example to eliminate brands with no cars on stock
+--SELECT brand, COUNT(brand), FLOOR(AVG(price)) AS AVG FROM cars WHERE sold IS FALSE GROUP BY brand HAVING COUNT(brand) > 1;
+
+--L19 C1 - show sold cars by year that sold more than 1 car
+--SELECT year, COUNT(year) AS car_count, MAX(price), MIN(price) FROM cars WHERE sold IS TRUE GROUP BY year HAVING COUNT(year) > 1 ORDER BY car_count;
+
+--L20 C1 - oldest cars available
+--SELECT brand, model, year FROM cars WHERE sold IS FALSE ORDER BY year LIMIT 5;
+
+--L20 C2 - most common colors in stock
+--SELECT color, COUNT(color) AS color_count FROM cars WHERE sold IS FALSE GROUP BY color HAVING COUNT(color) > 2 ORDER BY color_count DESC; long but cool!
+
+--L21 E1 - Inserting 2 cars
+INSERT INTO cars (
+    brand, model, year, price, color, condition, sold
+) VALUES (
+    'Ford', 'Escort RS200', 1978, 39000, 'blue', 4, FALSE
+), (
+    'Aston Martin', 'V8 Vantage', 1977, 145000, 'dark green', 5, FALSE
+);
+
+--L21 C1 - add 2 new cars
+INSERT INTO cars (
+    brand, model, year, price, color, condition, sold
+    ) VALUES (
+        'Chevrolet', 'Bel Air', 1955, 50000, 'purple', 5, FALSE
+    ), (
+        'Porsche', '944 Turbo', 1986, 48000, 'white', 4, FALSE
+    );
+
+--L22 E1 - update 1 value, when doing assignments we use equals to update the value. We have 2 different db4s on the db, so if we want to update a value, we need to be as specific as we can to avoid side effects and errors
+UPDATE cars SET sold = TRUE WHERE brand = 'Ford' AND model = 'Escort RS200';
+
+--L22 C1 - update second db4
+UPDATE cars SET condition = 5, price = 465000 WHERE brand = 'Aston Martin' AND model = 'DB4' AND condition = 3;
+
+--L22 C2 - unfortunately all porsches got ruined, and have to be sold to cheap price and condition 1
+UPDATE cars SET condition = 1, price = 10000 WHERE brand = 'Porsche' AND sold IS FALSE;
+
+--L23 E1 - deleting cars with 0 condition
+DELETE FROM cars WHERE condition = 0;
+
+--L23 C1 - deleting cars that have been sold
+DELETE FROM cars WHERE sold IS TRUE;
+
+--WE ARE DONE!!!
 
 
 /*
@@ -156,4 +211,28 @@
 
     L17: MAX, MIN, AVG:
     MAX returns the maximum value, MIN the minimum, and AVG the average of a set of values
+
+    L18 - GROUP BY
+    in order to perform more complex aggregates we use GROUP BY and to grup sets into definded parameters and perform calculations, like seeing how many of certain brand of cars.
+
+    L19- HAVING
+    Allows us to write conditions in aggregates to filter results by criteria met.
+
+    L20: Challenges 2
+
+    L21: Maniuplating data
+    We will see inserting deleting and updating values from the db. DBs are dynamic resources which means we can add, modify, and delete data. We will learn how to perform these operations
+
+    These operations are known as DML Data Manipulation Language or CRUD commands. CRUD stands for Create Read Update and Delete, 4 main commands for data manipulation
+
+    Returning Data - DML commands dont return data from the DB, but we have set up our runner to run a SELECT statement after executing the command. Inthe challengs, we will add the command to our index.js file for data persistence.
+
+    L22 - INSERT INTO
+    INSERT to add new records to our db table, when we add records, we want to add info to all the tables to avoid having null values which can break our db. We wont add a value to the id which is automatically added as a primary key.
+
+    L23 - UPDATE
+    We use this to update any records
+
+    L24 - DELETE
+    We use this to delete requested records on query
 */
