@@ -15,3 +15,37 @@ Setting up Vite
 Check node and npm version to see if version > 18
 Then in the terminal run npm create vite@latest, choose the framework, Which variant use JS version, everything will get scaffolded and have a project folder.
 Then in VSCode run npm run dev and go to localhost:5173, in the src folder the files are there, 
+
+JS libraries and frameworks
+A library is a collection of reusable code, and they reduce the need to write repetitive/complex things from scratch. You control how/when it's used. No/few boundaries
+A framework is a predetermined architecture that follows a specified pattern of development. Need to be familiar with documentation. You need to work within the boundaries set by the framework. There are good and bad ways to use it.
+
+React is a Library and a ecosystem and its one of the most common libraries used.
+In 2006, jQuery was very popular and it bridged the gap between browsers and how to interpret DOM. It made it easy to make cross browser compatibility better than vanilla JS. In 2010 JS frameworks like angularJS, ember, and backbone frameworks became popular and defined components that needed to be used a certain way. Around 2013 React, Angular, and Vue became popular libraries/frameworks that helped build webapps. 2016 Svelte and Next.js became popular and Next.js used React 2020 on a lot more like Remix, solid, astro, qwik, etc... Each one of these have their features.
+
+Why choose React?
+It has the highest job demand, it has a large ecosystem and community that support it, it has less magic and can understand the code more, its very composable and declarative, and it has a very active development.
+
+It is required to know JS before learning React, that way we have a solid foundation.
+
+When you might not want a framework, it might be not neccesary if working on small projects, or if have network load concerns like loading apps on slow networks, these frameworks have a learning curve, there are also maintenance concerns that might be a concern, and also if it is incompatible with existing codebase.
+
+We will see now how React is composable and declarative
+Why use react for learning and using?
+Its composable - we have the tools to easily create reusable components of the web, like using basic elements and materials to create stunning art and visuals, like marble and Lego Bricks. this allows us to combine it in various ways to make complex systems.
+
+Its like a navigation bar, with vanilla elements you need to do it in every webpage, in React, you do a component and it shows on every single page
+
+We like react too because it is Declarative, we can lean on the library of React to handle tedious tasks the we otherwise would have to worry about ourselves
+
+When something is declarative we can tell the program what should be done and the program does it. When its imperative we need to say the program how its done.
+
+/* Lesson 7 Challenge in JS to create vanilla JS element and do it in an imperative way:
+const divRoot = document.getElementById("root")
+const h1Elem = document.createElement("h1")
+h1Elem.textContent = "This is imperative coding!";
+h1Elem.classList.add("header");
+divRoot.appendChild(h1Elem);
+*/
+
+Inreact is more declarative, just root.render(<h1 className="header">Hello, React!</h1>)
