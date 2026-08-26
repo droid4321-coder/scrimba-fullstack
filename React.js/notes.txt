@@ -49,3 +49,24 @@ divRoot.appendChild(h1Elem);
 */
 
 Inreact is more declarative, just root.render(<h1 className="header">Hello, React!</h1>)
+
+Before the project we need to see some ReactFacts, but first, lets recreate a new react project simbolically
+
+React code -> import {createRoot} from "react-dom/client"
+
+const root = document.createRoot(document.getElementById("root"));
+
+const htmlCode = <h1>Test H1 Element</h1>
+
+root.render(
+    <>
+    htmlCode
+    </>
+)
+
+IN html, we use the jsx extension, but under the hood we are using vite, and it says if using React, please use JSX for compatibility
+In the rectfacts project, we have 2 images. If static images are local, we need to handle them differently
+
+    //in vite this works -> <img src="./assets/react.svg" /> but, a relative path might not work correctly, making it an absolute path is better. There is a better way to handle images.
+
+How about handling 2 or more elements in the root render? Wrap them around a single div! because it needs to render one parent element. A main can be used, or a section or article. You can only render a single JSX element with many children.

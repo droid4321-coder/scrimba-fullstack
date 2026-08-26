@@ -11,6 +11,7 @@ const reactElement = <h1>Hello From JSX!</h1> // written with JSX, which is buil
 console.log(reactElement);
 // 2. render some markup in the root
 root.render(
+    //in vite this works -> <img src="./assets/react.svg" /> but, a relative path might not work correctly, making it an absolute path is better. There is a better way to handle images.
     reactElement
 )
 
