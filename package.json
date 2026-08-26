@@ -3,6 +3,7 @@
     "@google/genai": "^2.16.0",
     "dotenv": "^17.4.2",
     "openai": "^7.4.0",
+    "react-dom": "^19.2.8",
     "sanitize-html": "^2.17.7",
     "vite": "^8.2.1"
   },

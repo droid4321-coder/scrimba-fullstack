@@ -10,3 +10,8 @@ Section 1 - Static Pages in React
 Its true we do know how to create pages, but in React we need to learn to think in React to aplly different technologies.
 The project is ReactFacts, we will learn why React is useful, set up a new React project, we will see the syntax and JSX, and build custom component, and styling.
 There will be a lot of challenges.
+
+Setting up Vite
+Check node and npm version to see if version > 18
+Then in the terminal run npm create vite@latest, choose the framework, Which variant use JS version, everything will get scaffolded and have a project folder.
+Then in VSCode run npm run dev and go to localhost:5173, in the src folder the files are there, 
