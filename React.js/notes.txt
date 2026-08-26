@@ -74,3 +74,11 @@ How about handling 2 or more elements in the root render? Wrap them around a sin
 Components allows us to encapsulate small things into modules and integrate them to our main React Project, we can create our own custom components. That way not everything is rendered inside a root component.
 
 With custom components we use PascalCase -> Meaning start with a capital letter
+
+Its good to render elements in fragments. We can import the fragments in react and there is a difference by using a fragment, it wont nest objects creating a DOM node, its much cleaner and best for dealing with flexbox and grid in CSS.
+
+Its cleaner to wrap every component element inside <></> and that way you dont need to import the fragment
+
+in JSX to style with class we use className because react turns these components into objects
+
+These components are cluttering our index.jsx, lets organize them
