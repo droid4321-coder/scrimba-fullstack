@@ -82,3 +82,25 @@ Its cleaner to wrap every component element inside <></> and that way you dont n
 in JSX to style with class we use className because react turns these components into objects
 
 These components are cluttering our index.jsx, lets organize them
+
+When doing a new project is good to have a mental outline of how to do the project, wht needs to appear in the page, and how to execute it.
+
+Mental outline for Reactfacts:
+
+I would do a header for the react logo, react facts and make it black as to separare it from the main text.
+Then a main content wuth the reacfacts, and a background image.
+
+A mental outline can be:
+<div.container>
+    <header>
+        <nav>
+            <img />
+        </nav>
+    </header>
+    <main>
+        <h1></h1>
+        <ul>
+            <li></li> x 5
+        </ul>
+    </main>
+</div>
