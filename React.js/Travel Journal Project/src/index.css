@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #e63453;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.header-img {
+    width: 30px;
+}
+
+.header-text {
+    font-family: "Inter", serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}

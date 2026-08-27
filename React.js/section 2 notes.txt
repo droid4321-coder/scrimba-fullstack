@@ -1,0 +1,3 @@
+Data driven react creating a travel journal project
+In our previous project we did hardcoded text, now we are going to do is make React have reusable components by revieving information. The project is a travel journal, and all the information is contained in a regular JS file in objects and arrays.
+We will learn why reusability is important, we will see props, create components from an array of data, and challenges

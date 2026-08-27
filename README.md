@@ -40,6 +40,7 @@ Simbolic Day 35: Never give up!
 Simbolic Dav 36: Winners dont do breaks lol! Finished Node.js finally! Going to Databases
 Simbolic Day 37: Comtinue SQL! SQL Done! Lets do React!
 Simbolic Day 38: Starting React! Finished Section 1!
+Simbolic Day 39: Starting React Section 2!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
