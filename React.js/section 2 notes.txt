@@ -1,3 +1,10 @@
 Data driven react creating a travel journal project
 In our previous project we did hardcoded text, now we are going to do is make React have reusable components by revieving information. The project is a travel journal, and all the information is contained in a regular JS file in objects and arrays.
 We will learn why reusability is important, we will see props, create components from an array of data, and challenges
+
+In lesson 3, we hardcoded the japan destination, and that is not good for reusability, we need to do reusable components to put new things in every data section. Reusability is everywhere in a lot of websites the new movie is there, nut the structure is the same, it is data driven. They add the new info to a DB and that info gets added to the website with reusable components
+
+This is where props come into play, lets spread the lessons prop and see what it is and how to use it.
+
+Props part 2 - understand more visual props
+If we look at Youtube, you are going to find a repeated number of elements in the same structure, like the videos that are one after another. In each one there is an image, title, channel name, views, time, etc. Nobody created this manually, this info is stored in a DB and the flexible component recieves the info and allows it to be seen in the page, the reusable components can be nested together, liek in here the video list components
