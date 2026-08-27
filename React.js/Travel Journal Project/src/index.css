@@ -1,7 +1,5 @@
-* {
+html, body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .header {
@@ -10,16 +8,95 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    padding: 20px 0;
+    height: 55px;
 }
 
 .header-img {
-    width: 30px;
+    width: 24px;
+    margin-right: 7px;
 }
 
 .header-text {
     font-family: "Inter", serif;
-    font-size: 1.5em;
+    font-size: 0.9rem;
     font-weight: 500;
+}
+
+.journal-entry {
+    display: flex;
+    font-family: "Inter", serif;
+    margin-bottom: 36px;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.img-container {
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-right: 19px;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+}
+
+.location-text {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-right: 12px;
+}
+
+.marker-img {
+    width: 7px;
+    margin-right: 4px;
+}
+
+.maps-link {
+    color: #2B283A;
+    font-size: 0.7rem;
+}
+
+.maps-link:visited {
+    color:gray;
+}
+
+.poi-text {
+    margin-top: 7px;
+    margin-bottom: 17px;
+}
+
+.description-text {
+    line-height: 1.5;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+
+.poi-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 }
