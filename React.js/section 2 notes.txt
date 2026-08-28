@@ -8,3 +8,6 @@ This is where props come into play, lets spread the lessons prop and see what it
 
 Props part 2 - understand more visual props
 If we look at Youtube, you are going to find a repeated number of elements in the same structure, like the videos that are one after another. In each one there is an image, title, channel name, views, time, etc. Nobody created this manually, this info is stored in a DB and the flexible component recieves the info and allows it to be seen in the page, the reusable components can be nested together, liek in here the video list components
+
+Importing static assets outside of Scrimba - doneso with code a million times for paths inside assets lol.
+import images as assets inside our files to ensure the path and the image renders correctly

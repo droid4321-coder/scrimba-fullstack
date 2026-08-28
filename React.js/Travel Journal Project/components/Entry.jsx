@@ -1,6 +1,30 @@
-export default function Entry() {
+export default function Entry(props) {
+
+    console.log(props)
+
     return (
         <article className="journal-entry">
+
+            <div className="img-container">
+                <img className="main-img" src={props.img.src} alt={props.img.alt} />
+            </div>
+            
+            
+            <div className="info-container">
+                <div className="location-container">
+                    <img src="./../src/assets/marker.png" alt="marker icon" className="marker-img" />
+                    <span className="location-text">{props.country}</span>
+                    <a href={props.googleMapsLink} target="_blank" className="maps-link">View on Google Maps</a>
+                </div>
+                <h2 className="poi-text">{props.title}</h2>
+                <p className="date-text"><b>{props.dates}</b></p>
+                <p className="description-text">{props.text}</p>
+            </div>
+        </article>
+    )
+}
+
+/*         <article className="journal-entry">
 
             <div className="img-container">
                 <img className="main-img" src="https://scrimba.com/links/travel-journal-japan-image-url" alt="mount fuji" />
@@ -18,5 +42,4 @@ export default function Entry() {
                     <p className="description-text">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
             </div>
         </article>
-    )
-}
+*/
