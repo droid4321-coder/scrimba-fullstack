@@ -7,31 +7,49 @@
 
 //lets use these values now to remove hardcoded data and use the props components
 //its important that the names of our properties match the names of the components to avoid rendering bugs
-export default function Contact(props) {
+export default function Contact({ img, name, phone, email }) {
 
     //console.log(props);
     
     return (
         <article className="contact-card">
                 <img 
-                    src={props.img}
+                    src={img}
                     alt="Cat image"
                 />
-            <h3>{props.name}</h3>
+            <h3>{name}</h3>
                 <div className="info-group">
                     <img 
                         src="./src/images/phone-icon.png" 
                         alt="phone icon" 
                     />
-                <p>{props.phone}</p>
+                <p>{phone}</p>
                 </div>
                 <div className="info-group">
                     <img 
                         src="./src/images/mail-icon.png" 
                         alt="mail icon"
                     />
-                <p>{props.email}</p>
+                <p>{email}</p>
                 </div>
         </article>
     )
 }
+
+//destructuring props
+
+const person = {
+    img: "./images/mr-whiskerson.png",
+    name: "Mr.Whiskerson",
+    phone: "(800) 555-1234",
+    email: "mr.whiskaz@catnap.meow"
+}
+
+console.log(person.name);
+
+//destructuring example
+const { img, name } = person;
+console.log(img);
+console.log(name);
+
+//if we want to destructure or use props its all up to user preference.
