@@ -8,7 +8,9 @@
 import Contact from "./Contact.jsx";
 
 //props part 4 - passing properties to React Contact component
-//it looks way nicer!
+//it looks way nicer!, buuuut all the info stays the same. 
+
+//props part 5 - The issue is that we need to recieve the props to get the data, the React Component needs a parameter in the function to receive the data and process it.
 function App() {
     return (
         <div className="contacts">
