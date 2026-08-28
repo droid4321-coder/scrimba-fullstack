@@ -11,3 +11,13 @@ If we look at Youtube, you are going to find a repeated number of elements in th
 
 Importing static assets outside of Scrimba - doneso with code a million times for paths inside assets lol.
 import images as assets inside our files to ensure the path and the image renders correctly
+
+Refresher for array.map method, as we will use it
+
+example:
+
+const arr = ["one", "two", "three"]
+
+const repeatArr = arr.map((object, index) => {
+    return object.repeat(index);
+})
