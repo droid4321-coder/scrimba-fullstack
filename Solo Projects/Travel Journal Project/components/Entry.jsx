@@ -1,6 +1,8 @@
+//because I am doing entry={entry}, we need to make nested object calls since we are entering entry, we need to enter props.propertyName
+
 export default function Entry(props) {
 
-    console.log(props)
+    //  console.log(props)
 
     return (
         <article className="journal-entry">
