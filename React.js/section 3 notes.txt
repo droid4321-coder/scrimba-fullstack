@@ -1,0 +1,11 @@
+Section 3 - Interactive web apps in React - Project Chef Claude
+
+This allows us to use intractive apps, we have built static websites with components, reusable components, props and passing data.
+
+Difference betwee static web pages and dynamic web apps, mostly we have worked on static, read only web apps with no user driven changes to data, like blogs, news sites, recipes, etc.
+
+We are about to understand dynamic web apps, because it has read-write abilities where the user has the ability to change data, are highly interactive, and display our data, examples are a bank website, SaaS products like Airbnb, eCommerce sites, etc.
+
+We are making an app called Chef Claude, where we will put a list of ingredients, and it will tell us a suggested recipe, and we will be able to use either claude ai, or hugging face
+
+Header entry
