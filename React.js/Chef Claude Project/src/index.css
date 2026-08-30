@@ -1,4 +1,4 @@
-* {
+*, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,4 +15,47 @@
 
 .header-img {
     width: 50px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.form-input {
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 130px;
+    max-width: 400px;
+    height: 30px;
+    flex-grow: 1;
+}
+
+.form-button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    height: 30px;
+    width: 180px;
+    font-family: "Inter", serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.ingredients-list {
+    list-style-type: disc !important;
+    /* Forces standard bullet points */
+    padding-left: 25px !important;
+    /* Pushes the list right so the bullets are visible */
+    margin-top: 10px;
+    /* Optional: adds nice spacing below your form */
 }

@@ -9,3 +9,20 @@ We are about to understand dynamic web apps, because it has read-write abilities
 We are making an app called Chef Claude, where we will put a list of ingredients, and it will tell us a suggested recipe, and we will be able to use either claude ai, or hugging face
 
 Header entry
+Form entry
+
+Project overview
+The project will have the header and entry to add ingredients to a list, then, there will be a list of ingredients that will be shown. After that there is an area for generating a recipe. This will send a prompt to the AI which will return us a suggested recipe, and a formatted list of ingredients and instructions.
+
+Event listeners are what set apart a static website from a dynamic one, because event listeners allow for interactivity on the website.
+
+Adding event listeners for react elements
+/* 
+    In JS we would use someElement.addEventListener("click", () => {function}) or add a onclick attribute inside the button.
+
+    In react we do onClick to add a function inside of an element like => onClick={function () { console.log("Clicked") }} or add it to the top and then call it in the onClick function.
+
+    The React documentation for events is useful because it tells us what function to call depending on what we want for the trigger for the event
+*/
+
+mapping ingredients... instruction on document
