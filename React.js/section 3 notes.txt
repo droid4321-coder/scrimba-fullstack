@@ -26,3 +26,36 @@ Adding event listeners for react elements
 */
 
 mapping ingredients... instruction on document
+
+props vs state: props
+One major confusions is not understanding props and state.
+In React, a prop refers to the properties being passed into a component in order for it to work correctly, similar to how a function receives parameters: "from above". A component receiving props is not allowed to modify those props (they are immutable)
+
+Example function addTwoNumbers(a, b) {
+    a = 42 // this messes up the function, dont do this as params are immutable
+    return a + b
+} -> using parameters to insert any number which is passed down to the function call
+addTwoNumbers(1, 2)
+
+example function Navbar(props) {
+    props.logoIcon = "some-other-logo.png" // this wont work, dont do it,
+}
+
+<Navbar logoIcon="spatula.png" />
+
+State refers to values that are managed by the component, similar to variables declared inside a function. Any time you have changing values that should be saved/displayed, you'll likely be using state.
+
+IN state the view as a function of state:
+
+1. Render - React runs your function and displays whatever gets returned. The function will only be run again if:
+    a. it received new props from above or
+    b. its internal state values change
+
+2. setState - changing a local, non-state variable doesn't cause React to re-render the component. Changing state with a built-in setState function does.
+
+3. view = function(state) - Thus, when state changes and React re-runs (re-renders) your component, something new gets returned and replaces what used to be on the page.
+
+Example <App /> -> it renders once
+<App darkMode={true} /> re renders in dark mode. If changes to false, it Will re-run
+
+Light switch / bulb analogy . If the lightbulb is off, there is no electricity going and the room is dark. When the toggle is on, it changes state and the light will be on and the room will illuminate.
