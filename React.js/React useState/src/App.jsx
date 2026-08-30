@@ -2,11 +2,17 @@ import React from "react"
 import App1 from "./App1.jsx"
 import App2 from "./App2.jsx"
 import Ternary from "./Ternary.jsx"
+import Array from "./Array.jsx"
+import Object from "./Object.jsx"
 
 export default function App() {
     return (
         <>
+            <App1 />
+            <App2 />
+            <Array />
             <Ternary />
+            <Object />
         </>
     )
 }

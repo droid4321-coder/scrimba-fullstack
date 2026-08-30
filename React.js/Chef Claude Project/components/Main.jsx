@@ -1,3 +1,5 @@
+import React from "react";
+
 //its best to put onSubmit on the form so it registers the form gracefully, and it handles both the button press and button submit
 
 //preventDefault() prevents the page from refreshing after submitting a form, which is default HTML behavior
@@ -9,7 +11,9 @@ Then, the new ingredient is obtained via the Formdata.get() function method, get
 
 export default function Main() {
 
-    const ingredients = ["Chicken", "Oregano", "Tomatoes"]
+    //const ingredients = ["Chicken", "Oregano", "Tomatoes"]
+
+    const [ingredients, setIngredients] = React.useState([])
 
     const ingredientsListItems = ingredients.map((ingredient) => {
         return <li key={ingredient}>{ingredient}</li>
@@ -20,9 +24,13 @@ export default function Main() {
         console.log("Form submitted!");
         const formData = new FormData(event.currentTarget)
         const newIngredient = formData.get("ingredient")
-        console.log(newIngredient);
-        ingredients.push(newIngredient)
-        console.log(ingredients);
+        //console.log(newIngredient);
+        //ingredients.push(newIngredient)
+        //console.log(ingredients);
+
+        setIngredients((prevIngredient) => {
+            return [...prevIngredient, newIngredient];
+        })
     }
 
     return (
