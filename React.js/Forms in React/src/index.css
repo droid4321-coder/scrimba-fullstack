@@ -46,3 +46,9 @@ button:hover {
     border-color: #042F2E;
     color: white;
 }
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

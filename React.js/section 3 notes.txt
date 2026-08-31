@@ -84,3 +84,8 @@ When we press a button, it sends the information as a query on the url and refre
 When the method is POST, it puts it in a request body, which we wont see in the URL, but it refreshes the page. How to stop this? preventDefault function which prevents the refresh behavior. Also, use Formdata to handle the form inputs
 
 There was a property on HTML called action ad its used to send the finromation to a page or api to be handled. With the function handleSubmit we are able to do this on the client side. There are a number of defaults that we want to implement bt default and React 19 allows this, making the function quite concise and better!
+
+Covering other types of forms is React. Not every single one but the ones we need. Starting with textarea, it has a separate closing tag and its used for larget text entry.
+
+Also the radio is used for selecting elements, preferibly one at a time
+Checkbox - selecting multiple elements
