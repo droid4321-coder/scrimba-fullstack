@@ -15,17 +15,31 @@ export default function Form() {
         //const formEl = event.currentTarget // gets the current event, done noe by default
         //const formData = new FormData(formEl) // takes the event and converts the information into an object
 
+        //with this we can get all data into on object
+        //console.log(Object.fromEntries(formData));
+        const data = Object.fromEntries(formData)
+
         const email = formData.get("email") // gets the email form value
         const password = formData.get("password")
         const textArea = formData.get("description")
         const employmentStatus = formData.get("employment-status")
         const dietaryRestrictions = formData.getAll("dietary-restrictions")
+        const favColor = formData.get("fav-color")
         console.log(email);
         console.log(password);
         console.log(textArea)
         console.log(employmentStatus); //huh, it only returns on?
         //radio buttons dont come with the value we want, it only returns on or null if none is checked, we need to set up the value property with the expected value we want from that radio button. Also, we can select a default radio button to be filled by using defaultChecked attribute. This also works for checkboxes
         console.log(dietaryRestrictions); // we only get one? The easy way to get around it is by using getAll with formData
+        console.log(favColor);
+
+        const allData = {
+            ...data,
+            dietaryRestrictions: dietaryRestrictions
+        }
+
+        console.log(allData);
+
 
         //formEl.reset() //clears the input fields. Default done now
         //then we would get the info from the form and submit it to a backend, where it gets sanitized and verified against a database for example
@@ -84,6 +98,18 @@ export default function Form() {
                         <input type="checkbox" name="dietary-restrictions" id="checkbox" value="gluten-free" />Gluten-free
                     </label>
                     </fieldset>
+                    <label htmlFor="fav-color" id="fav-color" required>What is your favorite color?
+                        <select id="fav-color" name="fav-color">
+                        <option value="" disabled >Choose a color</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="indigo">Indigo</option>
+                        <option value="violet">Violet</option>
+                    </select>
+                    </label>
                     <button>Submit</button>
                 </label>
             </form>

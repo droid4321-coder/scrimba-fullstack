@@ -89,3 +89,8 @@ Covering other types of forms is React. Not every single one but the ones we nee
 
 Also the radio is used for selecting elements, preferibly one at a time
 Checkbox - selecting multiple elements
+Now we tackle select and option elements
+
+Conditional rendering
+This is used to render contents when certain criteria is met, as we will do in the Chef Claude project, as we need to display various things when conditions are met
+We render parts of a page based on a condition, if true, renders, if false, it wont be even added to the document.
