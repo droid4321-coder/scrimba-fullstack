@@ -64,3 +64,14 @@ Complex state: Arrays
 Up to now we have handled state variables with primitive values. But at times we will deal with arrays and objects. How to useState with them? 
 
 Complex state: objects, the same, but with objects!
+
+React forms
+A really common task will be creatins forms in our React projects, like creating a signn up form, and forms have been up a long time in the web.
+
+In the example project, we see that we have a basic form. This form when entered, refreshes the whole page and clears the content, thats default behavior, in this case going to the page requested on the action attribute.
+
+Because this is a PHP link, it puts the query actions in the page URL
+
+Then, JS became the modern way to get the information of a form, we will use it in React, and we can read the documentation on the form HTML component.
+
+The Formdata allows us to handle form entries and convert them to usable data.
