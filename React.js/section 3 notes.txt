@@ -74,4 +74,11 @@ Because this is a PHP link, it puts the query actions in the page URL
 
 Then, JS became the modern way to get the information of a form, we will use it in React, and we can read the documentation on the form HTML component.
 
-The Formdata allows us to handle form entries and convert them to usable data.
+The Formdata allows us to handle form entries and convert them to usable data. depending on the type if input stored, it will be handled Differently
+in React htmlFor does the same thing that for attrib html label
+
+The button has a quirk to remember, input types can change the html form. If a button has a type of submit inside the form, it will change the types to be a submit button for the form.
+
+When we press a button, it sends the information as a query on the url and refreshes the page, deleting the data on the form. The default method is GET, getting the data from the URL. This works in a los of cases but not a good idea for sensitive information.
+
+When the method is POST, it puts it in a request body, which we wont see in the URL, but it refreshes the page. How to stop this? preventDefault function which prevents the refresh behavior. Also, use Formdata to handle the form inputs
