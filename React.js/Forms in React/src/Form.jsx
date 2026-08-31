@@ -9,21 +9,23 @@ import React from "react";
 
 export default function Form() {
 
-    function handleSubmit(event) {
-        event.preventDefault(); //prevents default behavior
-        console.log("Submitted!");
-        const formEl = event.currentTarget // gets the current event
-        const formData = new FormData(formEl) // takes the event and converts the information into an object
+    function signUp(formData) {
+        //event.preventDefault(); //prevents default behavior this is done by default now with the form action function
+        //console.log("Submitted!");
+        //const formEl = event.currentTarget // gets the current event, done noe by default
+        //const formData = new FormData(formEl) // takes the event and converts the information into an object
         const email = formData.get("email") // gets the email form value
+        const password = formData.get("password")
         console.log(email);
-        formEl.reset() //clears the input fields.
+        console.log(password);
+        //formEl.reset() //clears the input fields. Default done now
         //then we would get the info from the form and submit it to a backend, where it gets sanitized and verified against a database for example
     }
 
     return (
         <section>
             <h1>Signup Form</h1>
-            <form onSubmit={handleSubmit} action="" method="POST">
+            <form action={signUp}>
                 <label htmlFor="email">Email: 
                     <input
                     id="email"
