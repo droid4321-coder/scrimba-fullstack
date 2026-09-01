@@ -8,7 +8,7 @@ import Object from "./Object.jsx"
 export default function App() {
     return (
         <>
-            <App2 />
+           <Object />
         </>
     )
 }
