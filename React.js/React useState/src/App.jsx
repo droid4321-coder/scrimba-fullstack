@@ -8,11 +8,7 @@ import Object from "./Object.jsx"
 export default function App() {
     return (
         <>
-            <App1 />
             <App2 />
-            <Array />
-            <Ternary />
-            <Object />
         </>
     )
 }
