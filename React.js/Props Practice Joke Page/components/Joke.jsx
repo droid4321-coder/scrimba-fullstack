@@ -30,15 +30,19 @@ export default function Joke({ setup, punchline, upvotes, downvotes, comments, i
         However, if we change the true to false, it will not run, because the condition in the left is false, and it runs left to right, it doesnt run the console.log. If the console log is first, then it will run.
 
         This is why && works on the code in the rEact component
+
+        Conditional ternary practice - heh, did it here
+        {isShown ? <p>{punchline}</p> : null} is recommended just in case to not show a falsy value in the app like 0, its an alternative
+        /its a good practice to do the variable or a function outside of the return and then call that function or variable in the JSX component
     */
     
     
     return (
         <>
             {setup && <h3>{setup}</h3>}
-            {isShown && <p>{punchline}</p>}
+            {isShown ? <p>{punchline}</p> : null}
             <p>{upvotes && <span>Upvotes: {upvotes}</span>} {downvotes && <span>Downvotes: {downvotes}</span>}</p>
-            <button onClick={toggleShown}>{ isShown ? "Hide punchline" : "Show punchline" }</button>
+            <button onClick={toggleShown}>{ isShown ? "Hide" : "Show" } punchline</button>
             {comments && <div>Comments: {comments.map((comment, index) => {
                return ( <div key={index}>
                     <h4>{comment.title} from {comment.author}</h4>
