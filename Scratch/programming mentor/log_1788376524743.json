@@ -1,0 +1,48 @@
+{
+  "sdkHttpResponse": {
+    "headers": {
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "content-encoding": "gzip",
+      "content-length": "2955",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 02 Sep 2026 19:15:24 GMT",
+      "server": "scaffolding on HTTPServer2",
+      "server-timing": "gfet4t7; dur=24467",
+      "vary": "Origin, X-Origin, Referer",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-gemini-service-tier": "standard",
+      "x-xss-protection": "0"
+    }
+  },
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Welcome! I'm glad you're diving into Haskell. It's a beautiful functional programming language, though it does things a bit differently than imperative languages like Python or C++.\n\nSince my goal is to help you learn by doing, I won't just give you the code directly. Instead, let's build it together with a few hints!\n\nTo write a \"Hello, World!\" program in Haskell, you need to think about two main components:\n\n### Hint 1: The Entry Point\nJust like in C, C++, or Java, a Haskell program needs a specific starting point (a function) so the compiler knows where to begin execution. \n* What is the name of this standard entry-point function in most programming languages? (It's a four-letter word starting with 'm').\n\n### Hint 2: Printing to the Screen\nIn Haskell, functions that interact with the outside world (like printing text to the console) return an \"I/O action\". \n* There is a built-in function in Haskell used specifically to output a string followed by a new line to the terminal. Its name is a combination of \"put\", \"String\", and \"Line\". Can you guess or look up what that function is called?\n\n---\n\nGive it a try! Try to combine the entry point and the printing function with the string `\"Hello, World!\"`. \n\nWrite down what you think the code looks like and reply with it here. I'll check it over and let you know if you've got it right or if there are any errors!",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "tHWYaujCFf60qtsPiN2kwA8",
+  "usageMetadata": {
+    "promptTokenCount": 74,
+    "candidatesTokenCount": 329,
+    "totalTokenCount": 818,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 74
+      }
+    ],
+    "thoughtsTokenCount": 415,
+    "serviceTier": "standard"
+  }
+}

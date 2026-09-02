@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Programming Mentor</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #output-text {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f4f4f4;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+
+        /* The CSS loading dots animation */
+        .is-loading::after {
+            content: "";
+            animation: loadingDots 1.5s steps(4) infinite;
+        }
+
+        @keyframes loadingDots {
+            0% {
+                content: "";
+            }
+
+            25% {
+                content: ".";
+            }
+
+            50% {
+                content: "..";
+            }
+
+            75% {
+                content: "...";
+            }
+
+            100% {
+                content: "";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>AI Programming Mentor</h1>
+    <textarea id="input-text" placeholder="Paste your code or ask your question here..."></textarea>
+    <br>
+    <button id="submit-btn">Get Hint</button>
+    <button id="debug-btn">Send test to output (Debugging Purposes)</button>
+    <button id="clear-btn">Clear Text</button>
+    <button></button>
+
+    <div id="output-text">Your mentor's hints will appear here.</div>
+
+    <script>
+        const promptInput = document.getElementById("input-text");
+        const output = document.getElementById("output-text");
+        const submitBtn = document.getElementById("submit-btn");
+        const debugBtn = document.getElementById("debug-btn");
+        const clearBtn = document.getElementById("clear-btn");
+
+        debugBtn.addEventListener("click", () => {
+            promptInput.value = "This is debug text for the input of the prompt";
+            output.textContent = "This is debug text for the output of the AI prompt";
+        })
+
+        clearBtn.addEventListener("click", () => {
+            promptInput.value = "";
+            output.textContent = "";
+        })
+
+        submitBtn.addEventListener("click", async () => {
+            const promptValue = promptInput.value;
+            if (!promptValue.trim()) return;
+
+            // 1. Set text to loading and trigger CSS animation
+            output.textContent = "Loading";
+            output.classList.add("is-loading");
+
+            try {
+                // We fetch to "/" because the HTML and API live on the exact same port!
+                const response = await fetch("/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ userPrompt: promptValue })
+                });
+
+                const data = await response.json();
+
+                // 2. Remove loading class and display the text cleanly
+                output.classList.remove("is-loading");
+
+                if (data.error) {
+                    output.textContent = data.error;
+                } else {
+                    output.textContent = data.mentorHint;
+                }
+
+            } catch (error) {
+                output.classList.remove("is-loading");
+                output.textContent = "An error occurred connecting to the server.";
+                console.error("Frontend Error:", error);
+            }
+        });
+    </script>
+</body>
+
+</html>
