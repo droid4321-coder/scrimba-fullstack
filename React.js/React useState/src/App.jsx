@@ -4,11 +4,12 @@ import App2 from "./App2.jsx"
 import Ternary from "./Ternary.jsx"
 import Array from "./Array.jsx"
 import Object from "./Object.jsx"
+import AppP from "./Passing data/App.jsx"
 
 export default function App() {
     return (
         <>
-           <Object />
+            <AppP />
         </>
     )
 }

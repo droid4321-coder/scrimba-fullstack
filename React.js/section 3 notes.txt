@@ -94,3 +94,31 @@ Now we tackle select and option elements
 Conditional rendering
 This is used to render contents when certain criteria is met, as we will do in the Chef Claude project, as we need to display various things when conditions are met
 We render parts of a page based on a condition, if true, renders, if false, it wont be even added to the document.
+
+Passing data to components:
+Sample of a React app , the square on the top is the parent component and then goes down are the child components and the line represent it is rendering to another component.
+
+                parent- App
+
+        Child 1 - Header        Child 2 - Body
+
+Sub-Child 1 - State for username     Sub Child 2 - Wants data
+
+SubChild 1 has a state, and SubChild 2 needs that state variable too.
+Is there a way to pass the state data from subchild 1 to subchild 2?
+Nope, we cant do it from side to side, on React, data flows upwards, not to the side. The best way is to pass that state upwards so that both subchild components have access to the state variable and be passed as props.
+
+                parent- App
+
+        Child 1 - Header - State here        Child 2 - Body - Wants data
+
+Sub-Child 1     Sub Child 2 - Can get data
+
+Yet another component like child 2 wants access to the state variable, and we cant go from child to parent, only from parent to child. We bump the state up.
+
+                parent- App, State here
+
+        Child 1 - Header - Access via props        Child 2 - Body - Access
+
+Sub-Child 1     Sub Child 2 - Can get data
+
