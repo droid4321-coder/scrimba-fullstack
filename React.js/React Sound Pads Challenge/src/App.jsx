@@ -1,5 +1,6 @@
 import React from "react"
 import padsData from "./pads.js"
+import Pad from "./Pad.jsx"
 
 export default function App(props) {
     /**
@@ -15,10 +16,30 @@ export default function App(props) {
     //state variable for pads array
     const [pads, setPads] = React.useState(padsData)
 
+
+    //function to toggle the buttons and maintain a single source of truth
+
+    /* Explaining this function:
+        This function opens the setPads state variable and gets previous value.
+        Then, it returns a map of the previous component and maps it to the pad with associated id.
+        If the id matches the id of the pad array, then it returns an object with all previous values, and the on property flipped, therefore toggling the button
+        Else, it returns the pad object unchanged. */
+    
+    function toggle(id) {
+        //map over the pads array and if current item has the same id as the one passed to the function, flip its on value
+        //console.log(id);
+        setPads((prevValue) => {
+            return prevValue.map((pad) => {
+               return pad.id === id ? {...pad, on : !pad.on} : pad
+            })
+        })
+    }
+
     //state variable for darkmode prop declared in the App component bracket
     const [darkMode, setDarkMode] = React.useState(props.darkMode)
 
-    const darkModeCheck = darkMode ? {backgroundColor : "#222222"} : {backgroundColor : "#CCCCCC"}
+
+    //const darkModeCheck = darkMode ? {backgroundColor : "#222222"} : {backgroundColor : "#CCCCCC"}
 
     //if in HTML we do document.getElementById("something").style.backgroundColor = "black" <- its in camelCase due to JS convention
 
@@ -33,7 +54,7 @@ export default function App(props) {
     //mapping buttons to make them appear
     const buttonElements = pads.map((pad) => {
         return (
-            <button style={darkModeCheck} key={pad.id}></button>
+            <Pad on={pad.on} color={{ backgroundColor: pad.color }} key={pad.id} id={pad.id} toggle={() => toggle(pad.id)} />
         )
     })
 
