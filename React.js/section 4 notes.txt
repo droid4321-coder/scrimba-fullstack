@@ -1,0 +1,6 @@
+Section 4 - Handling side effects in React
+
+Is all about handling side effects in React. understading side effects can be tricky, when React used hooks, it was revolutionary with the side effects. We will learn controlled components (forms) like in the app we will do, functional programming in React, think about side effects, creating side effects to fetch data as soon as aour app loads, and side effects how to create them etc. Challenges.
+
+Meme generator project -> will be able to put text up and down in the image, also, getting a meme from imageflip API. We will add a feature to Chef Claude app
+Starting point -> This project will have a starting point, analyze the code and comment it. The user will type the meme and on keypress it will change, the button will get a new meme image. Everything is hardcoded right now.
