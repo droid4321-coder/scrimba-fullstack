@@ -27,3 +27,5 @@ The other main principle is inmutability. When receiveing props, its important t
 Our components should avoid side effects. If we are using props on components, we need to make sure it affects an outside function. Example, now we make a POST request to add an item to a list in the db, if we need to rerender everytime, this will lead to problems.
 
 We want to put values to localstorage, or a db, but using functional programming.
+
+Fetching data in React - we need to fetch data in react and display it. We need to fetch the data GET, and display the data and save it in state. We will use data from the Star Wars Api and save it in state
