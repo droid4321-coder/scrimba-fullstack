@@ -122,3 +122,44 @@ Yet another component like child 2 wants access to the state variable, and we ca
 
 Sub-Child 1     Sub Child 2 - Can get data
 
+Lesson 52 Ai API signups
+Ai component for chef claude. we have 2 different options claude or huggingface
+Huggingface is free and the API for inference is already put in the .env file heres an example of how to use it:
+
+import { InferenceClient } from "@huggingface/inference";
+
+const client = new InferenceClient(process.env.HF_TOKEN);
+
+const chatCompletion = await client.chatCompletion({
+  model: "openai/gpt-oss-120b:fastest",
+  messages: [
+    {
+      role: "user",
+      content: "How many 'G's in 'huggingface'?",
+    },
+  ],
+});
+
+console.log(chatCompletion.choices[0].message);
+
+Using VITE:
+
+import { InferenceClient } from '@huggingface/inference';
+
+// Initialize the client using Vite's env loader
+const hf = new InferenceClient(import.meta.env.VITE_HF_TOKEN);
+
+// Example function to run text generation
+async function queryModel() {
+  try {
+    const response = await hf.textGeneration({
+      model: 'gpt2',
+      inputs: 'The best way to deploy an AI model is',
+    });
+    console.log(response.generated_text);
+  } catch (error) {
+    console.error("Error fetching inference:", error);
+  }
+}
+
+

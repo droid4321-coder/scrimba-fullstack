@@ -1,7 +1,7 @@
-import { RecontextImageResponse } from "@google/genai";
 import React from "react";
 import ClaudeRecipe from "./ClaudeRecipe.jsx";
 import IngredientsList from "./IngredientsList.jsx";
+import { aiResponse } from "../ai.js";
 
 //its best to put onSubmit on the form so it registers the form gracefully, and it handles both the button press and button submit
 
@@ -17,6 +17,8 @@ export default function Main() {
     //const ingredients = ["Chicken", "Oregano", "Tomatoes"]
 
     const [ingredients, setIngredients] = React.useState([])
+
+    const [recipeContent, setRecipeContent] = React.useState("")
 
     const [recipeShown, setRecipeShown] = React.useState(false)
 
@@ -37,14 +39,31 @@ export default function Main() {
         setIngredients((prevIngredient) => {
             return [...prevIngredient, newIngredient];
         })
-        console.log(ingredients);
+        //console.log(ingredients);
         //before it was updating the local state on every change in every input field! now its waaaaay easier, before it was controlled components.
     }
 
-    function showRecipe() {
-        setRecipeShown((prevState) => {
-            return !prevState
-        })
+    async function showRecipe() {
+
+        try {
+            //setting it to false just in case an ingredient is added
+            setRecipeShown(recipeShown)
+
+            //this waits for tha AI response and puts it in the variable
+            const recipeContent = await aiResponse(ingredients)
+            console.log(`recipeContent Component response: ${recipeContent}`);
+
+            //sets it with the setter
+            setRecipeContent(recipeContent)
+
+            //show the recipe as true
+            setRecipeShown(true)
+        } catch (error) {
+            console.error(`An error has ocurred. ${error}`)
+            throw error
+        }
+
+
     }
 
     const showingredientList = ingredients.length > 0 ? "visible" : "hidden"
@@ -62,10 +81,13 @@ export default function Main() {
             />
             <ClaudeRecipe
                 recipeShownEnable={recipeShownCheck}
+                recipeText={recipeContent}
             />
         </main>
     )
 }
+
+/* Lets see..... To get the recipe from the AI, I need to save it to a variable that will put it in the ClaudeRecipe component on the suggested-recipe-container, passing it as a prop. But, that will be done when the button is pressed, so I need to wire a function to that button that gets the recipe and puts it in the variable.... */
 
 /* we will tackle 3 things:
     1. Cluttered Main component, needs cleanup
