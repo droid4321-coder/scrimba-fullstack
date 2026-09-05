@@ -4,3 +4,26 @@ Is all about handling side effects in React. understading side effects can be tr
 
 Meme generator project -> will be able to put text up and down in the image, also, getting a meme from imageflip API. We will add a feature to Chef Claude app
 Starting point -> This project will have a starting point, analyze the code and comment it. The user will type the meme and on keypress it will change, the button will get a new meme image. Everything is hardcoded right now.
+
+We have made a state with an object containing the top, bottom text and the imageUrl for easy changing, changing the hardcoded values below to the state object values.
+
+We will see now about controlled components whenever we made a form. There are instances where they make sense, this is one of them. We are collectiong information, and every single keystroke updates inmediately in our page. We dont need a formdata object, but we want an eventlistener that changes the state. In React 19 we have form actions, lets walk through this.
+
+What is a controlled component? Forms have their own ability internally, when we enter values, forms have a intrinsic way of saving the value and their state. React does not control the output, a controlled component React is in control of it, an uncontrolled component is a component React does not control the value of, controlled React does control and reflect the value of state. React should get a single source of truth of state.
+
+Im able to type something different on the bottom text. There a 2 things to do to have a controlled component, 1 is to be able to change the state via every change submitted inside of an input box, like we did on the top text, and even though when changing the state, the top meme text says the same thing, the input box does not, its empty with a placeholder.
+
+IN a true controlled component, we want to have everything say the same thing. React kicked the control of the form having a value and now React is in control of all the values. Lets see side effects in React.
+
+The next task we have on hand is fetching data. We could hardcode memes, but lets get an API that has most popular memes in the platform. We will use imageflip API for that, 100 popular memes. To do that, we need to make a request to the API to solicit the images, since its async we receive the response of arrays from the app, then we get a randon imag from the API. The button will load the images from the app. We need to do that on load so it has the array ready.
+
+We need to see how this is done in React.
+
+Functional programming in React - How React works and the philosophy, and will help in side effects. There are main principles, 1 - Pure functions, these are functions that when giving the same input, will return the same values. And running that function will not change nothing in the system. Like in props, which will return an user interface. If it is written correctly, it will always return the same. We dont want different results.
+We as devs need to check to see if the component is done successfully as we need
+
+The other main principle is inmutability. When receiveing props, its important that we never change the props to anything else, because then it will be mutable, which is not a principle in functional programming, we will never change state directly, we use the setter to re render the state.
+
+Our components should avoid side effects. If we are using props on components, we need to make sure it affects an outside function. Example, now we make a POST request to add an item to a list in the db, if we need to rerender everytime, this will lead to problems.
+
+We want to put values to localstorage, or a db, but using functional programming.
