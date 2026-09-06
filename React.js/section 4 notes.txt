@@ -29,3 +29,9 @@ Our components should avoid side effects. If we are using props on components, w
 We want to put values to localstorage, or a db, but using functional programming.
 
 Fetching data in React - we need to fetch data in react and display it. We need to fetch the data GET, and display the data and save it in state. We will use data from the Star Wars Api and save it in state
+
+Side effects - What are Reacts primart tasks, these include working with the DOM/browser to render UI to the page. Manage statefor us between cycles (i.e state values are "remembered" from one render to the next), and keep the UI update whenever state or props changes occur
+
+React cant handle on its own outside effects, like localstorage, if that value changes, REact wont update itself automatically, you can use them but React is not automatically connected to it, also API/DB interactions, we need to call it manually, also websockets(e.g websocket connections), basically anything that React is not in charge.
+
+This is where the useEffect() function comes in play ,this is a way to give us the way to connect React to systems outside of React control.We can study escape hatches.
