@@ -30,18 +30,35 @@ export default function App(props) {
 
     //by adding count to the useEffect, there is no more infinte loop. Because the count does not change, we are no longer making another fetch request, when the button is clicked, it changes the count value, the dependcy array count changes, and the effect runs again.
 
+    //empty array basically means do the action once and thats it.
+    //"https://swapi.dev/api/people/1" -> Star Wars API URL
+
     const [starWarsData, setStarWarsData] = React.useState(null)
-    const [count, setCount] = React.useState(0)
+    const [count, setCount] = React.useState(1)
+
+    //basically now ny making the URL like this, we can sort thru the characters. Yeah!!!!
+
 
     React.useEffect(() => {
-        console.log("Effect Ran");
-        fetch("https://swapi.dev/api/people/1")
-        .then(res => res.json())
-        .then(data => {
-            setStarWarsData(data)
-        })
-    }, [])
 
+        let starWarsURL = `https://swapi.dev/api/people/${count}`
+        //console.log("Effect Ran");
+        fetch(starWarsURL)
+        .then(res => res.json())
+        .then(data => {setStarWarsData(data)})
+    }, [count])
+
+    // function Add() {
+    //     setStarWarsData((prevCount) => {
+    //         prevCount = prevCount + 1
+    //     })
+    // }
+
+    function getNewCharacter() {
+        setCount((prevCount) => {
+            return prevCount + 1
+        })
+    }
     //<pre>{JSON.stringify({ name : "Luke" }, null, 2)}</pre> is hardcoded data
 
 
@@ -79,8 +96,9 @@ export default function App(props) {
     return (
         <div className="container">
             <h2>The count is {count}</h2>
-            <button onClick={() => setCount(prevCount => prevCount + 1)}>Add</button>
-            <pre>{JSON.stringify({starWarsData}, null, 2)}</pre>
+            <p>Current URL: {starWarsURL}</p>
+            <button onClick={getNewCharacter}>Get next Character</button>
+            <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
         </div>
     )
 }
