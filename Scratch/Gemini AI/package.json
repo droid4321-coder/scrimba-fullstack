@@ -1,0 +1,11 @@
+{
+  "name": "gemini-api",
+  "version": "1.0.0",
+  "description": "Simple website to give Gemini a prompt and System Instruction, And get an Output",
+  "author": "Droid",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -34,7 +34,20 @@ export default function Main() {
 
     //You might be tempted to use the asybc.await function, but, why do we dont use it here? When using useEffect, we cannot use async await modules inside it. Explaination will come now.
 
-    console.log(memeArr);
+    function changeMeme() {
+        if (memeArr && memeArr.length > 0) {
+            let randomMemeURL = memeArr[Math.floor(Math.random() * memeArr.length)].url
+            console.log(randomMemeURL)
+            setMeme((prevMeme) => {
+                return (
+                    {
+                        ...prevMeme,
+                        imageUrl: randomMemeURL
+                    }
+                )
+            })
+        }
+    }
 
     function handleChange(event) {
         const {value, name} = event.currentTarget;
@@ -70,7 +83,7 @@ export default function Main() {
                         onChange={handleChange}
                     />
                 </label>
-                <button>Get a new meme image 🖼</button>
+                <button onClick={changeMeme}>Get a new meme image 🖼</button>
             </div>
             <div className="meme">
                 <img src={meme.imageUrl} />
