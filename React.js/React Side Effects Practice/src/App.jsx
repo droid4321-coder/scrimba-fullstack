@@ -40,7 +40,7 @@ export default function App(props) {
         .then(data => {
             setStarWarsData(data)
         })
-    }, [count])
+    }, [])
 
     //<pre>{JSON.stringify({ name : "Luke" }, null, 2)}</pre> is hardcoded data
 

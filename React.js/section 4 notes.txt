@@ -37,3 +37,28 @@ React cant handle on its own outside effects, like localstorage, if that value c
 This is where the useEffect() function comes in play ,this is a way to give us the way to connect React to systems outside of React control.We can study escape hatches.
 
 useEffect with dependency array -> A counter was added to the code to re-render the component easily
+
+empty dependecy array in useEffect - React is going to compare the values to determine whether it runs or not. How to determine what to put inside useEffect. We have the count value but there is no code that depends on the count variable to do its function. By changing the count on the example code, its simply doing another fetch request, which does not depend on it. If we use an empty array, the fetch request runs and it rerenders, but the useeffect does not run because it does not change.
+
+useEffect quiz
+
+1. In what way are React components meant to be "pure functions"
+They are meant to be pure functions in the sense that they should always return the same value everytime the function is called with the same variable. The same state should return the same content, or Ui that is rendered on the page. This wil never affect an ouside system.
+
+
+2. What is a "side effect" in React? What are some examples?
+Its an effect that is outside the system in React, like fetching an API. localStorage, connection thru websockets, manual DOM manipulation.
+
+
+3. What is NOT a "side effect" in React? Examples?
+functions that React does control, like state variables, maintaining state, keeping Ui in sync with data, rendering DOM elements
+
+
+4. When does React run your useEffect function? When does it NOT run
+   the effect function?
+   It runs it everytime there is a render on the React component if there is not a dependency array and as soon as the component loads the first time, if there is a dependency array and the variable changes between renders, it runs, if not, it does not.
+
+
+5. How would you explain what the "dependecies array" is?
+Its an array that a useEffect function can rely on to check if the side effect should be executed ot not.
+
