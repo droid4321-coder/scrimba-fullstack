@@ -35,3 +35,5 @@ Side effects - What are Reacts primart tasks, these include working with the DOM
 React cant handle on its own outside effects, like localstorage, if that value changes, REact wont update itself automatically, you can use them but React is not automatically connected to it, also API/DB interactions, we need to call it manually, also websockets(e.g websocket connections), basically anything that React is not in charge.
 
 This is where the useEffect() function comes in play ,this is a way to give us the way to connect React to systems outside of React control.We can study escape hatches.
+
+useEffect with dependency array -> A counter was added to the code to re-render the component easily
