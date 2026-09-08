@@ -1,38 +1,24 @@
-import { useState, useEffect, useRef } from "react";
+import { useState} from "react";
 import Die from "./Die.jsx";
 import MatchNumber from "./MatchNumber.jsx";
 import Buttons from "./Buttons.jsx";
+import dieData from "./../src/die.js"
 
 export default function Main() {
 
-    const [dieValue, setDieValue] = useState(Math.floor(Math.random() * 6) + 1)
+    const [die, setDie] = useState(dieData)
 
-    const [dieHold, setDieHold] = useState(false)
-
-    function toggleDieHold() {
-        setDieHold(prevValue => !prevValue)
-    }
-
-    function handleReroll() {
-        if (!dieHold) {
-            const randNumber = Math.floor(Math.random() * 6) + 1
-            setDieValue(randNumber)
-        }
-    }
-
-    const dieHoldCheck = dieHold ? "hold" : "no hold"
+    const dieElements = dieData.map((die) => {
+        return (
+            <Die key={die.id} number={die.number} />
+        )
+    })
 
     return (
         <main className="main-container">
             <MatchNumber />
-            <Die
-                dieValue={dieValue}
-                toggleDieHold={toggleDieHold}
-                dieHoldCheck={dieHoldCheck}
-            />
-            <Buttons
-                handleReroll={handleReroll}
-            />
+            {dieElements}
+            <Buttons />
         </main>
     )
 }
