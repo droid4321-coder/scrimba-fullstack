@@ -22,6 +22,19 @@ export default function Main() {
 
     const [recipeShown, setRecipeShown] = React.useState(false)
 
+    //dom node to auto jump to the section via useRef(). usually we initialize it as null. /ref is a separate property to set it in the DOM Nodes
+    const recipeSection = React.useRef(null)
+
+    //this useEffect runs if the recipeSection current is not null and recipeContent is not an empty string, and the recipeShown changes stte it will scroll into view
+    React.useEffect(() => {
+        if (recipeSection.current !== null && recipeContent !== "" && recipeShown === true) {
+            recipeSection.current.scrollIntoView()
+        }
+    }, [recipeContent, recipeShown])
+
+    //refs are objects with a current property
+    //console.log(recipeSection);
+
     const ingredientsListItems = ingredients.map((ingredient) => {
         return <li key={ingredient}>{ingredient}</li>
     })
@@ -69,6 +82,8 @@ export default function Main() {
     const showingredientList = ingredients.length > 0 ? "visible" : "hidden"
     const showRecipeCTA = ingredients.length > 3 ? "get-recipe-container visible" : "hidden"
     const recipeShownCheck = recipeShown ? "visible" : " hidden"
+    
+    //passing ref prop to the child component
 
     return (
         <main className="main">
@@ -78,6 +93,7 @@ export default function Main() {
                 ingredientsListItemsEnable={ingredientsListItems}
                 recipeCTACheck={showRecipeCTA}
                 recipeFunction={showRecipe}
+                ref={recipeSection}
             />
             <ClaudeRecipe
                 recipeShownEnable={recipeShownCheck}

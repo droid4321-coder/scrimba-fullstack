@@ -62,3 +62,24 @@ functions that React does control, like state variables, maintaining state, keep
 5. How would you explain what the "dependecies array" is?
 Its an array that a useEffect function can rely on to check if the side effect should be executed ot not.
 
+useRef() -> a quick look to add a function to chef claude. 
+Refs are similar to state except, 1. You can mutate them directly unlike states that we have to use the state setter function to do any changes to the state variable. We can set them to anything. And Changong a ref does not cause a re-render on React,
+
+Refs are commonly used for accessing DOM nodes without needing to assign ids to elements. This is a high level overview. 
+
+In the Chef claude project, we want to make it so when the recipe is complete, the page scrolls down automatically to it. we can do that using useRefs. To get access to the DOM node, we need to get element by Id that we would do in vanilla JS. But since React is centered about reusable components, if I would render the elements, we would have 2 of the same ID.
+
+But useRefs allow us to access DOM nodes and do stuff with them.
+
+Why refs are null when first accesing? Because we are logging it before the elements are rendered to the page, when elements are rendered it reruns the console.log and the ref has been set.
+
+Lets add the code to fix a bug, it scrolls abruptly instead of scrolling smoothly. we can add a configutatio nobject that makes it smooth putting {behavior: smooth} inside of the function.
+
+This is a known bug in chrome browsers with the iframe, the smooth behavior it might not work. There is a workaround, 
+
+const yCoord = recipeSection.current.getRoundingClientRect()...{
+   top:yCoord,
+   behavior: "smooth",
+}
+
+For the rest of the course there are 2 more projects.

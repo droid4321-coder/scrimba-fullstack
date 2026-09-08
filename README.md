@@ -50,6 +50,7 @@ Day 45: Quickie but learning!
 Day 46: Learn Learn and Learn! Finished Section 3 React! Going to section 4!
 Day 47: Start React section 4!
 Day 48: Keep on going w React!
+Day 49: Lets go! Finished Section 4 React, now to the capstone projects...
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
