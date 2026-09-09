@@ -1,3 +1,11 @@
 .hold {
-    color: blue;
+    background-color: lightseagreen;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }

@@ -8,17 +8,52 @@ export default function Main() {
 
     const [die, setDie] = useState(dieData)
 
-    const dieElements = dieData.map((die) => {
+    const [matchNumber, setMatchNumber] = useState(1)
+
+    const dieMatch = die.filter((item) => item.number === matchNumber)
+
+    const dieMatchCount = dieMatch.length
+
+    const dieElements = die.map((item) => {
         return (
-            <Die key={die.id} number={die.number} />
+            <Die key={item.id} id={item.id} number={item.number} hold={item.hold} toggleHold={() => toggleHold(item.id)}  />
         )
     })
 
+    function toggleHold(id) {
+        setDie((prevHold) => {
+            return prevHold.map((item) => {
+                return item.id === id ? {...item, hold : !item.hold} : item
+            })
+        })
+    }
+
+    function handleReroll() {
+        setDie((prevValue) => {
+            return prevValue.map((item) => {
+                if (!item.hold) {
+                    return ({
+                        ...item,
+                        number: Math.floor(Math.random() * 6) + 1
+                    })
+                } else {
+                    return item
+                }
+            })
+        })
+    } 
+
+    function handleNumberChange(event) {
+        setMatchNumber(Number(event.target.value))
+    }
+
     return (
         <main className="main-container">
-            <MatchNumber />
+            <MatchNumber matchNumber={matchNumber} handleNumberChange={handleNumberChange} dieMatchCount={dieMatchCount} />
             {dieElements}
-            <Buttons />
+            <Buttons
+                handleReroll={handleReroll}
+            />
         </main>
     )
 }
