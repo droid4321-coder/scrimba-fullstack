@@ -10,6 +10,8 @@ export default function Main() {
 
     const [matchNumber, setMatchNumber] = useState(1)
 
+    const [turn, setTurn] = useState(1)
+
     const dieMatch = die.filter((item) => item.number === matchNumber)
 
     const dieMatchCount = dieMatch.length
@@ -41,18 +43,41 @@ export default function Main() {
                 }
             })
         })
+
+        setTurn(prevValue => prevValue + 1)
     } 
 
     function handleNumberChange(event) {
         setMatchNumber(Number(event.target.value))
     }
 
+    function resetGame() {
+        setDie((prevValue) => {
+            return prevValue.map((item) => {
+                return ({
+                    ...item,
+                    number: Math.floor(Math.random() * 6) + 1,
+                    hold: false
+                })
+            })
+        })
+
+        setTurn(1)
+    }
+
     return (
         <main className="main-container">
-            <MatchNumber matchNumber={matchNumber} handleNumberChange={handleNumberChange} dieMatchCount={dieMatchCount} />
+            <MatchNumber
+                matchNumber={matchNumber}
+                handleNumberChange={handleNumberChange}
+                dieMatchCount={dieMatchCount}
+                turn={turn}
+            />
             {dieElements}
             <Buttons
                 handleReroll={handleReroll}
+                dieMatchCount={dieMatchCount}
+                resetGame={resetGame}
             />
         </main>
     )

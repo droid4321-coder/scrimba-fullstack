@@ -1,8 +1,13 @@
 export default function Buttons(props) {
+
+    const victoryCheck = props.dieMatchNumber === 10 ? true : false
+
+    const enableReset = victoryCheck ? false : true
+
     return (
         <div className="reroll-container">
-            <button className="reroll-btn" id="reroll-btn" onClick={props.handleReroll}>Re-Roll</button>
-            <button className="reset-btn" id="reset-btn">New Game</button>
+            <button disabled={victoryCheck} className="reroll-btn" id="reroll-btn" onClick={props.handleReroll}>Re-Roll</button>
+            <button disabled={enableReset} className="reset-btn" id="reset-btn" onClick={props.resetGame}>New Game</button>
         </div>
     )
 }
