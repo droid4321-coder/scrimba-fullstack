@@ -9,7 +9,7 @@ export default function MatchNumber(props) {
     return (
         <div className="pnumber-container">
             <label htmlFor="pnumber">Enter number to match dice:</label>
-            <input type="number" name="pnumber" id="pnumber" min={1} max={6} value={props.matchNumber} onChange={props.handleNumberChange} />
+            <input className="pnumber" type="number" name="pnumber" id="pnumber" min={1} max={6} value={props.matchNumber} onChange={props.handleNumberChange} />
             <p>Turn {props.turn}. You have {props.dieMatchCount} out of 10 matches</p>
             <p>Timer: {minutes.toString().padStart(2, "0")}:{seconds.toString().padStart(2, "0")}:{miliseconds.toString().padStart(2, "0")}</p>
             <p className={victoryCheck}>Victory! Congratulations!</p>

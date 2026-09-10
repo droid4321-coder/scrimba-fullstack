@@ -1,3 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: "Ranchers", serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+input {
+    background: transparent;
+    color:white;
+}
+
+.pnumber-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pnumber{
+    height: 100px;
+    text-align: center;
+    border:none;
+    font-size: 5rem;
+    font-family: "Ranchers", serif;
+}
+
+button {
+    font-family: "Ranchers", serif;
+    font-size: 2.5rem;
+    border: none;
+}
+
+.die-button.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font-size: 2rem;
+}
+
 .hold {
     background-color: lightseagreen;
 }
@@ -8,4 +66,9 @@
 
 .hidden {
     display: none;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
 }

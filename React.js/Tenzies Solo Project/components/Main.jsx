@@ -72,14 +72,12 @@ export default function Main() {
     }
 
     function handleTimer() {
-        setInterval(() => {
+        const interval = setInterval(() => {
             setTimer(prev => prev + 1)
         }, 10)
 
         isRunning(prev => !prev)
-    }
 
-    function handleVictory() {
         if (dieMatchCount === 10) {
             setWin(prev => !prev)
         }
@@ -94,6 +92,7 @@ export default function Main() {
                 turn={turn}
                 timer={timer}
             />
+            <div className="die-button-container">
             {dieElements}
             <Buttons
                 handleReroll={handleReroll}
@@ -101,7 +100,8 @@ export default function Main() {
                 resetGame={resetGame}
                 handleTimer={handleTimer}
                 running={running}
-            />
+                />
+            </div>
         </main>
     )
 }
