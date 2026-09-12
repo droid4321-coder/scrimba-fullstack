@@ -53,6 +53,7 @@ Day 48: Keep on going w React!
 Day 49: Lets go! Finished Section 4 React, now to the capstone projects...
 Day 50: Tenzies functionally done, lets continue the video and do assmebly endgame
 Day 51: A bit more React!
+Day 52: Project Go!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
