@@ -1,21 +1,40 @@
 import { useState } from "react"
 import clsx from "clsx"
 import { languages } from "./../src/languages.js"
+import { getFarewellText } from "../src/utils.js"
 
 export default function Main() {
 
+    /* stuff remaining:
+        Farewell messages - done!
+        disable the keyboard - done!
+        fix a11y issues
+        make new game work
+        choose random word
+        confetti when win!
+    */
+
+    //states
     const [currentWord, setCurrentWord] = useState("react")
 
     const [guessedLetters, setGuessedLetters] = useState([])
 
+    //variables & functions
     const alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+
+    //if something does not need to be in state variable, better!
+    const wrongGuessedCount = guessedLetters.filter(letter => !currentWord.includes(letter)).length
     
-    const langElements = languages.map((item) => {
+    const langElements = languages.map((item, index) => {
+        const isLanguageLost = index < wrongGuessedCount
         return (
             <span key={item.name} style={{
                 backgroundColor: item.backgroundColor,
                 color: item.color,
-            }} className="chip">{item.name}</span>
+            }} className={clsx("chip", {
+                "lost": isLanguageLost && "lost",
+            })}>{item.name}</span>
         )
     })
 
@@ -29,6 +48,17 @@ export default function Main() {
             {guessedLetters.includes(letter) ? letter.toUpperCase() : ""}
         </span>
     })
+
+    //convert the word to an array, and check if in the guessed letters array, every letter is present
+    const isGameWon = currentWord.split("").every(letter => guessedLetters.includes(letter))
+
+    //we need assembly here, I will change this later
+    const isGameLost = wrongGuessedCount === languages.length - 1
+
+    // console.log(isGameWon);
+    // console.log(isGameLost);
+
+    const isGameOver = isGameWon || isGameLost
 
     //what would be the best way to store the guessed letters? I think that, in the map function, create an empty guessed array and push the element.id into it, since the letter is the id! And, since we want to get it everytime the user clicks a key, we want it to be saved in a state variable
 
@@ -44,11 +74,13 @@ export default function Main() {
 
     const keyboardElements = alphabet.split("").map((letter) => {
         return <button
+            disabled={isGameOver}
             key={letter}
             className={clsx("keyboard-letter",
                 {
                     "right": guessedLetters.includes(letter.toLowerCase()) && currentWord.includes(letter.toLowerCase()),
-                    "wrong": guessedLetters.includes(letter.toLowerCase()) && !currentWord.includes(letter.toLowerCase())
+                    "wrong": guessedLetters.includes(letter.toLowerCase()) && !currentWord.includes(letter.toLowerCase()),
+                    "disabled" : isGameOver
                 }
             )
         }
@@ -59,17 +91,27 @@ export default function Main() {
     })
 
     //console.log(guessedLetters);
-
-    //if something does not need to be in state variable, better!
-    const wrongGuessedCount = 8 - guessedLetters.filter(letter => !currentWord.includes(letter)).length
     
-    console.log(`Lives remaining: ${wrongGuessedCount}`);
+    console.log(`Wrong guesses: ${wrongGuessedCount}`);
+
+    //this guesses if the last letter is not included in the current word string. if true, executes message, false, no message
+    const isLastGuessWrong = guessedLetters.length > 0 && !(currentWord.includes(guessedLetters[guessedLetters.length - 1])) ? true : false
 
     return (
         <>
-        <section className="status-container">
-            <h2 className="status-text">You Win!</h2>
-            <p className="status-text">Well done 🎉</p>
+            <section className={clsx("status-container", {
+                won: isGameWon,
+                lost: isGameLost,
+                farewell: !isGameOver && isLastGuessWrong
+            })}>
+            {wrongGuessedCount > 0 && isLastGuessWrong && <p className="farewell-text">{getFarewellText(languages[wrongGuessedCount - 1].name)}</p>}
+            {/* {!isLastGuessWrong && <p className="status-text">You got one!</p>} */}
+            {isGameWon && <h2 className="status-text">You Win!</h2>}
+            {isGameWon && <p className="status-text">Well done 🎉</p>}
+            {isGameLost && <h2 className="status-text">Game over!</h2>}
+            {isGameLost && <p className="status-text">You Lose! Better start learning Assembly 😭</p>}
+            {!isGameOver && !isGameWon && <h2>{"\u00A0"}</h2>}
+            {!isGameOver && !isGameWon && <p>{"\u00A0"}</p>}
         </section>
         <section className="languages-container">
             {langElements}
@@ -81,7 +123,7 @@ export default function Main() {
             {keyboardElements}
         </section>
             <section className="new-game-container">
-            <button className="new-game-btn">New Game</button>
+            {isGameOver && <button className="new-game-btn">New Game</button>}
         </section>
         </>
     )

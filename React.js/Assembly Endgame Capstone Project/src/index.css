@@ -27,14 +27,30 @@ header > h1 {
 .status-container {
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    justify-content: center;
     color: white;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
-    border-bottom: 1px solid white;
     max-width: 350px;
     margin: 0 auto;
+}
+
+.status-container.won {
+    background-color: green;
+    border-bottom: 1px solid white;
+}
+
+.status-container.lost {
+    background-color: red;
+    border-bottom: 1px solid white;
+}
+
+.status-container.farewell {
+    background-color: rgb(229, 44, 229);
+    border: 1px dashed white;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .status-text {
@@ -42,6 +58,7 @@ header > h1 {
     margin: 0;
     padding: 5px;
 }
+
 
 .languages-container {
     display: flex;
@@ -55,15 +72,10 @@ header > h1 {
     padding-top: 20px;
 }
 
-.chip {
-    padding: 5px;
-    border-radius: 3px;
-}
-
 .word-container {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 40px;
     max-width: 300px;
     margin: 0 auto;
 }
@@ -80,7 +92,7 @@ header > h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 50px;
     max-width: 395px;
     margin: 0 auto;
     gap: 8px;
@@ -116,6 +128,11 @@ header > h1 {
 .keyboard-letter.wrong {
     background-color: rgb(182, 105, 105);
     transition: background-color 0.2s ease;
+}
+
+.keyboard-letter.disabled {
+    background-color: rgba(255, 255, 255, 0.589);
+    cursor:not-allowed;
 }
 
 .slide-in-bck-top {
@@ -206,4 +223,35 @@ header > h1 {
         transform: rotateX(0);
         opacity: 1;
     }
+}
+
+.chip {
+    position: relative;
+    /* Acts as the anchor point */
+    padding: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    /* Keeps the pseudo-element rounded corners tidy */
+}
+
+/* adding lost class to chip lost language */
+.chip.lost::before {
+    content: "❌";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Explicitly pinning all four edges ensures perfect alignment */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    font-size: 0.85rem;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    /* Ensures the overlay sits cleanly on top of the text */
+    z-index: 1;
 }
