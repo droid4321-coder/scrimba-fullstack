@@ -3,6 +3,7 @@ import clsx from "clsx"
 import { languages } from "./../src/languages.js"
 import { getFarewellText } from "../src/utils.js"
 import RandomWord from "../src/words.js"
+import Confetti from "react-confetti"
 
 export default function Main() {
 
@@ -10,15 +11,21 @@ export default function Main() {
         Farewell messages - done!
         disable the keyboard - done!
         fix a11y issues - done!
-        make new game work
-        choose random word
-        confetti when win!
+        make new game work - done!
+        choose random word - done!
+        confetti when win! - done!
+
+        extra ideas:
+        Display remaining guesses count
+        Animation when game is lost
+        Implement a timer limit
+        Deploy this lol
     */
 
     //states
     const [currentWord, setCurrentWord] = useState(() => RandomWord())
 
-    console.log(currentWord);
+    // console.log(currentWord);
 
     const [guessedLetters, setGuessedLetters] = useState([])
 
@@ -41,17 +48,6 @@ export default function Main() {
         )
     })
 
-    const letterElements = currentWord.split("").map((letter, index) => {
-        return <span
-            key={index}
-            className={clsx("word", {
-                "flip-in-hor-bottom": guessedLetters.includes(letter)
-            })}
-        >
-            {guessedLetters.includes(letter) ? letter.toUpperCase() : ""}
-        </span>
-    })
-
     //convert the word to an array, and check if in the guessed letters array, every letter is present
     const isGameWon = currentWord.split("").every(letter => guessedLetters.includes(letter))
 
@@ -62,6 +58,18 @@ export default function Main() {
     // console.log(isGameLost);
 
     const isGameOver = isGameWon || isGameLost
+
+    const letterElements = currentWord.split("").map((letter, index) => {
+        return <span
+            key={index}
+            className={clsx("word", {
+                "flip-in-hor-bottom": guessedLetters.includes(letter),
+                "missed": isGameLost && !guessedLetters.includes(letter)
+            })}
+        >
+            {guessedLetters.includes(letter) || isGameOver ? letter.toUpperCase() : ""}
+        </span>
+    })
 
     //what would be the best way to store the guessed letters? I think that, in the map function, create an empty guessed array and push the element.id into it, since the letter is the id! And, since we want to get it everytime the user clicks a key, we want it to be saved in a state variable
 
@@ -97,13 +105,24 @@ export default function Main() {
 
     //console.log(guessedLetters);
     
-    console.log(`Wrong guesses: ${wrongGuessedCount}`);
+    // console.log(`Wrong guesses: ${wrongGuessedCount}`);
 
     //this guesses if the last letter is not included in the current word string. if true, executes message, false, no message
     const isLastGuessWrong = guessedLetters.length > 0 && !(currentWord.includes(guessedLetters[guessedLetters.length - 1])) ? true : false
 
+    function resetGame() {
+        setCurrentWord(() => RandomWord())
+        setGuessedLetters([])
+    }
+
     return (
         <>
+            {isGameWon && <Confetti
+                width={window.innerWidth}
+                height={window.innerHeight}
+                recycle={false}
+                numberOfPieces={1000}
+            />}
             <section
                 aria-live="polite"
                 role="status"
@@ -118,7 +137,7 @@ export default function Main() {
             {isGameWon && <p className="status-text">Well done 🎉</p>}
             {isGameLost && <h2 className="status-text">Game over!</h2>}
             {isGameLost && <p className="status-text">You Lose! Better start learning Assembly 😭</p>}
-            {isGameLost && <p className="status-text">The word was: {currentWord}</p>}
+            {/* {isGameLost && <p className="status-text">The word was: {currentWord}</p>} */}
             {!isGameOver && !isGameWon && <h2>{"\u00A0"}</h2>}
             {!isGameOver && !isGameWon && <p>{"\u00A0"}</p>}
         </section>
@@ -143,7 +162,7 @@ export default function Main() {
             {keyboardElements}
         </section>
             <section className="new-game-container">
-            {isGameOver && <button className="new-game-btn">New Game</button>}
+            {isGameOver && <button onClick={resetGame}className="new-game-btn">New Game</button>}
         </section>
         </>
     )
