@@ -2,20 +2,23 @@ import { useState } from "react"
 import clsx from "clsx"
 import { languages } from "./../src/languages.js"
 import { getFarewellText } from "../src/utils.js"
+import RandomWord from "../src/words.js"
 
 export default function Main() {
 
     /* stuff remaining:
         Farewell messages - done!
         disable the keyboard - done!
-        fix a11y issues
+        fix a11y issues - done!
         make new game work
         choose random word
         confetti when win!
     */
 
     //states
-    const [currentWord, setCurrentWord] = useState("react")
+    const [currentWord, setCurrentWord] = useState(() => RandomWord())
+
+    console.log(currentWord);
 
     const [guessedLetters, setGuessedLetters] = useState([])
 
@@ -75,6 +78,8 @@ export default function Main() {
     const keyboardElements = alphabet.split("").map((letter) => {
         return <button
             disabled={isGameOver}
+            aria-disabled={guessedLetters.includes(letter)}
+            aria-label={`letter ${letter}`}
             key={letter}
             className={clsx("keyboard-letter",
                 {
@@ -99,7 +104,10 @@ export default function Main() {
 
     return (
         <>
-            <section className={clsx("status-container", {
+            <section
+                aria-live="polite"
+                role="status"
+                className={clsx("status-container", {
                 won: isGameWon,
                 lost: isGameLost,
                 farewell: !isGameOver && isLastGuessWrong
@@ -110,6 +118,7 @@ export default function Main() {
             {isGameWon && <p className="status-text">Well done 🎉</p>}
             {isGameLost && <h2 className="status-text">Game over!</h2>}
             {isGameLost && <p className="status-text">You Lose! Better start learning Assembly 😭</p>}
+            {isGameLost && <p className="status-text">The word was: {currentWord}</p>}
             {!isGameOver && !isGameWon && <h2>{"\u00A0"}</h2>}
             {!isGameOver && !isGameWon && <p>{"\u00A0"}</p>}
         </section>
@@ -118,6 +127,17 @@ export default function Main() {
         </section>
         <section className="word-container">
             {letterElements}
+        </section>
+            
+            <section
+                className="sr-only"
+                aria-live="polite"
+                role="status"
+            >
+                <p>
+                    {currentWord.includes(guessedLetters[guessedLetters.length - 1]) ? `Correct: The last letter ${guessedLetters[guessedLetters.length - 1]} is in the word.` : `Sorry, the letter ${guessedLetters[guessedLetters.length - 1]} is not in the word. You have ${languages.length - 1} tries remaining` }
+                </p>
+                <p>Current Word: {currentWord.split("").map(letter => guessedLetters.includes(letter) ? letter + "." : "blank").join(" ")}</p>
         </section>
         <section className="keyboard-container">
             {keyboardElements}
