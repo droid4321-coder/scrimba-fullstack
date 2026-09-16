@@ -1,5 +1,20 @@
 //TS helps us find errors in our code and avoid potential edge cases on the future implementation
 
+//L8 - pizza type challenge
+
+type Pizza = {
+    name: string,
+    price: number
+}
+
+//L11 - adding an order type
+
+type Order = {
+    id: number,
+    pizza: Pizza,
+    status: string
+}
+
 const menu = [
     { name: "Margherita", price: 8 },
     { name: "Pepperoni", price: 10 },
@@ -9,14 +24,15 @@ const menu = [
 
 let cashInRegister = 100
 let nextOrderId = 1
-const orderQueue: object[] = []
+
+//L13 - fixing order typing manual - all TS errors fixed, wow!
+const orderQueue: Order[] = []
 
 //challenge 1 - add pizza to object
-function addNewPizza(name:string , price: number) {
-    return menu.push({
-        name: name,
-        price: price,
-    })
+//L8, using the custom type to add the object
+function addNewPizza(pizzaObj: Pizza) {
+    console.log(`${pizzaObj.name} with price ${pizzaObj.price} added to menu!`);
+    return menu.push(pizzaObj)
 }
 
 // addNewPizza("Custom", 10);
@@ -33,7 +49,9 @@ function placeOrder(pizza: string) {
         return `${pizza} not found on the menu list.`;
     } else {
         cashInRegister += menuItem.price
-        orderQueue.push({ ...menuItem, id: nextOrderId++, status: "ordered" })
+        console.log("Register price updated!");
+        orderQueue.push({id: nextOrderId++, pizza: menuItem, status: "Ordered"})
+        console.log("Order placed on queue.");
         return orderQueue;
     }
 }
@@ -52,6 +70,7 @@ function completeOrder(orderId: number) {
         return `Order #${orderId} not found on the queue.`;
     } else {
         orderFind.status = "completed";
+        console.log(`Order #${orderId} completed!`);
         return orderFind;
     }
 }
@@ -60,9 +79,10 @@ function completeOrder(orderId: number) {
 // console.log(orderQueue);
 // console.log("Stop");
 
-addNewPizza("Chicken Bacon Ranch", 12)
-addNewPizza("BBQ Chicken", 12)
-addNewPizza("Spicy Sausage", 11)
+//L8 - fixed to change cost to price, TS shows us that the type does not have a prop called cost
+addNewPizza({name:  "Chicken Bacon Ranch", price: 12})
+addNewPizza({name: "BBQ Chicken", price : 12})
+addNewPizza({ name: "Spicy Sausage", price: 11 })
 
 placeOrder("Chicken Bacon Ranch")
 
