@@ -55,6 +55,7 @@ Day 50: Tenzies functionally done, lets continue the video and do assmebly endga
 Day 51: A bit more React!
 Day 52: Project Go!
 Day 53: Lets keep building! Finished Assembly Endgame!!!!
+Day 54: Welcome back! Starting TypeScript!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.

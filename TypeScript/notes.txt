@@ -1,0 +1,18 @@
+typescript
+
+we will be studying basic literal and custom types, optional properties, unions, type narrowing, utility types, and how to use typescript in react, and building the assembly game in typescript
+
+Intro to typescript.Why learn it?
+
+1. Confidence - App-crashing runtime errors are dramatically reduced by TypeScript, which checks the code at compile time before it ever gets displayed. 
+2. Productivity - Using TypeScript "turns on" a number of neat features that make your life as a developer a LOT easier. Autocomplete, refactoring capabilities, inmediate error checking, and more, all greatly improve the developer experience.
+3. Employability - TypeScript is considered "table stakes" by many companies, even if its not explicitly listed in job descriptions. Knowing even a little TypeScript can set you apart from other junior developer candidates.
+
+By the end of this intro course, you will have an understanding of the fundamentals of TypeScript and why its so useful. - We will talk about the topics listed above. Using TS is one of the best ways to train your brain to think like a Senior Dev. It can be challenging first, especially converting old code and seeing a lot of errors after converting a code to TS.
+
+But a good phrase is that TS is not making your life terrible, It's just showing you how terrible your life already is. The errors are done to protect the code and make it efficient, like doing blueprints before building, planning ahead. In code this will have benefits.
+
+An example in a house is a stud guard, its a piece of steel that prevents damage to important components like a pvc pipe, TS is like that, a bit of extra work can be benefitial in the long run. Of course, TS wont solve all problems. Not every error is a runtime error, like logical errors that might arise.
+
+Lesson 2 - Pizza App
+Writing code in TS requires more considerations, but we will see the improvements.
