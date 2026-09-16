@@ -56,6 +56,7 @@ Day 51: A bit more React!
 Day 52: Project Go!
 Day 53: Lets keep building! Finished Assembly Endgame!!!!
 Day 54: Welcome back! Starting TypeScript!
+Day 55: Type and Script!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.

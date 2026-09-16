@@ -16,3 +16,11 @@ An example in a house is a stud guard, its a piece of steel that prevents damage
 
 Lesson 2 - Pizza App
 Writing code in TS requires more considerations, but we will see the improvements.
+
+L3 - moving code to TS
+
+L4 - Defensive coding
+TS allows us to see in advance what problems we will code.
+Sometimes we can code in the happy path, assuming everything will work perfectly, and it is the easiest code to write. But TS coding is like going the "sad path", assuming problems will occur, making it a more defensive way to write the code, althoug it is not that easy thinking of the edge cases.
+
+L5 - TS basics
