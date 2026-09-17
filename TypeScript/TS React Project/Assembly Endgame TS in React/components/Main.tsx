@@ -31,14 +31,14 @@ export default function Main() {
     const [guessedLetters, setGuessedLetters] = useState<string[]>([])
 
     //variables & functions
-    const alphabet = "abcdefghijklmnopqrstuvwxyz"
+    const alphabet : string = "abcdefghijklmnopqrstuvwxyz"
 
 
     //if something does not need to be in state variable, better!
-    const wrongGuessedCount = guessedLetters.filter(letter => !currentWord.includes(letter)).length
+    const wrongGuessedCount : number = guessedLetters.filter((letter : string) : boolean => !currentWord.includes(letter)).length
     
-    const langElements = languages.map((item, index) => {
-        const isLanguageLost = index < wrongGuessedCount
+    const langElements = languages.map((item, index : number) => {
+        const isLanguageLost : boolean = index < wrongGuessedCount
         return (
             <span key={item.name} style={{
                 backgroundColor: item.backgroundColor,
@@ -50,17 +50,16 @@ export default function Main() {
     })
 
     //convert the word to an array, and check if in the guessed letters array, every letter is present
-    const isGameWon = currentWord.split("").every(letter => guessedLetters.includes(letter))
+    const isGameWon : boolean = currentWord.split("").every((letter : string) => guessedLetters.includes(letter))
 
     //we need assembly here, I will change this later
-    const isGameLost = wrongGuessedCount === languages.length - 1
+    const isGameLost : boolean = wrongGuessedCount === languages.length - 1
 
     // console.log(isGameWon);
     // console.log(isGameLost);
+    const isGameOver : boolean = isGameWon || isGameLost
 
-    const isGameOver = isGameWon || isGameLost
-
-    const letterElements = currentWord.split("").map((letter, index) => {
+    const letterElements = currentWord.split("").map((letter : string, index : number) => {
         return <span
             key={index}
             className={clsx("word", {
@@ -75,8 +74,8 @@ export default function Main() {
     //what would be the best way to store the guessed letters? I think that, in the map function, create an empty guessed array and push the element.id into it, since the letter is the id! And, since we want to get it everytime the user clicks a key, we want it to be saved in a state variable
 
     // also we can make a set, that it dont allow for dupes, const lettersSet = new Set(prevState); lettersSet.add(pressedLetter); return Array.from(lettersSet). Interesting!
-    function addGuessedLetter(pressedLetter: string) {
-        setGuessedLetters(prevState =>
+    function addGuessedLetter(pressedLetter: string) : void {
+        setGuessedLetters((prevState : string[]) : string[] =>
             prevState.includes(pressedLetter) ?
                 prevState :
                 [...prevState, pressedLetter]
@@ -84,7 +83,7 @@ export default function Main() {
 
     }
 
-    const keyboardElements = alphabet.split("").map((letter) => {
+    const keyboardElements = alphabet.split("").map((letter : string) => {
         return <button
             disabled={isGameOver}
             aria-disabled={guessedLetters.includes(letter)}
@@ -109,9 +108,9 @@ export default function Main() {
     // console.log(`Wrong guesses: ${wrongGuessedCount}`);
 
     //this guesses if the last letter is not included in the current word string. if true, executes message, false, no message
-    const isLastGuessWrong = guessedLetters.length > 0 && !(currentWord.includes(guessedLetters[guessedLetters.length - 1])) ? true : false
+    const isLastGuessWrong : boolean = guessedLetters.length > 0 && !(currentWord.includes(guessedLetters[guessedLetters.length - 1])) ? true : false
 
-    function resetGame() {
+    function resetGame(): void {
         setCurrentWord(() => RandomWord())
         setGuessedLetters([])
     }

@@ -23,3 +23,10 @@ declare function useState<T>(
 ): [T, (newState: T) => void]
 
 L7 - Typing derived values and Arrow functions
+derived values TS infers the value, lets type them.
+When giving types to arrow functions, we need to wrap them in parentheses
+
+L8 - Typing the functions on the app.tsx
+
+L9 - New Setup
+We downloaded the new setup into a folder to keep up with the lesson
