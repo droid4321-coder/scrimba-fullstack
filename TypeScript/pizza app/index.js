@@ -40,7 +40,6 @@ function placeOrder(pizza) {
 // console.log("Stop");
 
 //challenge3 - completeOrder function
-
 function completeOrder(orderId) {
     const orderFind = orderQueue.find((item) => { return item.id === orderId });
     if (orderFind === undefined) {

@@ -77,8 +77,26 @@ function placeOrder(pizza: string) : string | Order[] {
 // console.log(orderQueue);
 // console.log("Stop");
 
-//challenge3 - completeOrder function
+//L28 - Generic functions pizza restaurant.
 
+//L29 - there is a bug on the status of the OrderQueue if we put something other than ordered or completed, TS wont warn us.
+//when the function was defined, when we are calling, we expect TS to infer, to fix this, we put that explicit typing on the generic
+
+function addToArray<T>(array: T[], item: T): T[]{
+    array.push(item);
+    return array
+}
+
+//example usage
+addToArray<Pizza>(menu, { id: nextPizzaId++, name: "Chicken Bacon Ranch", price: 12 })
+
+//we add the Order to the generic in order to enforce the Order type.
+addToArray<Order>(orderQueue, { id: nextOrderId++, pizza: menu[2], status: "completed" })
+
+console.log(menu)
+console.log(orderQueue);
+
+//challenge3 - completeOrder function
 //L6 - manual typing for functions, like we did now
 
 function completeOrder(orderId: number) : string | Order {
