@@ -1,0 +1,14 @@
+Section 2 TS in React
+
+L1 - TS and React
+We will be learning a quick TS refresher, typing UseStste, components, component props, typing function props.
+
+L2 - Installation 
+we create a folder and do npm create vite@latest, choosing TS + React. This creates the project, package.json all dependencies, tsconfig.json refers to 2 files, and these files ensure react and TS work smoothly.
+
+L3 - Basic and Custom Types
+We got the words.js file from og app and made it a TS file, lets type it to an array of strings
+
+L4 - functions
+
+L5 - refactoring on utils.ts,both functions have 
