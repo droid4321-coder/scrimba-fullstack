@@ -23,11 +23,12 @@ export default function Main() {
     */
 
     //states
-    const [currentWord, setCurrentWord] = useState(() => RandomWord())
+    //by passing <string> to it, we tell useState that the currentWord and setter must receive a string. if we do setCurrentWord(true), it wont work.
+    const [currentWord, setCurrentWord] = useState<string>((): string => RandomWord())
 
     // console.log(currentWord);
 
-    const [guessedLetters, setGuessedLetters] = useState([])
+    const [guessedLetters, setGuessedLetters] = useState<string[]>([])
 
     //variables & functions
     const alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -74,7 +75,7 @@ export default function Main() {
     //what would be the best way to store the guessed letters? I think that, in the map function, create an empty guessed array and push the element.id into it, since the letter is the id! And, since we want to get it everytime the user clicks a key, we want it to be saved in a state variable
 
     // also we can make a set, that it dont allow for dupes, const lettersSet = new Set(prevState); lettersSet.add(pressedLetter); return Array.from(lettersSet). Interesting!
-    function addGuessedLetter(pressedLetter) {
+    function addGuessedLetter(pressedLetter: string) {
         setGuessedLetters(prevState =>
             prevState.includes(pressedLetter) ?
                 prevState :

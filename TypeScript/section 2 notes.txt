@@ -11,4 +11,15 @@ We got the words.js file from og app and made it a TS file, lets type it to an a
 
 L4 - functions
 
-L5 - refactoring on utils.ts,both functions have 
+L5 - refactoring on utils.ts,both functions have the same code.
+
+L6 - useState typing
+By default TS will infer what type it is based on value. if we try to set it to another type, TS will throw an error.If we go to guessedLetters, we can see it is an array of any, because it starts with an empty array.
+
+To do this, we need to pass the type to the useState declaration using angle brackets. UseState will need a generic passed to it
+
+declare function useState<T>(
+    initialState: T
+): [T, (newState: T) => void]
+
+L7 - Typing derived values and Arrow functions
