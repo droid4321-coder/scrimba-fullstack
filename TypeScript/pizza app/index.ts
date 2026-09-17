@@ -39,10 +39,17 @@ const orderQueue: Order[] = []
 //L8, using the custom type to add the object
 
 //L20 void type, when a function does not return anything, TS infers it as a void type, so we can be explicit and type it.
-function addNewPizza(pizzaObj: Pizza): void {
+
+//L26 Adding Omit type to pizza property to fix issues, we did add the omit pizza id and the Pizza, but TS warns us of the property not existing in the pizzaObj.
+//The documentation will help us with the utility types
+function addNewPizza(pizzaObj: Omit<Pizza, "id">): Pizza {
     console.log(`${pizzaObj.name} with price ${pizzaObj.price} added to menu!`);
-    pizzaObj.id = nextPizzaId++
-    menu.push({...pizzaObj})
+    const newPizza: Pizza =  {
+        id: nextPizzaId++,
+        ...pizzaObj
+    }
+    menu.push(newPizza)
+    return newPizza
 }
 
 // addNewPizza("Custom", 10);

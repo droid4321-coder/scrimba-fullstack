@@ -27,3 +27,7 @@ L5 - TS basics
 
 L21 - TypeScript any type
 TS has specific types, like the any type.
+
+L27 - Generics
+
+Generics <T> - Generics is a powerful tool that helps us add flexibility to existing functions, types, etc. They act like function parameters, but for types, They user bracket syntax
