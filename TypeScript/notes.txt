@@ -24,3 +24,6 @@ TS allows us to see in advance what problems we will code.
 Sometimes we can code in the happy path, assuming everything will work perfectly, and it is the easiest code to write. But TS coding is like going the "sad path", assuming problems will occur, making it a more defensive way to write the code, althoug it is not that easy thinking of the edge cases.
 
 L5 - TS basics
+
+L21 - TypeScript any type
+TS has specific types, like the any type.
