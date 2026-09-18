@@ -7,3 +7,25 @@ L1-2 - Minimal Next.js Setup
 Installing Next.js using a minimal setup, following the installation steps on the official website.
 
 L2 - Doing It, already did it!
+
+L3 - Adding a new page to our site
+Currently with page.tsx inside home directory, we are showing what appears on the root site (page.com/). Lets add pages with their routes
+
+L4 - Routing in Next.js
+Adding new pages to the site, a route is a URL path that maps to a page in our app. We do them in next.js by adding folders and a file called page.jsx/tsx in it. Tha folder needs to be inside the app directory.
+
+Chart of Routing
+
+directory structure, url path/route, description, full URL
+app/page.tsx, /, homepage, localhost:3000/
+app/about/page.tsx, /about, about page, localhost:3000/about
+app/products/page/tsx, /products, products list page, localhost:3000/products
+
+L5 - understanding create-next-app
+We will create the printforge project. We will setup it under a more common automated setup using create-next-app@latest
+This util was made by next.js team to start a project. it will ask a series of questions, like if we want to use TS, yes, Eslint, yes, and TailwindCSS, yes which is a css processor. Code inside src directory, nope, app router, yes this is a paradigm to create app routes in the directories, pages is an alternative. If we want turbopack, of local yes, or nope if building, change import alias, no.
+
+L6 - Using the create-next-app
+npx allows us to use a npm package without having to install it. 
+
+L7 - Scrimba's runner - To be continued!
