@@ -30,3 +30,32 @@ L8 - Typing the functions on the app.tsx
 
 L9 - New Setup
 We downloaded the new setup into a folder to keep up with the lesson
+
+L10 Typing React Components
+TS infers types of components, as long as we are returning a JSX Element, we dont need to, but we could. We can also see the component written like the example below. React.FC includes props by default.
+
+L11 - JSX Element or null.
+The confetti package container contains the component to return some cool confetti if you win. 
+
+L12 - Typing component props
+Handling the component prop of ConfettiContainer
+To type props we do ({isGameWon} : {isGameWon : boolean, prop2 : type, so on so on})
+
+L13 - Custom component prop types
+IN the last scrim we did 5 types, but now its messy, lets do custom types
+Typed
+
+L14 - The same stuff with AriaLiveStatus - done!
+
+L15 - Component Props and Imported Types
+LanguageChips.tsx - the languages prop has a custom type setup, to do this we need to export it to be able to import it to the tsx file, therefore enabling its use.
+
+L16 - Elements within Elements
+We move into the components we can find. Styles has a backgroundColor, and color, which the type imported has. So we can Omit the name, by doing Omit<Language, "name"> Omit<type, key to omit>
+
+L17 - Wordletters Challenge - Type it all!
+
+L18 - Typing function props
+The syntax to type function props is prop: (parameters) => returnType
+
+L19 - Final Challenge, Keyboard.tsx - Done!!!

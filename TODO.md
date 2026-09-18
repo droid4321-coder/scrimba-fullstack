@@ -1,22 +1,22 @@
 # Courses needed to finish this! (Do them on Scrimba.com!)
 
 1. JS - Mobile App
-2. Intro to Python
-3. SQL - Creating and Joining Tables
-4. TypeScript in Express
-5. Intro to Supabase
-6. Next.js - Making Data Flow
-7. Learn Regex
-8. Learn and Deploy Portfolio
-9. UI Design Fundamentals
-10. HTML CSS Multi Page Website
-11. Imba
-12. Netlify
-13. React Router, have the course downloaded
-14. React 19 new stuff
-15. Vite
-16. Langbase
-17. Vue
-18. NestJS
-19. Supabase
-20. Express.js
+2. Intro to Python - can skim thru
+3. SQL - Creating and Joining Tables - priority!
+4. TypeScript in Express - priority
+5. Intro to Supabase - good!
+6. Next.js - Making Data Flow - priority!
+7. Learn Regex - good
+8. Learn and Deploy Portfolio -good
+9. UI Design Fundamentals - good
+10. HTML CSS Multi Page Website - can skim
+11. Imba - backburner
+12. Netlify - backburner
+13. React Router, have the course downloaded - good!
+14. React 19 new stuff - priority!
+15. Vite - can skim
+16. Langbase - meh
+17. Vue - priority
+18. NestJS - this too
+19. Supabase - good!
+20. Express.js - Yes!

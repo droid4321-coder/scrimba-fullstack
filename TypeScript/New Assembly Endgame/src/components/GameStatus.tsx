@@ -1,6 +1,16 @@
+import type { JSX } from "react";
 import clsx from "clsx"
 import {getFarewellText} from "../utils";
-import {languages} from "../languages";
+import { languages } from "../languages";
+
+//custom type for props, follows this convention Component name + Props
+type GameStatusProps = {
+        isGameWon: boolean,
+        isGameLost: boolean,
+        isGameOver: boolean,
+        isLastGuessIncorrect: boolean,
+        wrongGuessCount: number,
+}
 
 export default function GameStatus({
                                        isGameWon,
@@ -8,8 +18,8 @@ export default function GameStatus({
                                        isGameOver,
                                        isLastGuessIncorrect,
                                        wrongGuessCount
-                                   }) {
-    const gameStatusClass = clsx("game-status", {
+} : GameStatusProps) : JSX.Element {
+    const gameStatusClass : string = clsx("game-status", {
         won: isGameWon,
         lost: isGameLost,
         farewell: !isGameOver && isLastGuessIncorrect
