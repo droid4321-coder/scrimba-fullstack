@@ -1,0 +1,9 @@
+L1 - intro to next.js
+Next.js is the tool of choice for many agencies and devs due to a variety of factors such as its flexibility and ability to deliver just about any type of digital experience on the web you can think of. IN the past, fullstack devs were few and far, but now its becoming more popular due to the frameworks allowing it.
+
+The project is PrintForge, a website for users to browse and get 3D models and see them. This is the full project for this section of the course. This course will be given by sections, being added regularly. You should have a fundament of HTML, CSS, JS and React to get the most out of this course. Its also good to learn tailwindcss and TS. help stuff blah blah.
+
+L1-2 - Minimal Next.js Setup
+Installing Next.js using a minimal setup, following the installation steps on the official website.
+
+L2 - Doing It, already did it!
