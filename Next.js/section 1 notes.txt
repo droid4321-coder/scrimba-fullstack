@@ -29,3 +29,13 @@ L6 - Using the create-next-app
 npx allows us to use a npm package without having to install it. 
 
 L7 - Scrimba's runner - To be continued!
+Before, the challenges could be done directly from next.js, but this time, scrimba introduced a runner function. Idk, I just do it locally.
+
+L8 - create-next-app walkthough on filesystem.
+There are a couple files on the app created. Like the app folder, which holds the site and the folders for routes. favicon.ico - icon in browser page tab, globals.css, this is global styles for webpages, like changing stuff for the whole site. Dont start using globals.css for styling, we will use tailwindcss. The public directory, will hold files that will be served as static files. Some icons, now next-env-d.ts holds the types, tsconfig, allows us to change and modify TS behavior, tailwind and postcss allow for using TailwindCSS, package.json configures npm, next.config configures next.js, eslint modifies the linter for code checking, 
+
+L9 - PrintForge Challenge Setup
+Lets start printforge, creating the printforge project. Doing the pages for printforge project and deleting some files not needed. After cleaning up the files, we do next challenge for the home page.
+
+L10 - PrintForge Home page
+Creating the home page for the printForge Project, using html , ts, and tailwindCSS. Ts types, when we include TS, and doing a types file to hold the types there.
