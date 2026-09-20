@@ -1,30 +1,11 @@
 import { JSX } from "react/jsx-runtime";
-// import Image from "next/image";
+import Image from "next/image";
 
 //ye ye AI i know lol
 
 export default function Home() : JSX.Element {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      
-      {/* HEADER NAVBAR */}
-      <header>
-        <nav className="flex flex-row items-center justify-between p-4 bg-white shadow-md">
-          {/* Left Side: Logo */}
-          <h1 className="text-xl font-bold text-gray-900 tracking-wide">PrintForge</h1>
-          
-          {/* Right Side: Links */}
-          <ul className="flex space-x-6 text-gray-600 font-medium">
-            <li>
-              <a href="#" className="hover:text-blue-600 transition-colors">3D Models</a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-600 transition-colors">About</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       {/* HERO SECTION */}
       {/* 🚀 flex-col for stacked on mobile, md:flex-row to put them side-by-side on desktop */}
       <main className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between items-center gap-12">
@@ -51,8 +32,14 @@ export default function Home() : JSX.Element {
 
         {/* Right Side: Image Box Placeholder */}
         {/* w-full on mobile, md:w-1/2 matches the text side perfectly */}
-        <section /*className="w-full md:w-1/2 flex justify-center items-center bg-gray-200 rounded-2xl h-80 md:h-[450px] border-2 border-dashed border-gray-300" */>
-          <img src="/hero-image.png" alt="home image" />
+        <section className="w-full md:w-1/2 flex justify-center items-center h-80 md:h-112.5">
+          {/* <img src="/hero-image.png" alt="home image" /> */}
+          <Image
+            src="/hero-image.png"
+            width={1206}
+            height={1201}
+            alt="hero image"
+          />
         </section>
 
       </main>

@@ -1,10 +1,18 @@
 import type { JSX } from "react/jsx-runtime"
+import Image from "next/image"
 
 export default function AboutPage(): JSX.Element {
   return (
     <div className="max-w-6xl mx-auto p-5"> 
       <main className="flex flex-row justify-between items-center gap-10 pb-16">
-        <img src="/hero-image-square.png" alt="hero image in square" className="w-1/2 object-cover" />
+        {/* <img src="/hero-image-square.png" alt="hero image in square" className="w-1/2 object-cover" /> */}
+        <Image
+          src="/hero-image-square.png"
+          alt="hero image"
+          width={724}
+          height={724}
+          className="w-1/2 object-cover"
+        />
         <div className="w-1/2">
           <p className="pb-5 tracking-wider text-sm font-semibold text-gray-500">ABOUT PRINTFORGE</p>
           <h1 className="font-bold text-5xl pb-10">Empowering makers worldwide</h1>
@@ -23,7 +31,13 @@ export default function AboutPage(): JSX.Element {
         {/* Card 1 */}
         <div className="flex-1 w-full flex flex-col items-center text-center px-6">
           <div className="flex flex-row justify-center items-center gap-4 pb-3">
-            <img src="/layers.svg" alt="layers" className="w-8 h-8" />
+            <Image
+              src="/layers.svg"
+              alt="layers"
+              width={24}
+              height={24}
+              className="w-8 h-8"
+            />
             <h3 className="text-2xl font-bold">100K+ Models</h3>
           </div>
           <p className="text-gray-600 max-w-xs">Access our vast library of community-made 3D models.</p>
@@ -32,7 +46,13 @@ export default function AboutPage(): JSX.Element {
         {/* Card 2 */}
         <div className="flex-1 w-full flex flex-col items-center text-center px-6">
           <div className="flex flex-row justify-center items-center gap-4 pb-3">
-            <img src="/globe.svg" alt="globe" className="w-8 h-8" />
+            <Image
+              src="/globe.svg"
+              alt="layers"
+              width={24}
+              height={24}
+              className="w-8 h-8"
+            />
             <h3 className="text-2xl font-bold">Active Community</h3>
           </div>
           <p className="text-gray-600 max-w-xs">Join thousands of makers who share tips and provide feedback.</p>
@@ -41,7 +61,13 @@ export default function AboutPage(): JSX.Element {
         {/* Card 3 */}
         <div className="flex-1 w-full flex flex-col items-center text-center px-6">
           <div className="flex flex-row justify-center items-center gap-4 pb-3">
-            <img src="/flag.svg" alt="flag" className="w-8 h-8" />
+            <Image
+              src="/flag.svg"
+              alt="layers"
+              width={24}
+              height={24}
+              className="w-8 h-8"
+            />
             <h3 className="text-2xl font-bold">Free to Use</h3>
           </div>
           <p className="text-gray-600 max-w-xs">Most models are free to download. Optional premium features available to PRO subscribers.</p>

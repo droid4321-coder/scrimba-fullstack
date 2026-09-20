@@ -9,7 +9,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+      <header>
+        <nav>
+          <h1>Simple Next.js App</h1>
+          <ul>
+            <li>
+              <a href="/">Main Page</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/about/mission">Mission`</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+        {children}
+      </body>
     </html>
   )
 }

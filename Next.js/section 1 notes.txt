@@ -44,4 +44,47 @@ Ye i know I cheated with AI lol.
 L11 - Printforge about page
 Doing the about page here on the route. Again, AI cheats lol
 
-L12 - Nested Routes - Soon!
+L12 - Nested Routes
+It is common on websites to have nested routes on pages. An example in our project is if we wat to have an our misson page located at website.com/about/mission, the url path is /about/mission, so in the website it would be app/about/mission/page.tsx? yup!, by building the website, we can see the routes created!
+
+L13 - Layouts - pt 1
+Lets work on or layout files, when we talk about pages, this is UI that is specific to a single route. We will understand what a layout is. A layout is UI that is shared between multiple pages/routes. This UI is shared between all sites of your project. The page content changes, but the CSS rules willbe shared between all pages. Sometimes, we want a dashboard or navbar to be between all pages. Instead of creating the layout an every page. A page can also have its own layout. 
+
+We can imagine a website that has a header, the page content and the footer, the header and footer will be in all pages, but the page content is different, replacing only the segment we desire and keeping the other ones. 
+
+L14 - Layouts pt 2
+Lets look at our layout file in the simple app. The layout page will export a default function called RootLayout, does not matter what is called. But it needs to have children as a parameter because it needs to call all the children components to render the body. The children is where the page components are rendered
+
+Next.js first renders the root component, and inside that it renders the other pages, like if it was a React Component.
+
+<RootLayout>
+<Page />
+</RootLayout>
+
+This gives us the opportunity to do is to put additional code to put on the layout that will be shared with all the children pages.
+
+The layout we put now on the layout.tsx file, now it can be rendered on every single page, nice!!!
+
+L15 - Printforge header
+Adding the header to the layout.tsx page.
+
+L16 - Fonts & images in Next.js
+How we deal with fonts and images in Next.js We are using a normal image element, but next.js does some optimizations to images we can take advantage of. 
+
+Starting with fonts. Monsterrat Alternate for headers, Albert sans for text. These are google fonts, and we can install and configure fonts, in the documentation there is a page to check.
+
+To start we can import the font into the layout.tsx file, import { FontName } from next/font/google (WARNING! -> if the font has spaces they should be underscores)
+
+Now, how we import a secondary font? Well, we could use CSS to access the root and setting up global variables, then we maybe can select the element, and pass the variable in CSS. On the configuration object, we can add a variable to set up a var and use it.
+
+Where we added the font into the variable we put classname so it goes everywhere. Now we added the Monsterrat variable to the body component, making the variable we have on the object value accesible on each page.
+
+And we now can apply it on the globals.css in prder to apply it to every header. Then, we have every header with the font. We can also download a font file if needed.
+
+L17 - Optimizing images
+We can optimize images using the <Image /> component on Next.js, we pass it with needed properties, width,height, alt, src, classnames, etc.
+What are some image optimizations? Auto resize and converto to more eficient formats. Lazy loading, only load when moving into the viewport. Also it prevents layout shift. Scrimbas system dont work, but on local development it does, like I did here. 
+
+Another way to reference the image, we can manually import it, like import (imagename without the parentheses) from (image path w/o parentheses.) When we console log the image, it has the elements in an object. There is a challenge to optimize the inages in scrimba but doing it local so used the Image component from Nwxt to do so!.
+
+L18 - Links in Next.js To be continued
