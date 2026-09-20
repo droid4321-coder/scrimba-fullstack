@@ -39,3 +39,9 @@ Lets start printforge, creating the printforge project. Doing the pages for prin
 
 L10 - PrintForge Home page
 Creating the home page for the printForge Project, using html , ts, and tailwindCSS. Ts types, when we include TS, and doing a types file to hold the types there.
+Ye i know I cheated with AI lol.
+
+L11 - Printforge about page
+Doing the about page here on the route. Again, AI cheats lol
+
+L12 - Nested Routes - Soon!

@@ -52,7 +52,7 @@ export default function Home() : JSX.Element {
         {/* Right Side: Image Box Placeholder */}
         {/* w-full on mobile, md:w-1/2 matches the text side perfectly */}
         <section /*className="w-full md:w-1/2 flex justify-center items-center bg-gray-200 rounded-2xl h-80 md:h-[450px] border-2 border-dashed border-gray-300" */>
-          <img src="/home-image-1.png" alt="home image" />
+          <img src="/hero-image.png" alt="home image" />
         </section>
 
       </main>
