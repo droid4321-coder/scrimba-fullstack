@@ -108,3 +108,18 @@ L22 - Creating the 3d-models page using the getAllModels function.
 If we had data in SQL, we could even do a query and not worry if we have a secure server as the client can not see our queries or edit them.
 
 L23 - Dynamic Routes
+We will see dynamic routes being put in our project. Like in a blog, where we want to see all posts, but then access a particular post to get all the details. They will have a slug where there is a page with the particular post with details.
+
+Dynamic routes are applied when we dont know the path ahead of time. Read it from the docs. To do them, we need to create a folder whose name represents what you want the path to contain. Example, id, slug(title of the blogpost with hyphens all lowercase), category, etc. IN next.js, we need to surround the folder name with square brackets, like [id], [slug], [category], etc.
+
+Since our route is /posts/id, we need to put a nested route with square brackets, [id] and page.tsx. Then, we need to use useRouter to get the posts by ID when we click.
+
+In order to get the details of a post for example, we can get the params in the page component to access the dynamic route value. To start, we destructure the params prop inside the React function, therefore telling Next that this is a prop we pass when we have a dynamic page like the one we have. This lets us know what value we have on the parameters on the URL. 
+
+We can see by logging params that it is a Promise object that has an Id, the string that the URL has. We need to await it and the function needs to be an async one. When destructuring and getting the id in a console.log, this can help us get the details of said post.
+
+Very important, we need to fetch the post content we can do that by using the api and getting only the id in the params, also, everything needs to be awaited to be able to return it in the post. At times, we might need to filter the data depending on the API. The property of params is the same as the one called in the variable. 
+
+L24 - Adding details page to PrintForge 3D models section.
+
+L25 - Recap. Done!!!
