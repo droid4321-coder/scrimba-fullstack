@@ -1,0 +1,12 @@
+L1 - Walking thru refactors
+The instructor changed some info, and here are the updates. One of the updates is adding a categories bar on the 3d models page.
+
+To do List:
+Add a category page - filtering by category slugs
+Adding category navbar - Clicking an item should take us to the determined page
+
+L2 - Challenge - Add Categories page
+Lets add the categories page to the printforge using the route /3d-models/categories/categoryname and be able to search by category
+
+L3 - Adding categories navbar
+Adding the navbar to get all the categories and filter them by category
