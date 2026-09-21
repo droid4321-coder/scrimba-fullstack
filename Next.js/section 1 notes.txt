@@ -87,4 +87,24 @@ What are some image optimizations? Auto resize and converto to more eficient for
 
 Another way to reference the image, we can manually import it, like import (imagename without the parentheses) from (image path w/o parentheses.) When we console log the image, it has the elements in an object. There is a challenge to optimize the inages in scrimba but doing it local so used the Image component from Nwxt to do so!.
 
-L18 - Links in Next.js To be continued
+L18 - Links in Next.js
+We could use the native anchor tag, but next.js optimizes and has its own link, when doing anchor normal tags, it is refreshing the page again. 
+By doing the Link component importing it and using it, we can get all benefits from Next.js, like prefetching. Allowing client side navigation, prefetching when link is in view, by hovering the webpage is loaded, you can manually turn it off, also it maintains React states while browsing the page. 
+
+L19 - Applying links to printforge page.
+
+L20 - Using TS in the project - importing them to a types file
+We know that if we create a subfolder in the route folder, with a page.tsx file, we get a new route. But that does not stop us from creating folders for different activities. Like putting a types folder, as long as there is no page.tsx, it will never get turned to a route. We will export all types in the file, 
+
+L21 - Aside, Client VS Server Components
+We are ready to load the 3d models page, we need to know about client vs server components, seeing how we fetch data. Client components, the code is only run in the browser, the server sends the package and the browser unpacks it and runs it, react will first mount the component and then it must start a fetch request after the component mounts, useEffect and useState are needed to manage the async nature of fetching data.
+
+Now we can use server compnents, the code is only run on the server, while not strictly true, butn to get the point we say this, the data is fetched before rendering, that means no using useEffect or useState, just awaiting the data and using it in our markup. The code is simple, as opposed to React component fetching.
+
+Lets see it in action. If we want to dive deep there is an article called making sense of react server components.
+Because the code we put is run on the server, its good to put sensitive data like API keys on the fetch request here. Someone using the site cannot see the API key, because it is server run. Now, if oyu put the code on Github, the API key will leak. You can use an ORM like Prisma to fetch data from a DB.
+
+L22 - Creating the 3d-models page using the getAllModels function. 
+If we had data in SQL, we could even do a query and not worry if we have a secure server as the client can not see our queries or edit them.
+
+L23 - Dynamic Routes

@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
 import Image from "next/image";
+import Link from "next/link";
+import type { RootLayoutProps } from "@/app/types";
 
 /* This variable calls the font loaded, and sets some settings, like the subset to latin, the display to swap (load fallback font first then swap it to main font, good for slower connections), 
 
@@ -20,7 +22,7 @@ const MontserratAlternates = Montserrat_Alternates({
 })
 
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
@@ -31,28 +33,32 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <header>
         <nav className="flex flex-row items-center justify-between p-4 bg-white shadow-md">
             {/* Left Side: Logo */}
+            <Link href="/">
             <Image
               src="/printforge-logo.svg"
               alt="printforge logo"
               width={300}
               height={63}
               className="w-50 h-auto hidden md:block"
-            />
+              />
+            </Link>
 
+            <Link href="/">
             <Image
               src="/printforge-logo-icon.svg"
               alt="printforge logo"
               width={174}
               height={150}
               className="w-10 h-auto block md:hidden"
-            />
+              />
+            </Link>
           {/* Right Side: Links */}
           <ul className="flex space-x-6 text-gray-600 font-medium">
             <li>
-              <a href="#" className="hover:text-blue-600 transition-colors">3D Models</a>
+              <Link href="/3d-models" className="hover:text-blue-600 transition-colors">3D Models</Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-blue-600 transition-colors">About</a>
+              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
             </li>
           </ul>
         </nav>

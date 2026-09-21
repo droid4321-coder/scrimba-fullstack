@@ -61,6 +61,7 @@ Day 56: Script and Type! TS section 1 Done! Starting Section 2! Aaaaaand Done!!!
 Day 57: Starting Next.js!
 Day 58: Sweet n Short - Next.js
 Day 59: To next.js and beyond!
+Day 60: 2 months of work??? Next.js going onward!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.

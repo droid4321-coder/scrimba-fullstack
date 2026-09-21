@@ -1,4 +1,5 @@
 import { React } from "next/dist/server/route-modules/app-page/vendored/rsc/entrypoints"
+import Link from "next/link"
 
 //this is next.js React Component that makes the root page for our project
 // it needs to have the chidren prop to return the pages included
@@ -15,13 +16,16 @@ export default function RootLayout({
           <h1>Simple Next.js App</h1>
           <ul>
             <li>
-              <a href="/">Main Page</a>
+              <Link href="/">Main Page</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="/about/mission">Mission`</a>
+              <Link href="/about/mission">Mission</Link>
+              </li>
+            <li>
+              <Link href="/posts">Posts</Link>
             </li>
           </ul>
         </nav>
