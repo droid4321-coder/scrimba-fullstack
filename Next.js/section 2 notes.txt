@@ -9,4 +9,16 @@ L2 - Challenge - Add Categories page
 Lets add the categories page to the printforge using the route /3d-models/categories/categoryname and be able to search by category
 
 L3 - Adding categories navbar
-Adding the navbar to get all the categories and filter them by category
+Adding the navbar to get all the categories and filter them by category. The path for the category page is /3d-models/categories/[categoryName] and the category navbar should be added,clicking the category should like to the category page.
+
+I would put that navigation bar inside of the 3d-models page inside of layout.tsx, because it would be across the 3d-models page
+
+Alright, now we have the navbar, but there is an issue we want to tackle, we want to make the selected link highlighted so we know where we are, Next.js will help us with that.
+
+L4 - Aside - usePathname()
+Lets see how to put active links. Its applied when we are on the page. Its not only applying CSS, rather use a Next.js hook called usePathname(), which reads the current pathname and we can have it in a variable. Since this only works on a client component, the hook, we must include the words "use client" on the initial .tsx file. the use client tells next.js that this will be rendered client side. Now we can apply this variable to do some conditional styling to the active component. 
+
+L5 - Quick Link refactors
+Some refactors done to printforge project. Meh, I used AI and Will continue my almost the same design. Did it anyway copy pasted
+
+L6 - More about client components
