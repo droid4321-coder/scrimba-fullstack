@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation"
 
 export default function Navbar() {
 
+    console.log("Navbar", `${typeof window === "undefined" ? "Server" : "Client"} component`);
+
     const pathname = usePathname()
     console.log(pathname);
 

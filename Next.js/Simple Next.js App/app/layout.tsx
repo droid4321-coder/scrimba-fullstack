@@ -9,7 +9,10 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  }) {
+  
+  console.log("RootLayout", `${typeof window === "undefined" ? "Server" : "Client"} component`);
+  
   return (
     <html lang="en">
       <body>

@@ -22,3 +22,24 @@ L5 - Quick Link refactors
 Some refactors done to printforge project. Meh, I used AI and Will continue my almost the same design. Did it anyway copy pasted
 
 L6 - More about client components
+Use client directive. Thats the directive in Javascript, its a way to direct how a file is treated. This is a React Statement. There is a concept in React called Client Boundaries. Josh Comeau made an article talking about it more, which is useful to understand. All components in React by default are server components, if the use client directive is not mentioned. Being a server component means that the code is run on the server and then the result, the markup is sent to the client. Yuo can mark a component with the use client, the code wont be run on the server but the code is run on the browser, the client. When use client is used, a boundary is set where all of the code below the code that is declared as client, is also implicitly declared a client component. This can pose security risks, something to be aware of. So if we want to style the navbar component, its a bit overkill to make all components below that a client component. 
+
+We want to just change the navbar into a client component, and let the other components be rendered to the server. The first option is changing the RootLayout to a client component, but that turns the whole app into a client component, no bueno. We can do more specific scoping. Second option, Change the Navbar into a client component, which makes only the navbar the client component. Third option, change the NavLink into a client component. 
+
+What components we can change to client components? Navbar and NavLink? There is not a right or wrong answer, if we do a Navbar, we need to send it to Navlink, maybe via a prop. If NavLink, we can compare it to the href, we get a lot more extra control by doing Navbar component.
+
+L7 - Challenge, Style active Link,
+Styling the active link on the navbar and navlink. Changing the active link to a text-orange-accent.
+
+L8 - Even more on client components.
+The options given to client components, we need to clarify that, if we change the root layout to client, its not entirely true that it turns the whole app into client components. Example if 3d models was converted to a client component, we thought every children would be a client component.
+
+Lets clarify. There are 2 ways to turn components into client components. One is any file marked with use client. This will automatically get turned into client component, also, any components that are IMPORTED and RENDERED by a client component are made into client components. When seeing the simplified codebase. 
+
+We thought that by using root layout as client, all the children are client also, but it is a bit nunanced. Lets see by console logging a trick. In JS, if we console log something like window, if it is a server component, it will return undefined, as this is a browser, client component. Likewise, if I console.log module and it is a client component, it will be undefined. 
+
+Since children are passed down as a prop, they kinda bypass the requirement to be a client component, therefore, since they are not imported, they are server components??? Ok got it a little bit now with the console logging.
+
+Only turn the components we need into client components.
+
+L9 - Styling Categories Link on printforge.
