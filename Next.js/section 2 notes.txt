@@ -50,3 +50,30 @@ L10 - Challenge, category pages
 Lets make the category pages work by "filtering" models that have the same category as the selected one. We do this by calling the getModels function and passing an object with the category we want, the slug
 
 L11 - Rendering Strategies intro - Next!!!
+Rendering strats by Next.js there are different ones to optimize the aplication. Next.js will handle it by us. Rendering Strategies is when we give our app the power to decide when and where a page's HTML is built. The apps main job is to compile the HTML and send it to the browser. 3 main places and time where this happens. 1. Build-time - when coding the page and running the npm run dev command, the app hot refreshes for us to see the changes done on localhost 3000. 2. When comes time to deploy the app, then we need to build it so that the code is simplified and sent with optimizations, like converting TS to JS. It usually happens 1 time when app is built. Pre rendered once, served from cache, a memory of that HTML file. 2. Another time is request time, when the HTML is rendered on demand and always fresh. Example when someone wants to go to a route that has not been cached then the server will build the HTML upon request and sent it to the client, browser. 3. In browser, the HTML is built at times when the JS loads. Like when React app is sent, first the basic HTML is sent and then the JS code is put on the virtual DOM. IN default, we use server components in Next.js.
+
+Various strategies we will consider are SSG (Static Site Generation), ISR (Incremental Static Regeneration), and SSR(Server side Rendering). SSG is rendered at build time, once. When changes are made, they will not be seen in the built version. It is built on server, when the command "next build" is run. ISR is rendered once at build time, but some pages are then regenerated after a time window, of course *depending on your code. it is rendered on server, in the background when the next request triggers Regeneration. SSR is rendered on every request from the browser, and it will be rendered on server, when a request for that page comes in. We will see more on later lessons.
+
+L12 - Part 2 Rendering strats
+Lets look at a decision tree with asterisk* on decision. Questions that decide which strat we use include, Is the page content identical for everyone? Example, a homepage everyone will see might have the same content. If yes, can the content be a little outdated? if yes, we can consider using SSR, meaning the content will be generated once and pretty unlikely to change unless we do it explicitly and build again. Making changes means to rebuild the whole app, in cases like making a new commit and merging it on GitHub. On large sites that might be problematic. Following the questions. If the content cannot be a little outdated, we are inclined to use ISR, the idea being that the page will be originally static generated, but also specifying a time window for the info to be stale, like an hour, a day, a week. etc, like the 3d models we did on the printforge site, we would like to update it every 30 or 60 mins. If a new request comes for a site with ISR strat and the stale time has passed, it will first serve a stale version and then regenerate, so next person gets the new site.
+
+Often in dynamic web apps, the content is not going to be the same for everyone, there will be data specific. IN this case, we will use SSR, you will never display stale information. Everytime a request is made, the site will generate a build on demand and serve the specific site to the specific user. Like calling an API or a database, populating the HTML, and serving the page. Next.js will figure out automatically which rendering strat to use, we just need to write the code and Next.js handles the rest. This is a decision for Next.js, not us!
+
+L13 - part 3 rendering strats
+What code affects rendering? If we write code like export const revalidate = 60; or fetch(url, {next : (revalidate: 60)}) Next.js will use a combination of static + ISR, because data can be cached for a while, but should refresh after a specified period of time. 
+
+Another code is fetch(url, {cache: "no-store"}) or Read cookies(), headers(), etc, or export const dynamic = "force-dynamic", Next will use Dynamic SSR, because it needs fresh, on request data. 
+
+Lastly, if we do none of the above, or fetch(url, {cache: "force-cache"}) or export const dynamic = "force-static" we will use Static SSG, because the site is hardcoded and can be frozen at build time.
+
+L14 - Cat Facts SSG pt 1.
+We have a project called Cat Facts, and we will see stuff. Learning different strats, in scrimba just install the packages. And running npm run dev, which is next dev. FOr now, its returning a hardcoded fact.
+
+Quick gotcha about site rendering, the most reliable way to see if your page is rendering statically or dynamically is to build and run the production version of your app using the command "npm run build && npm start". The reason why this is useful, we might have seen the overlay of Next.js build tools, the little button on the down left corner, when we run in dev mode, and that tells the route is static or dynamic. Sometimes this button is not reliable.
+
+When built we get this on the terminal -> ○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+by using npm start, its the same as next start, we start the production version of the app. By using force dynamic, even if its statice prerendered, the force dynamic makied it server rendered on demand.
+
+L15 - Cat Facts adding a fetch
