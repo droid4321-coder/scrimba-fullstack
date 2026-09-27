@@ -43,3 +43,10 @@ Since children are passed down as a prop, they kinda bypass the requirement to b
 Only turn the components we need into client components.
 
 L9 - Styling Categories Link on printforge.
+Lets style the categories page to include an orange hue on the active link!
+There is a small bug where the 3d models page is not highlighted after selecting any category, the fix is to use the startsWith String Method.
+
+L10 - Challenge, category pages
+Lets make the category pages work by "filtering" models that have the same category as the selected one. We do this by calling the getModels function and passing an object with the category we want, the slug
+
+L11 - Rendering Strategies intro - Next!!!
