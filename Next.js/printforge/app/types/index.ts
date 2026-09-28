@@ -37,6 +37,12 @@ export type ModelDetailPageProps = {
     }>
 }
 
+export type ModelsPageProps = {
+    searchParams:{
+        search?: string
+    }
+}
+
 // Components Types
 export type ModelCardProps = {
     model: Model

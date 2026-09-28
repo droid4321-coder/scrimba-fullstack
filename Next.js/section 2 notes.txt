@@ -111,4 +111,6 @@ We seen how we can use a search params in a page, now we need access to those pa
 L19 - Cat facts searchParams pt 2
 Lets take the query and filter the results. Use cases differ, but this is an example. We can add some attributes, to make the input text better
 
-L20 - Printforge adding a form entry for searching - to do!
+L20 - Printforge adding a form entry for searching - done!
+
+L21: NextJS form components
