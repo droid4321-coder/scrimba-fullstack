@@ -65,7 +65,7 @@ Day 60: 2 months of work??? Next.js going onward! Section 1 Done!!!1 Going to Se
 Day 61: Lets go, again after break! Next.js Sec 2.
 Day 62: Open the door, enter the Next.js lol!
 Day 63: Rendering strategies!
-Day 64: Next on to HTML forms in Next.js
+Day 64: Next on to HTML forms in Next.js, section 2 over! Next.js Over...for now! Fullstack video done!!!!
 
 Phase 1: UI Foundations & Design (0:00:00 - 5:22:25)
 HTML & CSS Basics (0:01:27 - 1:04:19): Introduction to document structure, tags, and fundamental styling properties.
