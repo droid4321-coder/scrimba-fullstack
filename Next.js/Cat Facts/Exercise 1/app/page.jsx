@@ -1,27 +1,21 @@
 export const dynamic = "force-dynamic"
 
+//now we fetching a random fact and rendering it on page.
 async function getCatFact() {
-    return {
-        fact: "Cats step with both left legs, then both right legs when they walk or run."
-    }
+    const res = await fetch("https://catfact.ninja/fact", {cache: "no-store"})
+    return await res.json()
 }
-
-/**
- * Challenge: manually change this page to dynamic
- * 
- * 1. Add `export const dynamic = "force-dynamic"` to the
- *    top of the file.
- * 2. Do `npm run build` again and look carefully at the output.
- */
 
 export default async function Home() {
     const catFact = await getCatFact()
+    const timestamp = new Date().toLocaleTimeString()
 
     return (
         <div className="page">
             <main className="main">
                 <h1>🐈‍⬛ Cat Facts 🐈</h1>
                 <div className="fact-card">
+                    <p className="timestamp">Rendered at: {timestamp}</p>
                     <p className="fact-text">{catFact.fact}</p>
                 </div>
             </main>

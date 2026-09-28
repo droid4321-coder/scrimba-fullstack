@@ -77,3 +77,23 @@ When built we get this on the terminal -> ○  (Static)   prerendered as static 
 by using npm start, its the same as next start, we start the production version of the app. By using force dynamic, even if its statice prerendered, the force dynamic makied it server rendered on demand.
 
 L15 - Cat Facts adding a fetch
+We add a fetch to the function and see how it is being rendered, at least on mine, it is being rendered as static on the first excercise. But it does not change at refresh... hmmm??? does it need to be rendered as dynamic? in dev mode it refreshes... but on build the route is rendered as a static route, we dont get a new cat fact. In Next.js 15, they changed the default fetch so it no longer cache the response from fetch request. Every time a fetch is run, it would refetch instead of caching the response, turn it into a dynamic response, but on the docs, the fetch method differs from build to production automatically, in dev, will refetch but in production, it will make the request one time and cache it, returning the same reponse cached.
+
+Now lets try adding cache : no-store on the fetch method. Well, it returns a dynamic route, and on refresh gets different fact!!!, but on scrimba its still as a static route.... on my local dev machine it works. ON scrimba the web containers dont build dynamic routes like a local machine. in scrimba we might need to force it. using the export. 
+
+L16 - Cat Facts - Structured Play.
+Adding a timestamp to the request and playing with it in different ways
+
+Rendering timestamp in:
+dev mode -> The same happens as build???
+build mode -> ok, when I refresh the page, the timestamp updates the time.
+
+uncommenting line 1:
+dev mode -> the same stuff...
+build mode -> ummm it updates on my local machine...
+
+At least on my local machine, it stayed the same throughout...
+
+ON scrimba, the instructor... when it builds, the static content is not updating the timestamp... rendered statically. In my machine, the no store functions.
+
+L17 - HTML form submissions are navigation events - next
