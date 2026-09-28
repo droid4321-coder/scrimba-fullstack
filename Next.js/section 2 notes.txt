@@ -114,3 +114,11 @@ Lets take the query and filter the results. Use cases differ, but this is an exa
 L20 - Printforge adding a form entry for searching - done!
 
 L21: NextJS form components
+We can do improvements on the form using the nextJS form Component. The form element in HTML became official in 95, and it is a navigation event, a full navigation event. Next does client state on the side to optimize search. NextJS uses a form component built on top of the native HTML form element. Using it is importing and using it Form, also giving it an action prop, which matches the HTML form element. This allows us to set the route for the search and process it.
+
+Since we do not want the user to go to another page, we just put "/" in our example app.
+
+L22 - Printforge - Upgrade to NExtJS Form component
+Upgrade the NextJS form component to the Form next method... done! This uses progressive enhancement, if thy had a slow internet or JS could not load, the Form will downgrade to the native HTML form element. Cool!
+
+Section 2 over!!!!

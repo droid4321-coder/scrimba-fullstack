@@ -1,3 +1,5 @@
+import Form from "next/form"
+
 //now we fetching a random fact and rendering it on page. Getting all facts and mapping them to the page.
 async function getCatFacts() {
     const res = await fetch("https://catfact.ninja/facts")
@@ -46,11 +48,11 @@ export default async function Home({ searchParams }) {
                 </div> */}
 
                 <div className="search">
-                    <form action="">
+                    <Form action="/">
                         <label htmlFor="search">Search bar!  
                             <input type="text" name="search" id="search" placeholder="search here!" autoComplete="off"/>
                         </label>
-                    </form>
+                    </Form>
                 </div>
 
                 <div className="facts-list">

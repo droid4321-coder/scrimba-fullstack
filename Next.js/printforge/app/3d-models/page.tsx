@@ -1,6 +1,7 @@
 import ModelsGrid from "@/app/components/ModelsGrid"
 import { getAllModels } from "@/app/lib/models"
 import type { ModelsPageProps } from "../types"
+import Form from "next/form"
 
 
 export default async function Page({searchParams} : ModelsPageProps) {
@@ -27,7 +28,7 @@ export default async function Page({searchParams} : ModelsPageProps) {
         <div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
             
             {/* 2. Structured form using semantic layout blocks */}
-            <form method="GET" action="" className="w-full max-w-xl mx-auto">
+            <Form action="/3d-models" className="w-full max-w-xl mx-auto">
                 <div className="flex flex-col gap-2">
                     {/* Accessible, clean label styling */}
                     <label 
@@ -70,7 +71,7 @@ export default async function Page({searchParams} : ModelsPageProps) {
                         Press <kbd className="bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded border border-neutral-200 dark:border-neutral-700 font-sans shadow-sm text-[10px]">Enter</kbd> to execute your query.
                     </p>
                 </div>
-            </form>
+            </Form>
             
             {/* The model rendering layout grid */}
             <ModelsGrid title="3D Models" models={filteredModels} />
