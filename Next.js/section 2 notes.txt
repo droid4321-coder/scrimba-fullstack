@@ -97,3 +97,18 @@ At least on my local machine, it stayed the same throughout...
 ON scrimba, the instructor... when it builds, the static content is not updating the timestamp... rendered statically. In my machine, the no store functions.
 
 L17 - HTML form submissions are navigation events - next
+Here we have a list of cat facts mapped. Rendering strats are not used in printforge right now because we are getting the data from a json file, not a fetch. In the future data will be in a DB and then using that to fetch content.
+
+Now we will focus on search parameters. The ultimate goal being adding a search bar to the printforge page to get results that match the name or description of the file. Lets add a for element to see the results.
+
+When searching, the page refeshes and the url adds up a question mark and the following text -> ?search=testing or if the form action is written, adds a page and the following -> ?formActionName/inputName=textEntered useSearchParams? In React Router, we cans do it elegantly by client side rendering.
+
+Heres the thing, when submitting a form, actually it is a navigation event on our site! we have that query embedded in a URL, and we want to filter the results based on the search term. When doing a serch we are navigating to a new location. 
+
+L18 - catFacts searchParams pt. 1
+We seen how we can use a search params in a page, now we need access to those parameters. Next.js allows us to do so with the searchParams promise. searchParams is used for server side rendered pages, and useSearchParams for client side rendered pages. since it is a prmoise we need to use async await, it will return an object with the nae of the search input box, or what we put, and the data entered in that search.
+
+L19 - Cat facts searchParams pt 2
+Lets take the query and filter the results. Use cases differ, but this is an example. We can add some attributes, to make the input text better
+
+L20 - Printforge adding a form entry for searching - to do!
