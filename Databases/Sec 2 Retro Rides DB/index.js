@@ -14,6 +14,7 @@ import path from "node:path"
   const tableDataPath = path.join(__dirname, 'populate-tables.sql')
   const alterPath = path.join(__dirname, 'alter-table.sql')
   const newDataPath = path.join(__dirname, 'insert-new-data.sql')
+  const alterConstraintsPath = path.join(__dirname, 'alter-constraints.sql')
 
   // Set up the DB files
   const createTables = fs.readFileSync(createPath, 'utf8');
@@ -21,6 +22,7 @@ import path from "node:path"
   const tableData = fs.readFileSync(tableDataPath, 'utf8')
   const alterData = fs.readFileSync(alterPath, 'utf8')
   const newTableData = fs.readFileSync(newDataPath, 'utf8');
+  const alterConstraintsData = fs.readFileSync(alterConstraintsPath, 'utf8');
 
   await db.exec(createTables);
   await db.exec(insertCarsData);
@@ -33,6 +35,7 @@ import path from "node:path"
   await db.exec(tableData)
   await db.exec(alterData)
   await db.exec(newTableData)
+  await db.exec(alterConstraintsData)
 
   // Load the SQL query file
   const query = fs.readFileSync(queryPath, 'utf8');

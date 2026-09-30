@@ -65,4 +65,4 @@ Day 62: Open the door, enter the Next.js lol!
 Day 63: Rendering strategies!
 Day 64: Next on to HTML forms in Next.js, section 2 over! Next.js Over...for now! Fullstack video done!!!! Finished 28 sep 2026
 Day 65: From now on , we continue on Scrimba.com, Annotations here. Covering SQL first.
-Day 66: Continuing SQL section 2
+Day 66: Continuing SQL section 2, completed! Starting section 3!

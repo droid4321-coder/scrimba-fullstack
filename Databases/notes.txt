@@ -158,3 +158,18 @@ When we look at the relationship between tables in the image. cars_id in sold_ca
 Example - the accountant wants to compare prices of cars weve sold with their original listed price.
 
 using right join will return all results from the right table and any matches in the left table. In this case, not every row in cars has a match in sold_cars, but all records in sold_cars have a match in cars
+
+L8 - Full join, inner join and dropping
+inner join returns recorda that have matching values in both tables. Full join returns records where there is a match in either table.
+
+Example - hiring staff but not assigning all to a dealership. fix DB first using the DROP word, DROP allows us to remove tables, columns, and constraints from the DB. Ita a bit like delete.
+
+The seller column in sold_cars references id records from staff. Since we dropped the null constraint, we can have records with null in the seller column of sold_cars. That means not all employees sell cars and some salespeople have not made a sale, staff records dont always match with a record in sold_cars
+
+L9 - Aggregates
+Lets learn about aggregates complex stuff, allow us to reduce the column to a single value
+
+L10 - Joining multiple tables
+
+Chaininh join clauses
+Examples in query.sql.
