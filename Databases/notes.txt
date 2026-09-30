@@ -98,3 +98,4 @@ sold
 
 the PGLite library will run a PostgreSQL db in practice excercises
 When we save the project, index.js is run. This creates the DB, runs the query, and logs the output
+

@@ -235,4 +235,13 @@ DELETE FROM cars WHERE sold IS TRUE;
 
     L24 - DELETE
     We use this to delete requested records on query
+
+    L25 - SQL injection
+    SQL injection, or SQLi, refers to the malicious practice of inpuitting SQL statements to compromise the security of an application. Attackers will attempt to input data to a site which will interfere with or expose data to a DB.
+
+    Usually this happens when a site does not correctly process user input before hosting it to a DB. A user can then enter malicious input from the frontend which will be processed as SQL.
+
+    SQL injection can be used to expose sensitive data, bypass authentication, modify or delete data, or execute admin operations.
+
+    Example using retro rides DB, an admin wants to optimize the DB
 */
