@@ -131,3 +131,30 @@ Each column will have a type which defines what kind of data we can insert to th
 Lets see a mockup of the tables to add, the dealerships table will have 4 columns, 1 - id, will be primary key, 2 - city dealership is located text, 3 - state dealership is located text, established column date dealership opened date type.
 
 We created dealership table lets create staff table, 5 columns, 1 id - serial primary key, dealership_id, integer not null references dealerships(id) <- foreign key, name text not null, and role text not null. Also creating the sold_cars table.
+
+L4 - Populating tables
+Lets add dara to the tables, in dealerships table lets add records table. To do that, we create a new sql file and reference that in our main index.js.
+
+Note that, when putting date, a timestamp is added, so that is all the zeroes that are after the date.
+
+Add the staff table data.
+
+L5 - Altering a table
+Ocassionally, we want to edit a table data, we do that with the ALTER, like tracking each car. 
+
+L6 - joins
+How to join multiple SQL tables together.
+We can retrieve data from multiple tables using JOIN clauses, collecting data from each table, joining tables on columns they have in common. Our tables need to have common columns which we can include in our JOIN clause.
+
+There are 4 types of join, Inner join, left join, right join, and full join, each returning a different set of results. All sql joins have 2 sides, A - The table we select from, and B - Table we join with, this will influence the data weĺl retrieve. 
+
+Inner join will return records with matching values in both tables, no null values in either table, left join return all records from table A and matching records from table B, right join the opposite, full join return all records from both tables where there is a match in either table.
+
+L7 - left and right join
+Understanding the links between our tables will help us to understand the different types of JOIN we can use in SQL.
+
+When we look at the relationship between tables in the image. cars_id in sold_cars references an id in the cars table, we created this link when defining the sold_cars table. That means that not every row in cars has a match in sold_cars, but all recorda in sold_cars have a match in cars. It will return all the sold_cars table and the matches in cars.
+
+Example - the accountant wants to compare prices of cars weve sold with their original listed price.
+
+using right join will return all results from the right table and any matches in the left table. In this case, not every row in cars has a match in sold_cars, but all records in sold_cars have a match in cars
