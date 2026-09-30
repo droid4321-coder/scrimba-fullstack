@@ -99,3 +99,35 @@ sold
 the PGLite library will run a PostgreSQL db in practice excercises
 When we save the project, index.js is run. This creates the DB, runs the query, and logs the output
 
+---------- SECTION 2 ----------
+
+L1 Intro to multiple tables.
+We are learning to creating DB tables, primary and foreign keys, column constraints and joining tables, plus challenges.
+
+Inthe previous section, we used a single table, now we will be creating new tables. We will learn to join tables and see data from multiple tables in our inputs.
+
+The new tables we will create are new dealerships that have opened, staff table with employee info, and sold cars in another table.
+
+L2 - Setup
+Changes made on project, lets put it here. Index.js the root of project, importing modules
+
+Rather than creating tables, that is done in another file. Another file for inserting data, and so on. The query is then written in query.sql, and the response is in the table.
+
+L3 - Creating Tables
+Since there was a great financial year, we opened new dealerships and will add tables, 3 tables will be added, dealerships, which will hold data on each dealership and location, adding a column to cars to see what dealership it is.
+
+2, staff, name and roles of every employee across each dealer, and sold cars, adding a record to this table with the price, date and seller. 
+
+Tables will relate to one another through different properties, creating relationships. Usually, this is done with primary keys, the unique id for each row. There are different types of relationships, one to one one row in a table relatin to anther row on a table, one to many one row relating to many rows in another table, and many to many many rows in a table relate to many rows in another table.
+
+Tables card and sold cars will have a 1 to 1 relationship because each car in either table can only relate to one car in sold_cars. Also, each sold car will relate to one member of staff who sold that car. 
+
+One to many - one dealership relates to many cars, and one dealership relates to many staff. We dont have many to many, but an example is a car parts table where every car has many parts and each part could relate to many cars.
+
+Keys - a primary key is a column with unique identifiers for each row, and a foreign key is a unique identifier which references another table, as an example dealership_id in the cars table will reference the primary key in the dealerships table.
+
+Each column will have a type which defines what kind of data we can insert to that column, and columns can be given constraints which further restrict what we can add to the column, like an example a column constraint that it cant be NULL.
+
+Lets see a mockup of the tables to add, the dealerships table will have 4 columns, 1 - id, will be primary key, 2 - city dealership is located text, 3 - state dealership is located text, established column date dealership opened date type.
+
+We created dealership table lets create staff table, 5 columns, 1 id - serial primary key, dealership_id, integer not null references dealerships(id) <- foreign key, name text not null, and role text not null. Also creating the sold_cars table.
