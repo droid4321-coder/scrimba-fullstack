@@ -39,11 +39,11 @@ ALTER TABLE sold_cars ALTER COLUMN seller DROP NOT NULL;
 	     hint: you can select his id from staff in query.js first
 */
 
-UPDATE sold_cars SET seller = NULL WHERE seller = 5;
+-- UPDATE sold_cars SET seller = NULL WHERE seller = 5;
 
 
 /*
 	3. Delete Frankie Fender from the staff table
 */
 
-DELETE FROM staff WHERE id = 5;
+-- DELETE FROM staff WHERE id = 5;

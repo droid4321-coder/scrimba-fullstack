@@ -173,3 +173,22 @@ L10 - Joining multiple tables
 
 Chaininh join clauses
 Examples in query.sql.
+
+---------- SECTION 3 ----------
+
+L1 - Intro to advanced SQL Logic and Conditions
+Advanced operators and expressions, like ANY, ALL, EXISTS, CASE
+
+L2 - ANY
+in SQL we can use ANY to find a match in a subquery
+Examples - Frankie wants to get cars that are more expensive than one ive sold before
+
+Often running the subquery helps us to set up our ANY query
+
+L3 - ALL
+The all keyword can be used on subqueries to find all matches in a subquery
+
+L4 - EXISTS
+Exists returns true if the subquery returns al least one row from the DB.
+
+L5 - CASE in SELECT - To be continued!
